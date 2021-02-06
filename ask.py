@@ -46,5 +46,4 @@ def eng_to_swa():
     print_result(swa, inp)
 
 while (True):
-    eng_to_swa()
-    swa_to_eng()
+    a = choice([eng_to_swa(), swa_to_eng()])
