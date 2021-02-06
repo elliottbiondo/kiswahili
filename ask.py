@@ -20,33 +20,30 @@ tense = ["na"]
 engine = pyttsx3.init()
 engine.setProperty('rate', 125)
 
-
 def print_result(expected, actual):
-    pass
-
-
-def swa_to_eng():
-    phrase = choice(subjects) + choice(tense) + choice(verb_roots)
-    engine.say(phrase)
-    engine.runAndWait()
-    val = input("Translate the following: {}\n>> ".format(phrase))
-
-    trans = translate(phrase)
-
-    if (val.lower() == trans.lower()):
+    if (expected == actual):
         print("CORRECT\n")
     else:
-        print("INCORRECT! answer: {}\n".format(trans))
+        print("INCORRECT! answer: {}\n".format(expected))
+
+def swa_to_eng():
+    swa = choice(subjects) + choice(tense) + choice(verb_roots)
+    eng = translate(swa)
+
+    engine.say(swa)
+    engine.runAndWait()
+
+    inp = input("Translate the following: {}\n>> ".format(swa))
+
+    print_result(eng, inp)
 
 def eng_to_swa():
     swa = choice(subjects) + choice(tense) + choice(verb_roots)
     eng = translate(swa)
+
     inp = input("Translate the following: {}\n>> ".format(eng))
 
-    if (inp.lower() == swa.lower()):
-        print("CORRECT\n")
-    else:
-        print("INCORRECT! answer: {}\n".format(swa))
+    print_result(swa, inp)
 
 while (True):
     eng_to_swa()
