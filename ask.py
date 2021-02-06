@@ -17,7 +17,6 @@ subjects = ["ni", "u", "a", "tu", "m", "wa"]
 #tense = ["li", "na", "ta"]
 tense = ["na"]
 
-
 engine = pyttsx3.init()
 engine.setProperty('rate', 125)
 
@@ -25,7 +24,7 @@ while (True):
     phrase = choice(subjects) + choice(tense) + choice(verb_roots)
     engine.say(phrase)
     engine.runAndWait()
-    val = input("Translate the following: {}\n".format(phrase))
+    val = input("Translate the following: {}\n>> ".format(phrase))
 
     t = trans(phrase)
 
