@@ -2,22 +2,21 @@ from googletrans import Translator
 import pyttsx3
 from random import choice
 
+from verb import Verb
+
 def translate(phrase):
     translator = Translator()
     return translator.translate(phrase, src="sw", dest="en").text
 
-verb_roots = []
+verbs = []
 with open("verbs", 'r') as f:
     lines = f.readlines()
     for line in lines:
         if len(line.strip()) > 0:
-            verb_roots.append(line.split("&")[0].strip().strip("-"))
-
-subjects = ["ni", "u", "a", "tu", "m", "wa"]
-tense = ["li", "na", "ta"]
+            verbs.append(Verb(line.split("&")[0].strip().strip("-")))
 
 engine = pyttsx3.init()
-engine.setProperty('rate', 125)
+engine.setProperty('rate', 150)
 
 def check_result(expected, actual):
     if (expected.lower() == actual.lower()):
@@ -26,7 +25,10 @@ def check_result(expected, actual):
         print("INCORRECT! answer: {}\n".format(expected))
 
 def swa_to_eng():
-    swa = choice(subjects) + choice(tense) + choice(verb_roots)
+
+    verb = choice(verbs)
+    swa = verb.conjugate()
+
     eng = translate(swa)
 
     engine.say(swa)
@@ -37,7 +39,9 @@ def swa_to_eng():
     check_result(eng, inp)
 
 def eng_to_swa():
-    swa = choice(subjects) + choice(tense) + choice(verb_roots)
+    verb = choice(verbs)
+    swa = verb.conjugate()
+
     eng = translate(swa)
 
     inp = input("Translate the following: {}\n>> ".format(eng))
