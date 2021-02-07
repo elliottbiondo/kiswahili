@@ -14,14 +14,13 @@ with open("verbs", 'r') as f:
             verb_roots.append(line.split("&")[0].strip().strip("-"))
 
 subjects = ["ni", "u", "a", "tu", "m", "wa"]
-#tense = ["li", "na", "ta"]
-tense = ["na"]
+tense = ["li", "na", "ta"]
 
 engine = pyttsx3.init()
 engine.setProperty('rate', 125)
 
-def print_result(expected, actual):
-    if (expected == actual):
+def check_result(expected, actual):
+    if (expected.lower() == actual.lower()):
         print("CORRECT\n")
     else:
         print("INCORRECT! answer: {}\n".format(expected))
@@ -35,7 +34,7 @@ def swa_to_eng():
 
     inp = input("Translate the following: {}\n>> ".format(swa))
 
-    print_result(eng, inp)
+    check_result(eng, inp)
 
 def eng_to_swa():
     swa = choice(subjects) + choice(tense) + choice(verb_roots)
@@ -43,7 +42,7 @@ def eng_to_swa():
 
     inp = input("Translate the following: {}\n>> ".format(eng))
 
-    print_result(swa, inp)
+    check_result(swa, inp)
 
 while (True):
     a = choice([eng_to_swa(), swa_to_eng()])
