@@ -12,17 +12,15 @@ class Verb(object):
                         "present" : "",
                         "future" : "ta"}]
 
-        self.subjects = [[["ni", "u", "a"],
-                          ["tu", "m", "wa"]],
-                         [["si", "hu", "ha"],
-                          ["hatu", "ham", "hawa"]]]
+        self.subjects = [[["ni", "u", "a"], ["tu", "m", "wa"]],
+                         [["si", "hu", "ha"], ["hatu", "ham", "hawa"]]]
 
     def _conjugate(self, tense, person, plural, neg):
         subject = self.subjects[neg][plural][person]
         tense = self.tenses[neg][tense]
         conj = subject + tense + self.root
 
-        if (neg == 1 and self.root[-1] == "a"):
+        if (tense == "present" and neg == 1 and self.root[-1] == "a"):
             return conj[:-1] + "i"
         else:
             return conj

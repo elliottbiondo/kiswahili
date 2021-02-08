@@ -9,7 +9,7 @@ def translate(phrase):
     return translator.translate(phrase, src="sw", dest="en").text
 
 verbs = []
-with open("verbs", 'r') as f:
+with open("vocab/verbs", 'r') as f:
     lines = f.readlines()
     for line in lines:
         if len(line.strip()) > 0:
