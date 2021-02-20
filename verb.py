@@ -16,9 +16,9 @@ class Verb(object):
                          [["si", "hu", "ha"], ["hatu", "ham", "hawa"]]]
 
     def _conjugate(self, tense, person, plural, neg):
-        subject = self.subjects[neg][plural][person]
-        tense = self.tenses[neg][tense]
-        conj = subject + tense + self.root
+        subject_pre = self.subjects[neg][plural][person]
+        tense_pre = self.tenses[neg][tense]
+        conj = subject_pre + tense_pre + self.root
 
         if (tense == "present" and neg == 1 and self.root[-1] == "a"):
             return conj[:-1] + "i"

@@ -13,7 +13,7 @@ with open("vocab/verbs", 'r') as f:
     lines = f.readlines()
     for line in lines:
         if len(line.strip()) > 0 and line.strip()[0] != "#":
-            verbs.append(Verb(line.split("&")[0].strip().strip("-")))
+            verbs.append(Verb(line.split("#")[0].strip().strip("-")))
 
 engine = pyttsx3.init()
 engine.setProperty('rate', 150)
