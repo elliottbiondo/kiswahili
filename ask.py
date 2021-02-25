@@ -4,6 +4,9 @@ from random import choice
 
 from parser import parse
 
+engine = pyttsx3.init()
+engine.setProperty('rate', 150)
+
 def translate(phrase):
     translator = Translator()
     return translator.translate(phrase, src="sw", dest="en").text
@@ -14,7 +17,7 @@ def check_result(expected, actual):
     else:
         print("INCORRECT! answer: {}\n".format(expected))
 
-def swa_to_eng():
+def swa_to_eng(verbs):
 
     verb = choice(verbs)
     swa = verb.conjugate()
@@ -28,7 +31,7 @@ def swa_to_eng():
 
     check_result(eng, inp)
 
-def eng_to_swa():
+def eng_to_swa(verbs):
     verb = choice(verbs)
     swa = verb.conjugate()
 
@@ -38,9 +41,10 @@ def eng_to_swa():
 
     check_result(swa, inp)
 
-verbs = parse()
-engine = pyttsx3.init()
-engine.setProperty('rate', 150)
+def main():
+    verbs = parse()
+    while (True):
+        a = choice([eng_to_swa(verbs), swa_to_eng(verbs)])
 
-while (True):
-    a = choice([eng_to_swa(), swa_to_eng()])
+if __name__ == "__main__":
+    main()
