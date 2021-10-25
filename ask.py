@@ -1,11 +1,11 @@
 from googletrans import Translator
-import pyttsx3
+#import pyttsx3
 from random import choice
 
 from parser import parse
 
-engine = pyttsx3.init()
-engine.setProperty('rate', 150)
+#engine = pyttsx3.init()
+#engine.setProperty('rate', 150)
 
 def translate(phrase):
     translator = Translator()
@@ -24,8 +24,8 @@ def swa_to_eng(verbs):
 
     eng = translate(swa)
 
-    engine.say(swa)
-    engine.runAndWait()
+    #engine.say(swa)
+    #engine.runAndWait()
 
     inp = input("Translate the following: {}\n>> ".format(swa))
 

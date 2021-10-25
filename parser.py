@@ -12,7 +12,9 @@ def parse():
                 while lines[i].strip() != '':
                     line = lines[i].strip("#")
                     if line.strip()[0] == "exception":
-                        pos_neg, person, sing_plur, tense, value = line.strip()[1:]
+                        pos_neg, person, sing_plur, tense, value \
+                            = line.strip()[1:]
+
                         pos_neg = 0 if pos_neg == "pos" else 1
                         person -= 1
                         sing_plur = 0 if sing_plur == "sing" else 1
@@ -21,5 +23,7 @@ def parse():
                 verbs.append(verb)
             else:
                 i += 1
+
+    print("Read {0} verbs".format(len(verbs)))
     return verbs
 
