@@ -40,7 +40,4 @@ class Verb(object):
         pos_neg = choice([0, 1])
         return self._conjugate(pos_neg, person, sing_plur, tense)
 
-    def root(self):
-        return self.root
-
 
