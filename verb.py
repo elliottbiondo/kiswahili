@@ -7,10 +7,12 @@ class Verb(object):
 
         self.tenses = [{"past" : "li",
                        "present" : "na",
-                       "future" : "ta"},
+                       "future" : "ta",
+                       "past-perfect" : "me"},
                        {"past" : "ku",
                         "present" : "",
-                        "future" : "ta"}]
+                        "future" : "ta",
+                        "past-perfect" : "ja"}]
 
         self.subjects = [[["ni", "u", "a"], ["tu", "m", "wa"]],
                          [["si", "hu", "ha"], ["hatu", "ham", "hawa"]]]
@@ -32,10 +34,13 @@ class Verb(object):
             return conj
 
     def conjugate(self):
-        tense = choice(["past", "present", "future"])
+        tense = choice(["past", "present", "future", "past-perfect"])
         person = choice([0, 1, 2])
         sing_plur = choice([0, 1])
         pos_neg = choice([0, 1])
         return self._conjugate(pos_neg, person, sing_plur, tense)
+
+    def root(self):
+        return self.root
 
 

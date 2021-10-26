@@ -1,5 +1,8 @@
 from verb import Verb
 
+
+
+
 def parse():
     verbs = []
     with open("vocab/verbs", 'r') as f:
