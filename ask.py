@@ -1,11 +1,7 @@
 from googletrans import Translator
-#import pyttsx3
 from random import choice
 
-from parser import parse
-
-#engine = pyttsx3.init()
-#engine.setProperty('rate', 150)
+from parser import Verb_Parser
 
 def translate(phrase):
     translator = Translator()
@@ -42,7 +38,8 @@ def eng_to_swa(verbs):
     check_result(swa, inp)
 
 def main():
-    verbs = parse()
+    vp = Verb_Parser(["vocab/verbs"])
+    verbs = vp.parse()
     while (True):
         a = choice([eng_to_swa(verbs), swa_to_eng(verbs)])
 
