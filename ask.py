@@ -20,9 +20,6 @@ def swa_to_eng(verbs):
 
     eng = translate(swa)
 
-    #engine.say(swa)
-    #engine.runAndWait()
-
     inp = input("Translate the following: {}\n>> ".format(swa))
 
     check_result(eng, inp)
@@ -40,6 +37,7 @@ def eng_to_swa(verbs):
 def main():
     vp = Verb_Parser(["vocab/verbs"])
     verbs = vp.parse()
+    print("Read {} verbs".format(vp.num_verbs()))
     while (True):
         a = choice([eng_to_swa(verbs), swa_to_eng(verbs)])
 

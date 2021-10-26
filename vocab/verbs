@@ -1,100 +1,101 @@
--andika # write
+-andika : write
 
--soma # read
+-soma : read
 
--fikiri # think
+-fikiri : think
 
--funza # teach
+-funza : teach
 
--pika # cook
+-pika : cook
 
--cheza # play, dance
+-cheza : play, dance
 
--kula # eat
+-kula : eat
+exception pos 1 sing present ni
 
--penda # like
+-penda : like
 
--lala # sleep
+-lala : sleep
 
--amka # wake up
+-amka : wake up
 
--tembea # walk
+-tembea : walk
 
--kimbia # run
+-kimbia : run
 
--enda # go
+-enda : go
 
--rudi # return
+-rudi : return
 
--kuja # come
+-kuja : come
 
--fika # arrive
+-fika : arrive
 
--fanya # do
+-fanya : do
 
--jibu # respond, answer
+-jibu : respond, answer
 
--jaribu # try
+-jaribu : try
 
--hitaji # need
+-hitaji : need
 
--osha # wipe
+-osha : wipe
 
--fagia # sweep
+-fagia : sweep
 
--safisha # clean
+-safisha : clean
 
--afua # wash
+-afua : wash
 
--omba # order
+-omba : order
 
--anza # start
+-anza : start
 
--awasha # turn on
+-awasha : turn on
 
-#-nawa # wash hands
+-nawa : wash hands
 
--ogelea # swim
+-ogelea : swim
 
--simama # stand
+-simama : stand
 
--keti # sit
+-keti : sit
 
--kaa # stay
+-kaa : stay
 
--tunza # take care of
+-tunza : take care of
 
--chukua # take, bring
+-chukua : take, bring
 
--winda # hunt
+-winda : hunt
 
--lia # cry
+-lia : cry
 
--zungumza # converse
+-zungumza : converse
 
--panga # plan
+-panga : plan
 
--fuga # feed
+-fuga : feed
 
--funga # close
+-funga : close
 
--fungua # open
+-fungua : open
 
--kubali # agree
+-kubali : agree
 
--endesha # drive
+-endesha : drive
 
--inua # lift
+-inua : lift
 
--tembelea # visit
+-tembelea : visit
 
--panda # climb
+-panda : climb
 
--zoea # be used to
+-zoea : be used to
 
--jua # to know
+-jua : know
 
--kuwa # to be
+-kuwa : be
 exception pos 1 sing present ni
 exception pos 2 sing present ni
 exception pos 3 sing present ni
@@ -108,31 +109,31 @@ exception neg 1 plur present si
 exception neg 2 plur present si
 exception neg 3 plur present si
 
--choka # become tired
+-choka : become tired
 
--cheka # laugh
+-cheka : laugh
 
--tengeneza # make
+-tengeneza : make
 
--goja # wait
+-goja : wait
 
--chukua # take
+-chukua : take
 
--ua # kill
+-ua : kill
 
--fa # to die
+-fa : die
 
--sikiliza # listen
+-sikiliza : listen
 
--sikia # hear
+-sikia : hear
 
--kuvumilia # tolerate
+-kuvumilia : tolerate
 
--zaa # give birth
+-zaa : give birth
 
--shangaa # wonder
+-shangaa : wonder
 
--elewa # understand
+-elewa : understand
 
--lewa # get drunk
+-lewa : get drunk
 

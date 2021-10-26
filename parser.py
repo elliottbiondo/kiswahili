@@ -20,7 +20,9 @@ class Verb_Parser(object):
             and (not self._blank_line(line))
 
     def _parse_verb_line(self, line):
-        return line.split("#")[0].strip().strip("-")
+        line = line.split("#")[0].strip()
+        root, eng = (l.strip() for l in line.split(":"))
+        return root.strip("-"), eng
 
     def _process_exceptions(self, verb, exception_lines):
         for line in exception_lines:
@@ -40,7 +42,8 @@ class Verb_Parser(object):
         i = 0
         while i < len(lines):
             if self._valid_line(lines[i]):
-                verb = Verb(self._parse_verb_line(lines[i]))
+                root, eng = self._parse_verb_line(lines[i])
+                verb = Verb(root, eng)
                 i += 1
 
                 exception_lines = []
@@ -59,4 +62,7 @@ class Verb_Parser(object):
         for path in self.paths:
             self._parse_file(path)
         return self.verbs
+
+    def num_verbs(self):
+        return len(self.verbs)
 

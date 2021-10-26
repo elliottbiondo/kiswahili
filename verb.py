@@ -2,8 +2,9 @@ from random import choice
 
 class Verb(object):
 
-    def __init__(self, root):
+    def __init__(self, root, eng):
         self.root = root
+        self.eng = eng
 
         self.tenses = [{"past" : "li",
                        "present" : "na",
