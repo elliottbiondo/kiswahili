@@ -2,7 +2,6 @@ muhimu : important
 uhakika : certainty
 tofauti : different
 sahihi : correct
-
 labdu : maybe
 pia : also
 mbalimbali : varieties
@@ -20,19 +19,30 @@ kati ya : between
 
 ndani ya : inside of
 nje ya: outside of
-maarifa : knowledge
 
+
+
+# time
+dakika : minute
+sekunde : second
+wiki : week
+mwezi : month
+miezi : months
+mwaka : year
+miaka : years
 kesho : tomorrow
 kesho kutwa : day after tomorrow
 jana : yesterday
 juzi : day before yesterday
+nusu : half
+robo : quarter
 
-mafua : sickness
 
 jengo : building
 majengo : buildings
 mgahawa : restaurant
 
+maarifa : knowledge
 dini : religion
 nguvu : power
 vita : war
@@ -42,23 +52,17 @@ amani : peace
 ajira : employment
 sheria : law
 
-ardhi : land
 mahali : place
 jinsi ya : the method to
 utani : jokes
-mbao : woods
-kabila : tribe
 mkweli : truthful person
 wakweli : truthful people
 kweli : truth
-nusu : half
-robo : quarter
-chanjo : vaccine
-ubongo : brain
-dakika : minute
 
+mafua : sickness
 afya : health
 mazoezi : exercise
+chanjo : vaccine
 
 mfano : example
 mifano : examples
@@ -70,18 +74,11 @@ hewa : air
 mabadiliko : changes
 madadiliko ya hali ya hewa : climate change
 
-kidole : finger
-vidole : fingers
-mkono : arm/hand
-mikono : arms/hands
-nywele : hair
 
-mwaka : year
-miaka : years
 ua : flower
 maua : flowers
-kisiwa : island
-visiwa : islands
+
+
 
 jicho : eye
 macho : eyes
@@ -91,6 +88,13 @@ mguu : foot
 miguu : feet
 mkono : hand
 mikono : hands
+kidole : finger
+vidole : fingers
+mkono : arm/hand
+mikono : arms/hands
+nywele : hair
+bega : shoulder
+mabega : shoulders
 
 
 ngumu : difficult
@@ -112,47 +116,47 @@ kelele : noises
 kilele : peak
 
 rahisi : easy
-kijiji : village
-vijiji : villages
 uvumilivu : tolerance
 kifungua kinywa : breakfast
 
-mtandao  : internet
+
+
+
 inavutia : it is interesting
 
-mrembo : beautiful person
 Mapokezi : reception
 
+baraka : blessing
+
+harausi - wedding
+
+
+
+mradi - project
+miradi - projects
+mtandao  : internet
+timu : team
+
+nchi : country
+jimbo : state
+taifa : nation
+bahari : ocean
+dunia : world
+kijiji : village
+vijiji : villages
+mji : town
+miji : towns
+mto : river
+mito : rivers
+ardhi : land
+kisiwa : island
+visiwa : islands
+mbao : woods
+kabila : tribe
 kaskazini: north
 mashariki : east
 kusini: south
 magharibi: west
 
-timu : team
-bahari : ocean
 
-kinywaji - drink
-vinywaji - drinks
 
-harausi - wedding
-
-mradi - project
-miradi - projects
-
-dunia : world
-
-baraka : blessing
-
-kuchoka : to become tired
-kucheka : to laugh
-kutengeneza : to make
-kungoja : to wait
-kuchukua : to take
-kuua : to kill
-kufa : to die
-kusikiliza : to listen
-kusikia : to hear
-kuvumilia : to tolerate
-kuzaa : to give birth
-kukubali : to accept/agree
-kushangaa : to wonder

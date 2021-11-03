@@ -11,7 +11,18 @@
 -cheza : play, dance
 
 -kula : eat
-exception pos 1 sing present ni
+exception neg 1 sing present sili
+exception neg 2 sing present huli
+exception neg 3 sing present hali
+exception neg 1 plur present hutuli
+exception neg 2 plur present hamli
+exception neg 3 plur present hawali
+exception neg 1 sing past sikula
+exception neg 2 sing past hukula
+exception neg 3 sing past hakula
+exception neg 1 plur past hattukula
+exception neg 2 plur past hamkula
+exception neg 3 plur past hawakula
 
 -penda : like
 
@@ -137,8 +148,8 @@ exception neg 3 plur present si
 
 -lewa : get drunk
 
--vaa # wear
+-vaa : wear
 
--tumia # to use
+-tumia : to use
 
 
