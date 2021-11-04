@@ -1,10 +1,10 @@
 from verb import Verb
 
-class Verb_Parser(object):
+
+class Parser(object):
 
     def __init__(self, paths):
         self.paths = paths
-        self.verbs = []
 
     def _blank_line(self, line):
         return len(line.strip()) == 0
@@ -18,6 +18,12 @@ class Verb_Parser(object):
     def _valid_line(self, line):
         return (not self._comment_line(line)) \
             and (not self._blank_line(line))
+
+class Verb_Parser(Parser):
+
+    def __init__(self, paths):
+        self.verbs = []
+        super().__init__(paths)
 
     def _parse_verb_line(self, line):
         line = line.split("#")[0].strip()
