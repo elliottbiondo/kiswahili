@@ -19,6 +19,9 @@ class Parser(object):
         return (not self._comment_line(line)) \
             and (not self._blank_line(line))
 
+    def _remove_comment(self, line):
+        return line.split("#")[0].strip()
+
 class Verb_Parser(Parser):
 
     def __init__(self, paths):
@@ -26,20 +29,22 @@ class Verb_Parser(Parser):
         super().__init__(paths)
 
     def _parse_verb_line(self, line):
-        line = line.split("#")[0].strip()
+        line = self._remove_comment(line)
         root, eng = (l.strip() for l in line.split(":"))
+        eng = [l.strip() for l in eng.split(",")]
         return root.strip("-"), eng
 
     def _process_exceptions(self, verb, exception_lines):
         for line in exception_lines:
-           if line.split()[0] == "exception":
-               pos_neg, person, sing_plur, tense, value \
-                   = line.split()[1:]
+            line = self._remove_comment(line)
+            if line.split()[0] == "exception":
+                pos_neg, person, sing_plur, tense, value \
+                    = line.split()[1:]
 
-               pos_neg = 0 if pos_neg == "pos" else 1
-               person = int(person) - 1
-               sing_plur = 0 if sing_plur == "sing" else 1
-               verb.exceptions[(pos_neg, person, sing_plur, tense)] = value
+                pos_neg = 0 if pos_neg == "pos" else 1
+                person = int(person) - 1
+                sing_plur = 0 if sing_plur == "sing" else 1
+                verb.exceptions[(pos_neg, person, sing_plur, tense)] = value
 
     def _parse_file(self, path):
         with open(path, 'r') as f:
