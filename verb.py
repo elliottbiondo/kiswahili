@@ -1,5 +1,22 @@
 from random import choice
 
+class Verb_Components:
+
+    def __init__(self, pos_neg, person, sing_plur, tense):
+        self.pos_neg = pos_neg
+        self.person = person
+        self.sing_plur = sing_plur
+        self.tense = tense
+
+    @classmethod
+    def from_random_sample(cls):
+        pos_neg = choice([0, 1])
+        person = choice([0, 1, 2])
+        sing_plur = choice([0, 1])
+        tense = choice(["past", "present", "future", "past-perfect"])
+        return cls(pos_neg, person, sing_plur, tense)
+
+
 class Verb(object):
 
     def __init__(self, root, eng):
@@ -20,25 +37,18 @@ class Verb(object):
 
         self.exceptions = {}
 
-    def _conjugate(self, pos_neg, person, sing_plur, tense):
+    def conjugate(self):
 
-        if (pos_neg, person, sing_plur, tense) in self.exceptions.keys():
-            return self.exceptions[pos_neg, person, sing_plur, tense]
+        vc = Verb_Components.from_random_sample()
 
-        subject_pre = self.subjects[pos_neg][sing_plur][person]
-        tense_pre = self.tenses[pos_neg][tense]
+        if (vc.pos_neg, vc.person, vc.sing_plur, vc.tense) in self.exceptions.keys():
+            return self.exceptions[vc.pos_neg, vc.person, vc.sing_plur, vc.tense]
+
+        subject_pre = self.subjects[vc.pos_neg][vc.sing_plur][vc.person]
+        tense_pre = self.tenses[vc.pos_neg][vc.tense]
         conj = subject_pre + tense_pre + self.root
 
-        if (tense == "present" and pos_neg == 1 and self.root[-1] == "a"):
+        if (vc.tense == "present" and vc.pos_neg == 1 and self.root[-1] == "a"):
             return conj[:-1] + "i"
         else:
             return conj
-
-    def conjugate(self):
-        tense = choice(["past", "present", "future", "past-perfect"])
-        person = choice([0, 1, 2])
-        sing_plur = choice([0, 1])
-        pos_neg = choice([0, 1])
-        return self._conjugate(pos_neg, person, sing_plur, tense)
-
-
