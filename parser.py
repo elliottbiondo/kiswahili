@@ -49,7 +49,7 @@ class Verb_Parser(Parser):
     def _parse_file(self, path):
         with open(path, 'r') as f:
             lines = f.readlines()
-        
+
         i = 0
         while i < len(lines):
             if self._valid_line(lines[i]):

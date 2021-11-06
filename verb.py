@@ -8,6 +8,16 @@ class Verb_Components:
         self.sing_plur = sing_plur
         self.tense = tense
 
+    def __hash__(self):
+        return hash((self.pos_neg, self.person, self.sing_plur, self.tenze))
+
+    def __eq__(self, other):
+        return (self.pos_neg, self.person, self.sing_plur, self.tense) ==
+               (other.pos_neg, other.person, other.sing_plur, other.tense)
+
+    def __ne__(self, other):
+        return not(self == other)
+
     @classmethod
     def from_random_sample(cls):
         pos_neg = choice([0, 1])
@@ -40,6 +50,7 @@ class Verb(object):
                          [["si", "hu", "ha"], ["hatu", "ham", "hawa"]]]
 
         self.exceptions = {}
+
 
     def conjugate(self):
 
