@@ -24,6 +24,20 @@ exception neg 1 plur past hattukula
 exception neg 2 plur past hamkula
 exception neg 3 plur past hawakula
 
+-kuwa : be
+exception pos 1 sing present ni
+exception pos 2 sing present ni
+exception pos 3 sing present ni
+exception pos 1 plur present ni
+exception pos 2 plur present ni
+exception pos 3 plur present ni
+exception neg 1 sing present si
+exception neg 2 sing present si
+exception neg 3 sing present si
+exception neg 1 plur present si
+exception neg 2 plur present si
+exception neg 3 plur present si
+
 -penda : like
 
 -lala : sleep
@@ -106,27 +120,13 @@ exception neg 3 plur past hawakula
 
 -jua : know
 
--kuwa : be
-exception pos 1 sing present ni
-exception pos 2 sing present ni
-exception pos 3 sing present ni
-exception pos 1 plur present ni
-exception pos 2 plur present ni
-exception pos 3 plur present ni
-exception neg 1 sing present si
-exception neg 2 sing present si
-exception neg 3 sing present si
-exception neg 1 plur present si
-exception neg 2 plur present si
-exception neg 3 plur present si
-
 -choka : become tired
 
 -cheka : laugh
 
 -tengeneza : make
 
--goja : wait
+-ngoja : wait
 
 -chukua : take
 
@@ -151,5 +151,13 @@ exception neg 3 plur present si
 -vaa : wear
 
 -tumia : to use
+
+-pendelea : prefer
+
+-pokea : recieve
+
+-sherehekea : celebrate
+
+
 
 

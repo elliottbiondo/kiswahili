@@ -16,6 +16,10 @@ class Verb_Components:
         tense = choice(["past", "present", "future", "past-perfect"])
         return cls(pos_neg, person, sing_plur, tense)
 
+class Conjugated_Verb():
+    def __init__(self):
+        pass
+
 
 class Verb(object):
 
