@@ -9,10 +9,10 @@ class Verb_Components:
         self.tense = tense
 
     def __hash__(self):
-        return hash((self.pos_neg, self.person, self.sing_plur, self.tenze))
+        return hash((self.pos_neg, self.person, self.sing_plur, self.tense))
 
     def __eq__(self, other):
-        return (self.pos_neg, self.person, self.sing_plur, self.tense) ==
+        return (self.pos_neg, self.person, self.sing_plur, self.tense) == \
                (other.pos_neg, other.person, other.sing_plur, other.tense)
 
     def __ne__(self, other):
@@ -56,8 +56,8 @@ class Verb(object):
 
         vc = Verb_Components.from_random_sample()
 
-        if (vc.pos_neg, vc.person, vc.sing_plur, vc.tense) in self.exceptions.keys():
-            return self.exceptions[vc.pos_neg, vc.person, vc.sing_plur, vc.tense]
+        if vc in self.exceptions.keys():
+            return self.exceptions[vc]
 
         subject_pre = self.subjects[vc.pos_neg][vc.sing_plur][vc.person]
         tense_pre = self.tenses[vc.pos_neg][vc.tense]

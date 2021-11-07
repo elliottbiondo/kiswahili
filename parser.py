@@ -1,4 +1,4 @@
-from verb import Verb
+from verb import Verb, Verb_Components
 
 
 class Parser(object):
@@ -44,7 +44,7 @@ class Verb_Parser(Parser):
                 pos_neg = 0 if pos_neg == "pos" else 1
                 person = int(person) - 1
                 sing_plur = 0 if sing_plur == "sing" else 1
-                verb.exceptions[(pos_neg, person, sing_plur, tense)] = value
+                verb.exceptions[Verb_Components(pos_neg, person, sing_plur, tense)] = value
 
     def _parse_file(self, path):
         with open(path, 'r') as f:
