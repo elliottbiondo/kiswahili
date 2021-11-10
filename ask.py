@@ -2,6 +2,7 @@ from googletrans import Translator
 from random import choice
 
 from parser import Verb_Parser
+from verb import Verb_Components
 
 def translate(phrase):
     translator = Translator()
@@ -16,7 +17,9 @@ def check_result(expected, actual):
 def swa_to_eng(verbs):
 
     verb = choice(verbs)
-    swa = verb.conjugate()
+
+    vc = Verb_Components.from_random_sample()
+    swa = verb.conjugate(vc)
 
     eng = translate(swa)
 
@@ -25,8 +28,11 @@ def swa_to_eng(verbs):
     check_result(eng, inp)
 
 def eng_to_swa(verbs):
+
     verb = choice(verbs)
-    swa = verb.conjugate()
+    vc = Verb_Components.from_random_sample()
+
+    swa = verb.conjugate(vc)
 
     eng = translate(swa)
 

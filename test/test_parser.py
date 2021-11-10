@@ -1,7 +1,6 @@
-from parser import Verb_Parser
-
 from nose.tools import assert_equal, with_setup, assert_raises
 
+from parser import Verb_Parser
 
 def test_simple():
     parser = Verb_Parser(["input/verbs"])

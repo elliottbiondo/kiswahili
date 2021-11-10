@@ -26,10 +26,6 @@ class Verb_Components:
         tense = choice(["past", "present", "future", "past-perfect"])
         return cls(pos_neg, person, sing_plur, tense)
 
-class Conjugated_Verb():
-    def __init__(self):
-        pass
-
 
 class Verb(object):
 
@@ -51,10 +47,7 @@ class Verb(object):
 
         self.exceptions = {}
 
-
-    def conjugate(self):
-
-        vc = Verb_Components.from_random_sample()
+    def conjugate(self, vc):
 
         if vc in self.exceptions.keys():
             return self.exceptions[vc]
