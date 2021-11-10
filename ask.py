@@ -17,7 +17,6 @@ def check_result(expected, actual):
 def swa_to_eng(verbs):
 
     verb = choice(verbs)
-
     vc = Verb_Components.from_random_sample()
     swa = verb.conjugate(vc)
 
@@ -31,12 +30,16 @@ def eng_to_swa(verbs):
 
     verb = choice(verbs)
     vc = Verb_Components.from_random_sample()
-
     swa = verb.conjugate(vc)
 
     eng = translate(swa)
 
-    inp = input("Translate the following: {}\n>> ".format(eng))
+    # Differiate between you (singular) and you (plural) in English
+    plural = ''
+    if vc.person == 1 and vc.sing_plur == 1:
+        plural = '(plural)'
+
+    inp = input("Translate the following: {0} {1}\n>> ".format(eng, plural))
 
     check_result(swa, inp)
 
