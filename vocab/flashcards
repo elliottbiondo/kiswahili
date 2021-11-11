@@ -21,7 +21,6 @@ ndani ya : inside of
 nje ya: outside of
 
 
-
 # time
 dakika : minute
 sekunde : second
@@ -37,10 +36,6 @@ juzi : day before yesterday
 nusu : half
 robo : quarter
 
-
-jengo : building
-majengo : buildings
-mgahawa : restaurant
 
 maarifa : knowledge
 dini : religion
@@ -80,22 +75,26 @@ maua : flowers
 
 
 
-jicho : eye
-macho : eyes
-sikio : ear
-masikio : ears
+jicho/macho : eye/eyes : ji-ma
+
+sikio/masikio : ear/ears : ji-ma
+
 mguu : foot
 miguu : feet
+
 mkono : hand
 mikono : hands
+
 kidole : finger
 vidole : fingers
+
 mkono : arm/hand
 mikono : arms/hands
-nywele : hair
+
 bega : shoulder
 mabega : shoulders
 
+nywele : hair
 
 ngumu : difficult
 mfupi : short
@@ -109,8 +108,8 @@ hewa : air
 mara nyingi : many times
 kichwa : head
 akili : intelligence
-jiwe : stone
-mawe : stones
+
+jiwe/mawe : stone/stones : ji-ma
 
 kelele : noises
 kilele : peak
@@ -118,7 +117,6 @@ kilele : peak
 rahisi : easy
 uvumilivu : tolerance
 kifungua kinywa : breakfast
-
 
 
 inavutia : it is interesting
@@ -140,22 +138,33 @@ jimbo : state
 taifa : nation
 bahari : ocean
 dunia : world
-kijiji : village
-vijiji : villages
-mji : town
-miji : towns
-mto : river
-mito : rivers
+
+kijiji/vijiji : village/villages : ki-vi
+
+mji/miji : town/towns : m-mi
+
+mto/mito : river/rivers : m-mi
+
+
+jengo : building
+majengo : buildings
+
+mgahawa : restaurant
+
+
+
+
 ardhi : land
-kisiwa : island
-visiwa : islands
+
+kisiwa/visiwa : island/islands : ki-vi
+
 mbao : woods
 kabila : tribe
+
 kaskazini: north
 mashariki : east
 kusini: south
 magharibi: west
-
 
 kadi : card
 kodi : rent

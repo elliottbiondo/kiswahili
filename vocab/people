@@ -1,41 +1,55 @@
-mwanaume : man
-wanaume : men
-mwanamke : woman
-wanawake : women
-msichana : girl
-wasichana : girls
+mwanaume/wanaume : man/men : m-wa
+
+mwanamke/wanawake : woman/woman : m-wa
+
+msichana/wasichana : girl/girls : m-wa
+
 kijana : boy
 wavulana : boys
-mkulima : farmer
-wakulima : farmers
-mwalimu : teacher
-wawalimu : teachers
+
+mkulima/wakulima : farmer/farmers : m-wa
+mwalimu/wawalimu : teacher/teachers : m-wa
+
 mtu : person
 watu : people
+
 mtoto : child
 watoto : children
+
 muuguzi : nurse
 wauguzi : nurses
+
 mhandisi : engineer
 wahandisi : engineers
+
 msanii : artist
 wasanii : artists
+
 daktari : doctor
 madaktari : doctors
+
 mwanasayansi : scientist
 wanasayansi: scientists
+
 rafiki : friend
+
 msafiri : traveler
 wasafiri : travelers
+
 mgeni : guest
 wageni : guests
+
 mwafrika : African
 waafrika : Africans
+
 mpishi : chef
 wapisha : chefs
+
 mwanafunzi : student
 wanafunzi : students
+
 rais : president
 raia : citzen
+
 mrembo : beautiful person
 warembo : beautiful people

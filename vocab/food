@@ -1,35 +1,54 @@
-chakula : food
-vyakula : foods
-viazi : potatoes
+chakula/vyakula : food/foods : ki-vi
+
+kiazi/viazi : potato/potatoes : ki-vi
+
 vitunguu : onions
 vitunguu saumu : garlic
+
 nyama ya mbuzi : goat meat
 nyama ya ng'ombe : beef
 nyama ya nguruwe : pork
-samaki : fish
-nyanya : tomato
+
+samaki : fish : n
+
+nyanya : tomato/tomatoes : n
+
 pilipli hoho : green pepper
-ndizi : banana
+
+ndizi : banana : n
+
 chai : tea
-mkate : bread
-wali : rice
+
+mkate/mikate : bread/breads : m-mi
+
+wali : rice : n
+
 chipsi : fries
+
 ugali : ugali
-karoti : carrot
-chungwa : orange
-machungwa : oranges
-parachihi : avocado
-maparachihi : avocados
-embe : mango
-maembe : mangoes
-tunda : fruit
-matunda : fruits
+
+karoti : carrot/carrots : n
+
+chungwa/machungwa : orange/oranges : ji-ma
+
+parachihi/maparachichi : avocado/avocados : ji-ma
+
+embe/maembe : mango/mangoes : ji-ma
+
+tunda/matunda : fruit/fruits : ji-ma
+
 mboga : vegetable
-maji : water
-kahawa : coffee
+
+kahawa : coffee : n
+
 bia : beer
-maziwa : milk
-juisi : juice
-maharage : beans
-kinywaji : drink
-vinywaji : drinks
+
+juisi : juice/juices : n
+
+/maharage : /beans : ji-ma
+
+/maziwa : /milk : ji-ma
+
+/maji : /water : ji-ma
+
+kinywaji/vinywaji : drink/drinks : ki-vi
