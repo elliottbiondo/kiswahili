@@ -2,30 +2,33 @@ chakula/vyakula : food/foods : ki-vi
 
 kiazi/viazi : potato/potatoes : ki-vi
 
-vitunguu : onions
-vitunguu saumu : garlic
+kitunguu/vitunguu : onion/onions : ki-vi
 
-nyama ya mbuzi : goat meat
-nyama ya ng'ombe : beef
-nyama ya nguruwe : pork
+kitunguu saumu/vitunguu saumu : garlic/garlics : ki-vi
+
+nyama ya mbuzi : goat meat : n
+
+nyama ya ng'ombe : beef : n
+
+nyama ya nguruwe : pork : n
 
 samaki : fish : n
 
 nyanya : tomato/tomatoes : n
 
-pilipli hoho : green pepper
+pilipli hoho : green pepper/green peppers : n
 
-ndizi : banana : n
+ndizi : banana/bananas : n
 
-chai : tea
+chai : tea : n
 
 mkate/mikate : bread/breads : m-mi
 
 wali : rice : n
 
-chipsi : fries
+chipsi : fries : n
 
-ugali : ugali
+ugali : ugali : u
 
 karoti : carrot/carrots : n
 
@@ -37,18 +40,18 @@ embe/maembe : mango/mangoes : ji-ma
 
 tunda/matunda : fruit/fruits : ji-ma
 
-mboga : vegetable
+mboga : vegetable/vegetables : n
 
 kahawa : coffee : n
 
-bia : beer
+bia : beer/beers : n
 
 juisi : juice/juices : n
 
-/maharage : /beans : ji-ma
+maharage : beans : ji-ma
 
-/maziwa : /milk : ji-ma
+maziwa : milk : ji-ma
 
-/maji : /water : ji-ma
+maji : water : ji-ma
 
 kinywaji/vinywaji : drink/drinks : ki-vi
