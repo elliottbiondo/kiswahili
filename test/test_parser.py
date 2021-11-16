@@ -1,9 +1,9 @@
 from nose.tools import assert_equal, with_setup, assert_raises
 
-from parser import Verb_Parser
+from parser import KisVerbParser
 
 def test_simple():
-    parser = Verb_Parser(["input/verbs"])
+    parser = KisVerbParser(["input/verbs"])
     verbs = parser.parse()
 
     assert_equal(3, len(verbs))

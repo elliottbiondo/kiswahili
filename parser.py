@@ -1,4 +1,4 @@
-from verb import Verb, Verb_Components
+from verb import KisVerb, VerbComponents
 
 
 class Parser(object):
@@ -22,11 +22,21 @@ class Parser(object):
     def _remove_comment(self, line):
         return line.split("#")[0].strip()
 
-class Verb_Parser(Parser):
+
+class KisVerbParser(Parser):
 
     def __init__(self, paths):
         self.verbs = []
         super().__init__(paths)
+
+    def parse(self):
+
+        for path in self.paths:
+            self._parse_file(path)
+        return self.verbs
+
+    def num_verbs(self):
+        return len(self.verbs)
 
     def _parse_verb_line(self, line):
         line = self._remove_comment(line)
@@ -38,13 +48,13 @@ class Verb_Parser(Parser):
         for line in exception_lines:
             line = self._remove_comment(line)
             if line.split()[0] == "exception":
-                pos_neg, person, sing_plur, tense, value \
+                polarity, person, plurality, tense, value \
                     = line.split()[1:]
 
-                pos_neg = 0 if pos_neg == "pos" else 1
+                polarity = 0 if polarity == "pos" else 1
                 person = int(person) - 1
-                sing_plur = 0 if sing_plur == "sing" else 1
-                verb.exceptions[Verb_Components(pos_neg, person, sing_plur, tense)] = value
+                plurality = 0 if plurality == "sing" else 1
+                verb.exceptions[VerbComponents(polarity, person, plurality, tense)] = value
 
     def _parse_file(self, path):
         with open(path, 'r') as f:
@@ -54,7 +64,7 @@ class Verb_Parser(Parser):
         while i < len(lines):
             if self._valid_line(lines[i]):
                 root, eng = self._parse_verb_line(lines[i])
-                verb = Verb(root, eng)
+                verb = KisVerb(root, eng)
                 i += 1
 
                 exception_lines = []
@@ -68,12 +78,4 @@ class Verb_Parser(Parser):
                 self.verbs.append(verb)
             else:
                 i += 1
-
-    def parse(self):
-        for path in self.paths:
-            self._parse_file(path)
-        return self.verbs
-
-    def num_verbs(self):
-        return len(self.verbs)
 
