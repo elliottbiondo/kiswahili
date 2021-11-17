@@ -1,6 +1,6 @@
 from random import choice
 
-class VerbComponents:
+class VerbComponents(object):
 
     # class variable defining cannonical sorting of verb components
     _polarity = ["affirmative", "negative"]
@@ -14,7 +14,6 @@ class VerbComponents:
         self._person_idx = person_idx
         self._plurality_idx = plurality_idx
         self._tense_idx = self._tense.index(tense)
-
 
     @classmethod
     def from_random_sample(cls):
@@ -49,7 +48,10 @@ class VerbComponents:
         return self._tense_idx
 
     def __hash__(self):
-        return hash((self._polarity_idx, self._person_idx, self._plurality_idx, self._tense_idx))
+        return hash((self._polarity_idx,
+                     self._person_idx,
+                     self._plurality_idx,
+                     self._tense_idx))
 
     def __eq__(self, other):
         return (self._polarity_idx, self._person_idx, self._plurality_idx, self._tense_idx) == \
@@ -59,26 +61,24 @@ class VerbComponents:
         return not (self == other)
 
     def __str__(self):
-
         out  = "{}, ".format(self._polarity[self._polarity_idx])
         out += "{} person, ".format(self._person[self._person_idx])
         out += "{}, ".format(self._plurality[self._plurality_idx])
-        out += "{}, ".format(self._tense[self._tense_idx])
+        out += "{} tense".format(self._tense[self._tense_idx])
         return out
 
 
 class KisVerb(object):
 
+    _tenses = [["li", "me", "na", "ta"],
+               ["ku",  "ja",  "", "ta"]]
+
+    _subjects = [[["ni", "u", "a"], ["tu", "m", "wa"]],
+                 [["si", "hu", "ha"], ["hatu", "ham", "hawa"]]]
+
     def __init__(self, root, eng):
         self.root = root
         self.eng = eng
-
-        self.tenses = [["li", "me", "na", "ta"],
-                       ["ku",  "ja",  "", "ta"]]
-
-        self.subjects = [[["ni", "u", "a"], ["tu", "m", "wa"]],
-                         [["si", "hu", "ha"], ["hatu", "ham", "hawa"]]]
-
         self.exceptions = {}
 
 
@@ -87,8 +87,8 @@ class KisVerb(object):
         if vc in self.exceptions.keys():
             return self.exceptions[vc]
 
-        subject_pre = self.subjects[vc.polarity_idx()][vc.plurality_idx()][vc.person_idx()]
-        tense_pre = self.tenses[vc.polarity_idx()][vc.tense_idx()]
+        subject_pre = self._subjects[vc.polarity_idx()][vc.plurality_idx()][vc.person_idx()]
+        tense_pre = self._tenses[vc.polarity_idx()][vc.tense_idx()]
         conj = subject_pre + tense_pre + self.root
 
         if (vc.tense() == "present" and vc.polarity() == "negative" and self.is_bantu()):
@@ -98,3 +98,49 @@ class KisVerb(object):
 
     def is_bantu(self):
         return self.root[-1] == "a"
+
+
+class EngVerb(object):
+
+    _subjects = [["I", "You", "S/he"], ["We", "You all", "They"]]
+    _copula = [["am", "are", "is"], ["are", "are", "are"]]
+
+    def __init__(self, inf):
+        self.inf = inf
+
+    def gerund(self):
+        if inf[-1] == "e":
+            root = inf[:-1]
+        else:
+            root = inf
+
+    def conjugate(self, vc):
+
+        if vc.tense() == "present":
+            return self._conjugate_present(vc)
+        elif vc.tense() == "future":
+            return self._conjugate_present(vc)
+        else:
+            return self._conjugate_google(vc)
+
+    def _conjugate_future(self, vc):
+        # All english verbs are regular in the future test
+        subject = self._subjects[vc.plurality_idx()][vc.person_idx()]
+        aux = "will" if vc.polarity() == "affirmative" else "will not"
+        return "{0} {1} {2}".format(subject, aux, inf)
+
+
+    def _conjugate_present(self, vc):
+        # All english verbs are regular in the future test
+        subject = self._subjects[vc.plurality_idx()][vc.person_idx()]
+        aux = self._copula[vc.plurality_idx()][vc.person_idx()]
+
+        if vc.polarity() == "negative":
+            aux += " not"
+
+        return "{0} {1} {2}".format(subject, aux, self.gerund())
+
+
+    def _conjugate_google(self, vc):
+        pass
+
