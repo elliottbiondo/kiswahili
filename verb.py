@@ -1,4 +1,5 @@
 from random import choice
+from googletrans import Translator
 
 class VerbComponents(object):
 
@@ -102,6 +103,7 @@ class KisVerb(object):
 
 class EngVerb(object):
 
+    _translator = Translator()
     _subjects = [["I", "You", "S/he"], ["We", "You all", "They"]]
     _copula = [["am", "are", "is"], ["are", "are", "are"]]
 
@@ -109,29 +111,28 @@ class EngVerb(object):
         self.inf = inf
 
     def gerund(self):
-        if inf[-1] == "e":
-            root = inf[:-1]
+        if self.inf[-1] == "e":
+            root = self.inf[:-1]
         else:
-            root = inf
+            root = self.inf
+        return root + "ing"
 
-    def conjugate(self, vc):
+    def conjugate(self, vc, swa):
 
-        if vc.tense() == "present":
-            return self._conjugate_present(vc)
-        elif vc.tense() == "future":
-            return self._conjugate_present(vc)
+        if vc.tense() == "future":
+            return self._conjugate_future(vc)
         else:
-            return self._conjugate_google(vc)
+            return self._conjugate_google(swa)
 
     def _conjugate_future(self, vc):
-        # All english verbs are regular in the future test
+        # All English verbs are regular in the future test
         subject = self._subjects[vc.plurality_idx()][vc.person_idx()]
         aux = "will" if vc.polarity() == "affirmative" else "will not"
-        return "{0} {1} {2}".format(subject, aux, inf)
+        return "{0} {1} {2}".format(subject, aux, self.inf)
 
 
     def _conjugate_present(self, vc):
-        # All english verbs are regular in the future test
+        # All English verbs are regular in the future test
         subject = self._subjects[vc.plurality_idx()][vc.person_idx()]
         aux = self._copula[vc.plurality_idx()][vc.person_idx()]
 
@@ -140,7 +141,6 @@ class EngVerb(object):
 
         return "{0} {1} {2}".format(subject, aux, self.gerund())
 
-
-    def _conjugate_google(self, vc):
-        pass
+    def _conjugate_google(self, phrase):
+        return self._translator.translate(phrase, src="sw", dest="en").text
 

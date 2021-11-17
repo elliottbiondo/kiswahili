@@ -1,53 +1,56 @@
-from googletrans import Translator
 from random import choice
 from copy import copy
 
 from parser import KisVerbParser
-from verb import VerbComponents
+from verb import VerbComponents, EngVerb
 
-def translate(phrase):
-    translator = Translator()
-    return translator.translate(phrase, src="sw", dest="en").text
+class Challenge(object):
 
-def check_result(expected, actual):
-    return expected.lower() == actual.lower()
+    def __init__():
+        pass
 
-def swa_to_eng(verb, vc):
+    def check_result(expected, actual):
+        return expected.lower() == actual.lower()
 
-    swa = verb.conjugate(vc)
-    eng = translate(copy(swa))
 
-    # Check if Google failed to translate
-    if eng == swa:
-        eng = str(vc) + "form of {}".format(verb.eng)
-
-    inp = input("Translate to english: {}\n>> ".format(swa))
-
-    if(check_result(eng, inp)):
+def check_result(expected, actual, message):
+    if expected.lower() == actual.lower():
         print("CORRECT\n")
     else:
-        print("INCORRECT! answer: {}\n".format(eng))
+        print("INCORRECT! answer: {}\n".format(message))
 
-def eng_to_swa(verb, vc):
 
-    swa = verb.conjugate(vc)
-    eng = translate(copy(swa))
+def swa_to_eng(kis_verb, eng_verb, vc):
+
+    swa = kis_verb.conjugate(vc)
+    eng = eng_verb.conjugate(vc, swa)
 
     # Check if Google failed to translate
     if eng == swa:
-        eng = str(vc) + "form of {}".format(verb.eng)
+        eng = "{0} form of 'to {1}'".format(str(vc), eng_verb.inf)
+
+    inp = input("Translate to English: {}\n>> ".format(swa))
+
+    check_result(eng, inp, eng)
+
+
+def eng_to_swa(kis_verb, eng_verb, vc):
+
+    swa = kis_verb.conjugate(vc)
+    eng = eng_verb.conjugate(vc, swa)
+
+    # Check if Google failed to translate
+    if eng == swa:
+       eng = "{0} form of {1}".format(str(vc), eng_verb.inf)
 
     # Differiate between you (singular) and you (plural) in English
     plural = ''
     if vc.person() == "second" and vc.plurality() == "plural":
         plural = '(plural)'
 
-    inp = input("Translate to kiswahili: {0} {1}\n>> ".format(eng, plural))
+    inp = input("Translate to Kiswahili: {0} {1}\n>> ".format(eng, plural))
 
-    if(check_result(swa, inp)):
-        print("CORRECT\n")
-    else:
-        print("INCORRECT! answer: {}\n".format(swa))
+    check_result(swa, inp, swa)
 
 def main():
     vp = KisVerbParser(["vocab/verbs"])
@@ -55,10 +58,17 @@ def main():
 
     print("Read {} verbs".format(vp.num_verbs()))
     while (True):
-        verb = choice(verbs)
+
+        # select a random kiswahili verb
+        kis_verb = choice(verbs)
+
+        # Since the verb may have multiple English translates, randomly select
+        # an English infinative and convert to EngVerb
+        eng_verb = EngVerb(choice(kis_verb.eng))
+
         vc = VerbComponents.from_random_sample()
         a = choice([eng_to_swa, swa_to_eng])
-        a(verb, vc)
+        a(kis_verb, eng_verb, vc)
 
 if __name__ == "__main__":
     main()
