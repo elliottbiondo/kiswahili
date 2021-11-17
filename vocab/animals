@@ -1,25 +1,25 @@
-mbwa : dog
-paka : cat
-kondoo : sheep
-farasi : horse
-mbuzi : goat
-twiga : giraffe
-wadudu : insect
-samaki : fish
-ndege : bird
-buibui : spider
-nyoka : snake
-nyati : buffalo
-mamba : crocodile
-kombakoche : lobster
-papa : shark
-popo : bat
-panya : rat
-uduvi : shrimp
-nyangumi : whale
-tempo : elephant
-simba : lion
-chui : leopard
-fusi : hyina
-mbu : mosquito
+mbwa : dog : m-wa-n*
+paka : cat : m-wa-n*
+kondoo : sheep : m-wa-n*
+farasi : horse : m-wa-n*
+mbuzi : goat : m-wa-n*
+twiga : giraffe : m-wa-n*
+wadudu : insect : m-wa-n*
+samaki : fish : m-wa-n*
+ndege : bird : m-wa-n*
+buibui : spider : m-wa-n*
+nyoka : snake : m-wa-n*
+nyati : buffalo : m-wa-n*
+mamba : crocodile : m-wa-n*
+kombakoche : lobster : m-wa-n*
+papa : shark : m-wa-n*
+popo : bat : m-wa-n*
+panya : rat : m-wa-n*
+uduvi : shrimp : m-wa-n*
+nyangumi : whale : m-wa-n*
+tempo : elephant : m-wa-n*
+simba : lion : m-wa-n*
+chui : leopard : m-wa-n*
+fusi : hyina : m-wa-n*
+mbu : mosquito : m-wa-n*
 

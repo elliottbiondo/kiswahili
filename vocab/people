@@ -4,52 +4,45 @@ mwanamke/wanawake : woman/woman : m-wa
 
 msichana/wasichana : girl/girls : m-wa
 
-kijana : boy
-wavulana : boys
+mvulana/wavulana : boy/boys : m-wa
 
 mkulima/wakulima : farmer/farmers : m-wa
+
 mwalimu/wawalimu : teacher/teachers : m-wa
 
-mtu : person
-watu : people
+mwanafunzi/wanafunzi : student/students : m-wa
 
-mtoto : child
-watoto : children
+mpishi/wapishi : chef/chefs : m-wa
 
-muuguzi : nurse
-wauguzi : nurses
+mtu/watu : person/people : m-wa
 
-mhandisi : engineer
-wahandisi : engineers
+mtoto/watoto : child/children : m-wa
 
-msanii : artist
-wasanii : artists
+muuguzi/wauguzi : nurse/nurses
 
-daktari : doctor
-madaktari : doctors
+mhandisi/wahandisi : engineer/engineers : m-wa
 
-mwanasayansi : scientist
-wanasayansi: scientists
+msanii/wasanii : artist/artists
 
-rafiki : friend
+msafiri/wasafiri : traveler/travelers : m-wa
 
-msafiri : traveler
-wasafiri : travelers
+mgeni/wageni : guest/guests : m-wa
 
-mgeni : guest
-wageni : guests
+mwafrika/waafrika : African/Africans : m-wa
 
-mwafrika : African
-waafrika : Africans
+mwanasayansi/wanasayansi : scientist/scientists : m-wa
 
-mpishi : chef
-wapisha : chefs
+mrembo/warembo : beautiful person/beautiful people : m-wa
 
-mwanafunzi : student
-wanafunzi : students
+mjinga/wajiga : fool/fools : m-wa
 
-rais : president
-raia : citzen
 
-mrembo : beautiful person
-warembo : beautiful people
+# Nounds that pluralize in n-class fashion, but have m-wa concords, except possesives:
+
+rafiki : friend/friends : m-wa-n
+raia : citizen/citizens : m-wa-n
+
+# Nouns that pluralize in the ji-ma fashion, have ALL m-wa concords, even possesive:
+
+daktari/madaktari : doctor : m-wa 
+rais/marais : president/presidents : m-wa

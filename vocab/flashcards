@@ -16,36 +16,27 @@ zaidi ya : more than
 
 katika : in
 kati ya : between
-
 ndani ya : inside of
 nje ya: outside of
 
 
 # time
-dakika : minute
-sekunde : second
-wiki : week
-mwezi : month
-miezi : months
-mwaka : year
-miaka : years
+dakika : minute/minutes : n
+sekunde : second/seconds : n
+wiki : week/weeks : n
+mwezi/miezi : month/monthes : m-mi
+mwaka/miaka : year : m-mi
+
 kesho : tomorrow
+
 kesho kutwa : day after tomorrow
+
 jana : yesterday
 juzi : day before yesterday
 nusu : half
 robo : quarter
 
 
-maarifa : knowledge
-dini : religion
-nguvu : power
-vita : war
-serekali : government
-uchumi : economy
-amani : peace
-ajira : employment
-sheria : law
 
 mahali : place
 jinsi ya : the method to
@@ -54,13 +45,11 @@ mkweli : truthful person
 wakweli : truthful people
 kweli : truth
 
-mafua : sickness
-afya : health
-mazoezi : exercise
-chanjo : vaccine
+mafua : sickness : ji-ma # plural only
+afya : health : n
+zoezi/mazoezi : exercise/exercises : ji-ma
+chanjo : vaccine/vaccines : n
 
-mfano : example
-mifano : examples
 
 mjinga : stupid
 
@@ -70,23 +59,16 @@ mabadiliko : changes
 madadiliko ya hali ya hewa : climate change
 
 
-ua : flower
+ua/maua : flower/flowers : 
 maua : flowers
 
 
 
 jicho/macho : eye/eyes : ji-ma
-
 sikio/masikio : ear/ears : ji-ma
-
-mguu : foot
-miguu : feet
-
-mkono : hand
-mikono : hands
-
-kidole : finger
-vidole : fingers
+mguu/miguu : foot/feet : m-mi
+mkono/mikono : hand/hands : m-mi
+kidole/vidole : finger/fingers : ki-vi
 
 mkono : arm/hand
 mikono : arms/hands
@@ -99,20 +81,18 @@ nywele : hair
 ngumu : difficult
 mfupi : short
 
-umoja : unity
-uhuru : freedom
 
 hali ya hewa : weather
 hali : condition
 hewa : air
 mara nyingi : many times
 kichwa : head
+
 akili : intelligence
 
-jiwe/mawe : stone/stones : ji-ma
+maana : meaning
 
 kelele : noises
-kilele : peak
 
 rahisi : easy
 uvumilivu : tolerance
@@ -128,43 +108,60 @@ baraka : blessing
 harausi - wedding
 
 
-mradi - project
-miradi - projects
+mfano/mifano : example/examples : m-mi
+mradi/miradi : project/projects : m-mi
 mtandao  : internet
 timu : team
 
-nchi : country
-jimbo : state
-taifa : nation
-bahari : ocean
-dunia : world
+# goverment
+
+serekali : government/governments : n
+dini : religion/regions : n
+sheria : law/laws : n
+uchumi : economy/economy : u
+umoja : unity :  u
+uhuru : freedom : u
+nchi : country/contries : n
+jimbo/majimbo : state/states : ji-ma
+taifa/mataifa : nation/nations : ji-ma
+
+maarifa : knowledge
+nguvu : power
+vita : war
+amani : peace
+ajira : employment
+
+kabila : tribe
+
+
+# geography
 
 kijiji/vijiji : village/villages : ki-vi
-
 mji/miji : town/towns : m-mi
-
 mto/mito : river/rivers : m-mi
-
-
-jengo : building
-majengo : buildings
-
-mgahawa : restaurant
-
-
-
-
-ardhi : land
-
+kilele/vilele : peak/peaks : ki-vi
+jiwe/mawe : stone/stones : ji-ma
 kisiwa/visiwa : island/islands : ki-vi
+bahari : ocean/oceans : n
+dunia : world/worlds : n
 
-mbao : woods
-kabila : tribe
+ardi : land 
+
+mbao : wood
+
 
 kaskazini: north
 mashariki : east
 kusini: south
 magharibi: west
+
+
+jengo/majengo : building/buildings : ji-ma
+mgahawa/migahawa : restaurant/restaurants : m-mi
+
+
+
+
 
 kadi : card
 kodi : rent
@@ -186,5 +183,4 @@ mzigo : luggage
 mizigo : luggages
 
 takataka : trash
-maana : meaning
 

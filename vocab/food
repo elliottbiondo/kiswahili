@@ -50,8 +50,8 @@ juisi : juice/juices : n
 
 maharage : beans : ji-ma
 
-maziwa : milk : ji-ma
+maziwa : milk : ji-ma # plural only
 
-maji : water : ji-ma
+maji : water : ji-ma # plural only
 
 kinywaji/vinywaji : drink/drinks : ki-vi
