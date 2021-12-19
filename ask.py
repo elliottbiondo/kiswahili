@@ -14,7 +14,7 @@ class Challenge(object):
 
 
 def check_result(expected, actual, message):
-    if expected.lower() == actual.lower():
+    if expected.lower().split() == actual.lower().split():
         print("CORRECT\n")
     else:
         print("INCORRECT! answer: {}\n".format(message))

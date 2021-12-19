@@ -10,6 +10,32 @@
 
 -cheza : play, dance
 
+-penda : like
+
+-lala : sleep
+
+-amka : wake up
+
+-tembea : walk
+
+-kimbia : run
+
+-enda : go
+
+-rudi : return
+
+-kuja : come
+
+-fika : arrive
+
+-fanya : do
+
+-jibu : respond, answer
+
+-jaribu : try
+
+-hitaji : need
+
 -kula : eat
 exception neg 1 sing present sili
 exception neg 2 sing present huli
@@ -37,32 +63,6 @@ exception neg 3 sing present si
 exception neg 1 plur present si
 exception neg 2 plur present si
 exception neg 3 plur present si
-
--penda : like
-
--lala : sleep
-
--amka : wake up
-
--tembea : walk
-
--kimbia : run
-
--enda : go
-
--rudi : return
-
--kuja : come
-
--fika : arrive
-
--fanya : do
-
--jibu : respond, answer
-
--jaribu : try
-
--hitaji : need
 
 -osha : wipe
 
@@ -128,6 +128,8 @@ exception neg 3 plur present si
 
 -ngoja : wait
 
+-subiri : wait
+
 -ua : kill
 
 -fa : die
@@ -136,7 +138,7 @@ exception neg 3 plur present si
 
 -sikia : hear
 
--kuvumilia : tolerate
+-vumilia : tolerate
 
 -zaa : give birth
 
@@ -151,8 +153,6 @@ exception neg 3 plur present si
 -tumia : to use
 
 -pendelea : prefer
-
--pokea : recieve
 
 -sherehekea : celebrate
 
@@ -222,6 +222,10 @@ exception neg 3 plur present si
 
 -pata : obtain
 
+-toa : give
+
+-pokea : recieve
+
 -pumzika : rest
 
 -oza : rot
@@ -231,6 +235,8 @@ exception neg 3 plur present si
 -potea : get lost
 
 -poteza : lose
+
+-tafuta : seek
 
 -leta : bring
 
@@ -250,11 +256,23 @@ exception neg 3 plur present si
 
 -tayarisha : prepare
 
--ongeza : increase
+-ongeza : add
+
+-ongezeka : increase
+
+-boresha : improve
 
 -punguza : reduce
 
 -weza : be able
+
+-chafuka : make dirty
+
+-kasirika : get angry
+
+-imarika : to strengthen
+
+-chelewa : to delay
 
 -ondoka : leave
 
@@ -289,7 +307,6 @@ exception neg 3 plur present si
 -tumia : send to
 
 -pinda : turn
-
 
 
 
