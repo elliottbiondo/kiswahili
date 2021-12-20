@@ -13,8 +13,8 @@ class Noun(object):
     self._possessive_prefixs = [["wa", "wa"], # m-wa
                                 ["wa", "ya"], # m-mi
                                 ["la", "ya"], # ji-ma
-                                ["ch", "vy"], # ki-vi
-                                [ "y",  "z"], # n
+                                ["cha", "vya"], # ki-vi
+                                [ "ya",  "za"], # n
                                 ["wa", "wa"]] # u
 
     self._adjective_prefixs = [[ "m", "wa"], # m-wa
