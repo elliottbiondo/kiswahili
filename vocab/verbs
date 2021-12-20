@@ -1,26 +1,44 @@
--andika : write
+-penda : like
 
--soma : read
+-hitaji : need
 
--fikiri : think
+-safiri : travel
 
--funza : teach
+-taka : want
 
 -pika : cook
 
--cheza : play, dance
+-andika : write
 
--penda : like
+-soma : read
 
 -lala : sleep
 
 -amka : wake up
 
+-cheza : play, dance
+
+-imba : sing
+
+-jifunza : learn
+
+-fundisha : teach
+
+-fikiri : think
+
+-jua : know
+
+-kimbia : run, flee
+
 -tembea : walk
 
--kimbia : run
+-tembelea : visit
 
 -enda : go
+
+-endelea : continue, develop
+
+-endesha : drive
 
 -rudi : return
 
@@ -34,36 +52,6 @@
 
 -jaribu : try
 
--hitaji : need
-
--kula : eat
-exception neg 1 sing present sili
-exception neg 2 sing present huli
-exception neg 3 sing present hali
-exception neg 1 plur present hutuli
-exception neg 2 plur present hamli
-exception neg 3 plur present hawali
-exception neg 1 sing past sikula
-exception neg 2 sing past hukula
-exception neg 3 sing past hakula
-exception neg 1 plur past hattukula
-exception neg 2 plur past hamkula
-exception neg 3 plur past hawakula
-
--kuwa : be
-exception pos 1 sing present ni
-exception pos 2 sing present ni
-exception pos 3 sing present ni
-exception pos 1 plur present ni
-exception pos 2 plur present ni
-exception pos 3 plur present ni
-exception neg 1 sing present si
-exception neg 2 sing present si
-exception neg 3 sing present si
-exception neg 1 plur present si
-exception neg 2 plur present si
-exception neg 3 plur present si
-
 -osha : wipe
 
 -fagia : sweep
@@ -76,29 +64,25 @@ exception neg 3 plur present si
 
 -anza : start
 
+-maliza : finish
+
+-acha : stop, quit, leave
+
+-zima : turn off
+
 -washa : turn on
 
 -nawa : wash hands
 
+-oga : bathe
+
 -ogelea : swim
 
--simama : stand
-
--keti : sit
-
--kaa : stay
-
 -tunza : take care of
-
--chukua : take, bring
 
 -winda : hunt
 
 -lia : cry
-
--zungumza : converse
-
--panga : plan
 
 -fuga : feed
 
@@ -106,19 +90,17 @@ exception neg 3 plur present si
 
 -fungua : open
 
--kubali : agree
+-kubali : accept
 
--endesha : drive
+-kubaliana : agree
 
 -inua : lift
 
--tembelea : visit
-
 -panda : climb
 
--zoea : be used to
+-panga : plan
 
--jua : know
+-zoea : be used to
 
 -choka : become tired
 
@@ -134,21 +116,29 @@ exception neg 3 plur present si
 
 -fa : die
 
+-faa : be suitable
+
+-zaa : give birth
+
+-vaa : wear
+
+-kaa : stay
+
+-keti : sit
+
+-simama : stand
+
 -sikiliza : listen
 
 -sikia : hear
 
 -vumilia : tolerate
 
--zaa : give birth
-
 -shangaa : wonder
 
 -elewa : understand
 
 -lewa : get drunk
-
--vaa : wear
 
 -tumia : to use
 
@@ -180,6 +170,8 @@ exception neg 3 plur present si
 
 -ambia : tell
 
+-zungumza : converse
+
 -paswa : should
 
 -unganisha : connect
@@ -190,25 +182,13 @@ exception neg 3 plur present si
 
 -isha : end
 
--zima : turn off
-
 -ruka : fly, jump
 
 -anguka : fall, crash
 
--imba : sing
-
--chora : draw
-
--endelea : continue, develop
-
--fundisha : teach
-
 -ingia : enter
 
 -jenga : build
-
--jifunza : learn
 
 -ogopa : fear
 
@@ -220,17 +200,17 @@ exception neg 3 plur present si
 
 -ona : see
 
--pata : obtain
-
--toa : give
-
--pokea : recieve
-
 -pumzika : rest
 
 -oza : rot
 
 -kagua : check
+
+-pata : obtain
+
+-toa : give
+
+-pokea : recieve
 
 -potea : get lost
 
@@ -240,9 +220,7 @@ exception neg 3 plur present si
 
 -leta : bring
 
--safiri : travel
-
--taka : want
+-chukua : take
 
 -tosha : to be enough
 
@@ -266,6 +244,8 @@ exception neg 3 plur present si
 
 -weza : be able
 
+-wezekana : be possible
+
 -chafuka : make dirty
 
 -kasirika : get angry
@@ -276,17 +256,9 @@ exception neg 3 plur present si
 
 -ondoka : leave
 
--acha : stop, quit, leave
-
--maliza : finish
-
 -nuka : stink
 
 -nukia : smell
-
--wezekana : be possible
-
--faa : be suitable
 
 -fanyika : happen
 
@@ -304,10 +276,39 @@ exception neg 3 plur present si
 
 -pita : pass by
 
--tumia : send to
+-tuma : send
 
 -pinda : turn
 
+# Irregular verbs
+
+-kula : eat
+exception neg 1 sing present sili
+exception neg 2 sing present huli
+exception neg 3 sing present hali
+exception neg 1 plur present hutuli
+exception neg 2 plur present hamli
+exception neg 3 plur present hawali
+exception neg 1 sing past sikula
+exception neg 2 sing past hukula
+exception neg 3 sing past hakula
+exception neg 1 plur past hattukula
+exception neg 2 plur past hamkula
+exception neg 3 plur past hawakula
+
+-kuwa : be
+exception pos 1 sing present ni
+exception pos 2 sing present ni
+exception pos 3 sing present ni
+exception pos 1 plur present ni
+exception pos 2 plur present ni
+exception pos 3 plur present ni
+exception neg 1 sing present si
+exception neg 2 sing present si
+exception neg 3 sing present si
+exception neg 1 plur present si
+exception neg 2 plur present si
+exception neg 3 plur present si
 
 
 
