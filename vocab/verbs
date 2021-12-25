@@ -30,21 +30,17 @@
 
 -kimbia : run, flee
 
+-weza : be able
+
 -tembea : walk
 
 -tembelea : visit
 
--enda : go
+-enda : go # kwenda
 
 -endelea : continue, develop
 
 -endesha : drive
-
--rudi : return
-
--kuja : come
-
--fika : arrive
 
 -fanya : do
 
@@ -72,6 +68,14 @@
 
 -washa : turn on
 
+-rudi : return
+
+-kuja : come
+
+-ondoka : leave
+
+-fika : arrive
+
 -nawa : wash hands
 
 -oga : bathe
@@ -85,6 +89,8 @@
 -lia : cry
 
 -fuga : feed
+
+-tumia : to use
 
 -funga : close
 
@@ -140,29 +146,7 @@
 
 -lewa : get drunk
 
--tumia : to use
-
 -pendelea : prefer
-
--sherehekea : celebrate
-
--chemsha : boil
-
--anda : prepare
-
--jianda : prepare yourself
-
--changamka : get exited
-
--ruhusu : permit, allow
-
--orodhesha : list
-
--safirisha : transport
-
--linda : protect
-
--epuka : avoid
 
 -ongea : speak
 
@@ -180,7 +164,7 @@
 
 -ishi : live
 
--isha : end
+-isha : end # kwisha
 
 -ruka : fly, jump
 
@@ -204,23 +188,23 @@
 
 -oza : rot
 
+-ota : grow 
+
 -kagua : check
 
--pata : obtain
+-potea : get lost
 
 -toa : give
 
 -pokea : recieve
 
--potea : get lost
-
 -poteza : lose
+
+-chukua : take
 
 -tafuta : seek
 
 -leta : bring
-
--chukua : take
 
 -tosha : to be enough
 
@@ -229,8 +213,6 @@
 -pasuka : be torn
 
 -zaliwa : be born
-
--ota : grow 
 
 -tayarisha : prepare
 
@@ -241,20 +223,6 @@
 -boresha : improve
 
 -punguza : reduce
-
--weza : be able
-
--wezekana : be possible
-
--chafuka : make dirty
-
--kasirika : get angry
-
--imarika : to strengthen
-
--chelewa : to delay
-
--ondoka : leave
 
 -nuka : stink
 
@@ -279,6 +247,36 @@
 -tuma : send
 
 -pinda : turn
+
+-wezekana : be possible
+
+-imarika : to strengthen
+
+-chelewa : to delay
+
+-sherehekea : celebrate
+
+-chemsha : boil
+
+-anda : prepare
+
+-jianda : prepare yourself
+
+-changamka : get exited
+
+-ruhusu : permit, allow
+
+-orodhesha : list
+
+-safirisha : transport
+
+-linda : protect
+
+-epuka : avoid
+
+-chafuka : make dirty
+
+-kasirika : get angry
 
 # Irregular verbs
 
@@ -311,8 +309,6 @@ exception neg 2 plur present si
 exception neg 3 plur present si
 
 
-
-
 #kuiva- v. to ripen
 #kuja- v. to come
 #kujaa- v. to be full
@@ -325,9 +321,6 @@ exception neg 3 plur present si
 #kuonja- v. to taste, to savor
 #kupaa- v. 1. to scrape off, 2. to rise, ascend, 3. to transfer embers
 #kupaka- v. to smear, to spread, to apply
-#kupunguza- v. to decrease, reduce, lessen
 #kuuma- v. to ache, to hurt
 #kuuma- v. to bite, to sting
 #kuvunja- v. to break
-#kwenda- v. to go
-#kwisha- v. to cease
