@@ -292,7 +292,7 @@ exception neg 3 plur present hawali
 exception neg 1 sing past sikula
 exception neg 2 sing past hukula
 exception neg 3 sing past hakula
-exception neg 1 plur past hattukula
+exception neg 1 plur past hatukula
 exception neg 2 plur past hamkula
 exception neg 3 plur past hawakula
 
