@@ -26,6 +26,8 @@
 
 -fikiri : think
 
+-dhani : think
+
 -jua : know
 
 -kimbia : run, flee
@@ -266,7 +268,7 @@
 
 -ruhusu : permit, allow
 
--orodhesha : list
+-husu : concerning
 
 -safirisha : transport
 
@@ -277,6 +279,18 @@
 -chafuka : make dirty
 
 -kasirika : get angry
+
+-umiza : harm
+
+-uma : be in pain
+
+-linganisha : compare
+
+-unganishwa : connect
+
+-orodhesha : list
+
+
 
 # Irregular verbs
 
@@ -321,6 +335,4 @@ exception neg 3 plur present si
 #kuonja- v. to taste, to savor
 #kupaa- v. 1. to scrape off, 2. to rise, ascend, 3. to transfer embers
 #kupaka- v. to smear, to spread, to apply
-#kuuma- v. to ache, to hurt
-#kuuma- v. to bite, to sting
 #kuvunja- v. to break
