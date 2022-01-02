@@ -1,6 +1,6 @@
 bafu : bathroom/bathrooms : n                                                    
-ufagio : broom/broom : u                                                         
-nguo : clothes/clothes : n                                                       
+ufagio : broom/brooms : u                                                         
+nguo : clothes : n                                                       
 jiko/majiko : kitchen/kitches, stove/stoves : ji-ma                              
 chumba/vyumba : room/rooms  : ki-vi                                              
 sabuni  : soap/soaps : n                                                         
@@ -11,7 +11,7 @@ dirisha/madirisha : window/windows : ji-ma
 sahani : plate/plates : n                                                        
 meza/meza : table/tables : b                                                     
 kikombe/vikombe : cup/cups : ki-vi                                               
-chupa/chupa : bottle/bottles : n
+chupa : bottle/bottles : n
 pazia/mapazia : curtain/curtains : ji-ma
 
-takataka/takataka : trash/trashes : n
+takataka : trash : n

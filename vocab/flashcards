@@ -2,7 +2,14 @@
 # Connecting words
 ################################################################################
 
+mojawapo - one (of the) -- tembo ni mnyama mojawapo ambayo ninawapenda
+kwa kawaida : usually
 baadhi ya : some
+kabisa : absolutely
+hivyo : thus
+halafu : then (after)
+mno : very (too much)
+
 pia : also
 tu : only
 bila : without
@@ -17,14 +24,7 @@ labdu : maybe
 mbalimbali : varieties
 mara tatu : three times
 mara nyingi : many times
-kabisa : absolutely
 zaidi ya : more than
-hivyo : thus
-kawaida n   : usually
-halafu : then (after)
-mno : very (too much)
-mojawapo - one (of the) -- tembo ni mnyama mojawapo ambayo ninawapenda
-
 
 baadaye - later
 
@@ -35,24 +35,32 @@ mfupi : short
 
 halisi : real
 
+jinsi ya : method of
+
 Kumechelewa kukucha
 Kumekucha salama
 
 wastani : average
 
 ################################################################################
-# Prepositions
+# Phrases
 ################################################################################
-juu ya : on top of
-chini ya : under
+
+nilipo kuwa mdogo : when I was younger
+Bado ni mapema : it is still early
+
+################################################################################
+# prepositions
+################################################################################
 katika : in
-kati ya : between
-katikati ya : in the middle of
 ndani ya : inside of
 nje ya: outside of
+juu ya : on top of
+chini ya : under
+kati ya : between
+katikati ya : in the middle of
+
 baada ya - after
-
-
 ################################################################################
 # time
 ################################################################################
@@ -75,9 +83,6 @@ nusu : half
 robo : quarter
 
 
-
-
-
 ################################################################################
 # weather
 ################################################################################
@@ -86,11 +91,9 @@ hewa : air
 mabadiliko : changes
 hali ya hewa : weather
 madadiliko ya hali ya hewa : climate change
-dhoruba/dhoruba : storm/storms
-barafu/barafu : ice/ice : n
-
-giza - darkness
-
+dhoruba : storm/storms : n
+barafu : ice/ice : n
+giza : darkness : ma # no plural
 
 ################################################################################
 # body
@@ -102,8 +105,10 @@ mguu/miguu : foot/feet : m-mi
 kidole/vidole : finger/fingers : ki-vi
 mkono/mikono : arm/arms, hand/hands : m-mi
 bega/mabega : shoulder/shoulder : ji-ma
-nywele/nywele : hair/hair : n
+nywele : hair/hair : n
 kichwa/vichwa : head/heads : vi-ki
+tako/matako : butt cheek/buttocks : ji-ma
+
 
 ################################################################################
 # health
@@ -115,14 +120,17 @@ afya : health : n
 zoezi/mazoezi : exercise/exercises : ji-ma
 chanjo : vaccine/vaccines : n
 upasuaji : surgery/surgeries : n
-kinga : immunity
+kinga : immunity  : n
+dalili : symptom/symptoms : n
+homa : fever : n
+
 
 
 ################################################################################
 # technology
 ################################################################################
 
-simu/simu : phone/phones : n
+simu : phone/phones : n
 mtandao : internet
 timu : team
 mkutano/mikutano : meeting/meetings : m-mi
@@ -136,10 +144,10 @@ maarifa : knowledge
 maana : meaning
 kweli : truth
 uvumilivu : tolerance
-namba/namba : number/numbers : n
-nambari/nambari : number/numbers : n
-asilimia/asilimia : percent/percents : n
-jamii/jamii : society/society : n
+namba : number/numbers : n
+nambari : number/numbers : n
+asilimia : percent/percents : n
+jamii : society/society : n
 
 ################################################################################
 # goverment
@@ -155,10 +163,10 @@ nchi : country/contries : n
 jimbo/majimbo : state/states : ji-ma
 taifa/mataifa : nation/nations : ji-ma
 kabila/makabila : tribe/tribes : ji-ma
-ajira/ajira : employment/employment : n
+ajira : employment/employment : n
 nguvu/nguvu : power/powers, authority/authorities : b
 kita/vita : war/wars : ki-vi
-amani/amani : peace/peaces : n
+amani : peace  : n
 
 tukio/matukio : event/events : ji-ma
 
@@ -166,6 +174,7 @@ tukio/matukio : event/events : ji-ma
 # geography
 ################################################################################
 
+mazingira : environment : ma # plural only
 kijiji/vijiji : village/villages : ki-vi
 mji/miji : town/towns : m-mi
 mto/mito : river/rivers : m-mi
@@ -174,37 +183,53 @@ jiwe/mawe : stone/stones : ji-ma
 kisiwa/visiwa : island/islands : ki-vi
 bahari : ocean/oceans : n
 dunia : world/worlds : n
-ardhi/ardhi : land/lands : n
+ardhi : land/lands : n
 ziwa/maziwa : lake/lakes : ji-ma
 msitu/misitu : forrest/forrests : m-mi
+ua/maua : flower/flowers
+
 
 mbao : wood
 
-kaskazini : north
-mashariki : east
-kusini : south
-magharibi : west
+
+################################################################################
+# travel
+################################################################################
+
+kaskazini : north : n
+mashariki : east : n
+kusini : south : n 
+magharibi : west : n
+
+tiketi : ticket/tickets : n
+ramani : map/maps : n # also means a very rude word
+begi/mabegi : bag/bags : ji-ma
+mfuko/mifuko : bag/bags : m-mi
+mzigo/mizigo : luggage/luggages : m-mi
 
 
 ################################################################################
 # day-to-day
 ################################################################################
 
-shida/shida : problem/problems : n
+shida : problem/problems : n
 tatizo/matatizo : problem/problem : ma-ja
-changamoto/changamoto : challenges/challenges : n
+changamoto : challenges/challenges : n
+tumaini/matumaini : hope/hopes : ji-ma
 
+nishati : inspiration/inspiration : n # also energy
+
+tahadhari : precaution
+
+tahadhari : precaution/precautions : n
+
+
+shughuli : activty/activities : n
 kinga ni bora kuliko tiba : Prevention is better than cure
 
 mapato : income
 biashara : business
 
-tumaini/matumaini : hope/hopes
-nisharti : inspiration
-
-tahadhari : precaution
-
-tahadhari/tahadhari : precaution/precatuions : n
 
 jengo/majengo : building/buildings : ji-ma
 mgahawa/migahawa : restaurant/restaurants : m-mi
@@ -213,11 +238,19 @@ Mapokezi : reception
 
 baraka : blessing
 
-harausi - wedding
 
 wivu : jealousy
 
-shuhuli : activty
+################################################################################
+# Celebration
+################################################################################
+
+harausi - wedding
+
+################################################################################
+# Other
+################################################################################
+
 
 shauku : passion 
 
@@ -232,24 +265,24 @@ ndugu : relatives
 
 mwana : offspring
 
-begi : bag
-mabegi : mbags
-mfuko : bag
-mifuko : bags
-mzigo : luggage
-mizigo : luggages
-
-ua/maua : flower/flowers : 
-maua : flowers
-
-nilipo kuwa mdogo : when I was younger
 
 
 mahali : place
-jinsi ya : method of
+
 utani : jokes
 
-tiketi : ticket
+uwezekano : possiblity
 
-ramani : map
+heri : luck
 
+hongera : congrats
+
+kupa : to give?
+
+Nipo hai - i am alive 
+
+hadi : same an mpaka
+
+imani : faith
+
+zima : entire, whole
