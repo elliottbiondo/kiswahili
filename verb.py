@@ -132,7 +132,7 @@ class EngVerb(object):
 
 
     def _conjugate_present(self, vc):
-        # All English verbs are regular in the future test
+        # this doesn't work yet, and might not be something worth pursuing
         subject = self._subjects[vc.plurality_idx()][vc.person_idx()]
         aux = self._copula[vc.plurality_idx()][vc.person_idx()]
 

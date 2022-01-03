@@ -1,4 +1,5 @@
-from verb import KisVerb, VerbComponents
+from verb import VerbComponents, KisVerb
+from noun import KisNoun
 
 
 class Parser(object):
@@ -78,4 +79,39 @@ class KisVerbParser(Parser):
                 self.verbs.append(verb)
             else:
                 i += 1
+
+class KisNounParser(Parser):
+
+    def __init__(self, paths):
+        self.nouns = []
+        super().__init__(paths)
+
+    def parse(self):
+
+        for path in self.paths:
+            self._parse_file(path)
+        return self.nouns
+
+    def _parse_noun_line(self, line):
+        line = self._remove_comment(line)
+        kis, eng, noun_class = (l.strip() for l in line.split(":"))
+
+        eng = [l.strip() for l in eng.split(",")]
+
+        return root.strip("-"), eng
+
+    def _parse_file(self, path):
+        with open(path, 'r') as f:
+            lines = f.readlines()
+
+        i = 0
+        while i < len(lines):
+            if self._valid_line(lines[i]):
+                root, eng = self._parse_noun_line(lines[i])
+                noun = KisNoun(kis, eng)
+                self.verbs.append(verb)
+                i += 1
+            else:
+                i += 1
+
 
