@@ -1,3 +1,36 @@
+# Irregular verbs
+
+-kula : eat
+exception neg 1 sing present sili
+exception neg 2 sing present huli
+exception neg 3 sing present hali
+exception neg 1 plur present hutuli
+exception neg 2 plur present hamli
+exception neg 3 plur present hawali
+exception neg 1 sing past sikula
+exception neg 2 sing past hukula
+exception neg 3 sing past hakula
+exception neg 1 plur past hatukula
+exception neg 2 plur past hamkula
+exception neg 3 plur past hawakula
+
+-kuwa : be
+exception pos 1 sing present ni
+exception pos 2 sing present ni
+exception pos 3 sing present ni
+exception pos 1 plur present ni
+exception pos 2 plur present ni
+exception pos 3 plur present ni
+exception neg 1 sing present si
+exception neg 2 sing present si
+exception neg 3 sing present si
+exception neg 1 plur present si
+exception neg 2 plur present si
+exception neg 3 plur present si
+
+
+# Regular verbs
+
 -penda : like
 
 -hitaji : need
@@ -194,9 +227,15 @@
 
 -kagua : check
 
+-pima : measure
+
 -potea : get lost
 
--toa : give
+-pa : give
+
+-toa : offer, produce
+
+-pata : acquire
 
 -pokea : recieve
 
@@ -292,7 +331,7 @@
 
 -hema : breathe
 
--amani : believe # ninakuamini - I believe you
+-amini : believe # ninakuamini - I believe you
 
 -sikitisha : dissapoint
 
@@ -300,38 +339,33 @@
 
 -umwa : be sick
 
+-onya : warn
+
+-nonog'ona : whisper
+
+-ahidi : promise
+
+-lalamika : complain
+
+-onga : taste
+
+-adhibu : punish
+
+-tupa : throw
+
+-ungana : unite
+
+-chimba : dig
+
+-tatua : solve
+
+-jiamini : trust oneself
 
 
-# Irregular verbs
 
--kula : eat
-exception neg 1 sing present sili
-exception neg 2 sing present huli
-exception neg 3 sing present hali
-exception neg 1 plur present hutuli
-exception neg 2 plur present hamli
-exception neg 3 plur present hawali
-exception neg 1 sing past sikula
-exception neg 2 sing past hukula
-exception neg 3 sing past hakula
-exception neg 1 plur past hatukula
-exception neg 2 plur past hamkula
-exception neg 3 plur past hawakula
+# -kusanyika? : gather
 
--kuwa : be
-exception pos 1 sing present ni
-exception pos 2 sing present ni
-exception pos 3 sing present ni
-exception pos 1 plur present ni
-exception pos 2 plur present ni
-exception pos 3 plur present ni
-exception neg 1 sing present si
-exception neg 2 sing present si
-exception neg 3 sing present si
-exception neg 1 plur present si
-exception neg 2 plur present si
-exception neg 3 plur present si
-
+# -kusanya? : collect
 
 #kuiva- v. to ripen
 #kuja- v. to come
