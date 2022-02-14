@@ -2,12 +2,15 @@
 # Connecting words
 ################################################################################
 
+kuliko : than
+sehemu : part
+
 mojawapo : one of the # tembo ni mnyama mojawapo ambayo ninawapenda
 kwa kawaida : usually
 baadhi ya : some
 kabisa : absolutely
 kwa hivyo : thus
-halafu : then (after)
+halafu : then
 mno : very (too much)
 
 tangu : since
@@ -74,6 +77,9 @@ katikati ya : in the middle of
 kabla ya : before
 baada ya : after
 
+-a kulia : right
+-a kushoto : left
+
 ################################################################################
 # time
 ################################################################################
@@ -132,6 +138,8 @@ godoro/magodoro : mattress/mattresses : ji-ma
 kisima/visiwa : well/wells : ki-vi
 ukuta/kuta : wall/walls : u
 blanketi : blanket/blankets : n
+taa : light/lights : n
+kijiko/vijiko : spoon/spoons : ki-vi
 
 
 ################################################################################
@@ -145,6 +153,13 @@ gauni/magauni : gown/gowns : ji-ma
 kofia : cap/caps : n
 koti/makoti : coat/coats : ji-ma
 kiatu/viatu : shoe/shoes : ki-vi
+uzi/nyuzi : thread/threads : u
+fulana : undershirt/undershirt : n
+hereni/hereni : earing/earings : n
+soksi/soksi : sock/socks : n
+pete : ring/rings : n
+kitenge/vitenge : sarong/sarongs : ki-vi
+
 
 
 ################################################################################
@@ -178,6 +193,9 @@ mkweli/wakweli : truthful person / truthful people : m-wa
 mfuasi/wafuasi : follower/followers : m-wa                                       
 mzinzi/wazinzi : adulter/adulters : m-wa                                         
 mchoyo : wachoyo : miser/misers : m-wa                                           
+mteja/wateja : customer/customers : m-wa
+mnunuzi/wanunuzi : buyer/buyers : m-wa
+muuzaji/wauzaji : seller/sellers : m-wa
                                                                                  
 # Pluralize in n-class fashion, but have m-wa concords, except possesives:
 rafiki : friend/friends : m-wa-n**
@@ -207,6 +225,8 @@ kichwa/vichwa : head/heads : ki-vi
 bega/mabega : shoulder/sholders : ji-ma
 tumbo/matumbo : stomach/stomach : ji-ma
 uso/nyuso : face/faces : u
+shingo : neck/necks : n
+pua/mapua : nose/noses : ji-ma
     
 ################################################################################
 # health
@@ -225,6 +245,101 @@ damu : blood/bloods : n
 chembechembe : cell/cells : n
 
 
+################################################################################
+# school
+################################################################################
+
+shule : school/schools : n
+mtihani/mitihani : test/tests/ m-mi
+kitabu/vitabu : book/books : ki-vi
+ukurasa/kurasa : page/pages : u
+karatasi : paper/papers : n
+kalamu : pen/pens : n
+mkasi/mikasi : scissors : n
+mchezo/michezo : game/games : m-mi
+mpira/mipira : ball/balls : m-mi
+muziki/miziki : music : m-mi
+mchoro/michoro : sketch/sketches
+chuo/vyuo : college/colleges : ki-vi
+chou kikuu/vyou vikuu : university/universities : ki-vi
+kiingereza : english : ki-vi
+
+################################################################################
+# work
+################################################################################
+
+kazi : work : n
+ofisi : office/offices : n
+kompyuta : computer/computers : n
+simu : phone/phones : n
+mtandao : internet
+timu : team
+mkutano/mikutano : meeting/meetings : m-mi
+mradi/miradi : project/projects : m-mi
+biashara : business/businesses : n 
+barua pepe : email/emails : n
+
+
+################################################################################
+# philosophy
+################################################################################
+
+akili : intelligence : n 
+
+maarifa : knowledge : ji-ma # plural only
+
+maana : meaning/meanings : n
+
+kweli : truth/truths : n
+
+uvumilivu : patience : u 
+subira : patience : n
+
+namba : number/numbers : n
+nambari : number/numbers : n
+asilimia : percent/percents : n
+jamii : society/society : n
+
+badiliko/mabadiliko : change/changes : ji-ma
+
+maendeleo : progress : ji-ma # plural only
+
+ukarimu : generosity : u # no plural
+
+################################################################################
+# Human geography
+################################################################################
+
+serekali : government/governments : n
+kijiji/vijiji : village/villages : ki-vi
+mji/miji : town/towns : m-mi
+mfereji/mifereji : canal/canals : m-mi
+daraj/madaraji : bridge/bridges : ji-ma
+
+sheria : law/laws : n
+uchumi : economy/economy : u
+umoja : unity :  u
+uhuru : freedom : u
+nchi : country/contries : n
+jimbo/majimbo : state/states : ji-ma
+taifa/mataifa : nation/nations : ji-ma
+kabila/makabila : tribe/tribes : ji-ma
+ajira : employment/employment : n
+nguvu/nguvu : power/powers, authority/authorities : n
+kita/vita : war/wars : ki-vi
+amani : peace  : n
+
+tukio/matukio : event/events : ji-ma
+umeme : electricity
+
+################################################################################
+# religion
+################################################################################
+
+dini : religion/regions : n
+imani : faith/faith, belief/beliefs : n
+
+msikiti/misikiti : mosque/mosques : m-mi
 
 ################################################################################
 # animals
@@ -269,15 +384,11 @@ nyuki : bee/bees : n
 panya : rat/rats, mouse/mice : n
 
 
-
-
 # Pluralize in another fashion, but have all m-wa concords:
 kifaru/vifaru : rhino/rhinos : m-wa*
 kiboko/viboko : hippo/hippos : m-wa*
 mkunga/mikunga : eel/eels : m-wa*
 jongoo/majongoo : millipede/millipede : m-wa*
-
-
 
 ################################################################################
 # food
@@ -318,97 +429,15 @@ kiungo/viungo : spice/spices : ki-vi
 mchuzi/michuzi : sauce/sauces : m-mi
 chumvi : salt : n
 pombe : alcohal/alcohals : n
+nanasi/mananasi : pineapple/pineapples : ji-ma
+mahindi : corn/corns : ji-ma # plural-only
+papai/mapapai : papaya/papayas : ji-ma
+mafuta : oil/oils : ji-ma # plural only
+
+upishi : recipe/recipes : u
 
 
-################################################################################
-# school
-################################################################################
 
-shule : school/schools : n
-mtihani/mitihani : test/tests/ m-mi
-kitabu/vitabu : book/books : ki-vi
-ukurasa/kurasa : page/pages : u
-karatasi : paper/papers : n
-kalamu : pen/pens : n
-mkasi/mikasi : scissors : n
-mchezo/michezo : game/games : m-mi
-mpira/mipira : ball/balls : m-mi
-muziki/miziki : music : m-mi
-mchoro/michoro : sketch/sketches
-
-################################################################################
-# work
-################################################################################
-
-kazi : work : n
-ofisi : office/offices : n
-simu : phone/phones : n
-mtandao : internet
-timu : team
-mkutano/mikutano : meeting/meetings : m-mi
-mradi/miradi : project/projects : m-mi
-biashara : business/businesses : n 
-
-
-################################################################################
-# philosophy
-################################################################################
-
-akili : intelligence : n 
-
-maarifa : knowledge : ji-ma # plural only
-
-maana : meaning/meanings : n
-
-kweli : truth/truths : n
-
-uvumilivu : patience : u 
-subira : patience : n
-
-namba : number/numbers : n
-nambari : number/numbers : n
-asilimia : percent/percents : n
-jamii : society/society : n
-
-badiliko/mabadiliko : change/changes : ji-ma
-
-maendeleo : progress : ji-ma # plural only
-
-ukarimu : generosity : u # no plural
-
-################################################################################
-# Human geography
-################################################################################
-
-serekali : government/governments : n
-kijiji/vijiji : village/villages : ki-vi
-mji/miji : town/towns : m-mi
-mfereji/mifereji : canal/canals : m-mi
-
-sheria : law/laws : n
-uchumi : economy/economy : u
-umoja : unity :  u
-uhuru : freedom : u
-nchi : country/contries : n
-jimbo/majimbo : state/states : ji-ma
-taifa/mataifa : nation/nations : ji-ma
-kabila/makabila : tribe/tribes : ji-ma
-ajira : employment/employment : n
-nguvu/nguvu : power/powers, authority/authorities : n
-kita/vita : war/wars : ki-vi
-amani : peace  : n
-
-tukio/matukio : event/events : ji-ma
-umeme : electricity
-
-################################################################################
-# religion
-################################################################################
-
-dini : religion/regions : n
-imani : faith/faith, belief/beliefs : n
-
-msikiti/misikiti : mosque/mosques : m-mi
 
 ################################################################################
 # nature
@@ -416,6 +445,7 @@ msikiti/misikiti : mosque/mosques : m-mi
 
 msitu/misitu : forrest/forrests : m-mi
 mti/miti : tree/trees : m-mi
+jani/majani : leaf/leaves : ji-ma
 mmea/mimea : plant/plants : m-mi
 mche/miche : seedling/seedlings : m-mi
 mzizi/miziz : root/roots : m-mi
@@ -429,6 +459,7 @@ dunia : world/worlds : n
 ardhi : land/lands : n
 ziwa/maziwa : lake/lakes : ji-ma
 ua/maua : flower/flowers
+tope/matope : mud/muds : ji-ma
 
 ################################################################################
 # weather
@@ -452,6 +483,8 @@ mashariki : east : n
 kusini : south : n 
 magharibi : west : n
 
+
+
 gari/magari : car/cars : ji-ma
 boti : boat/boats : n
 treni : train/trains : n
@@ -470,14 +503,27 @@ mwavuli/miavuli : umbrella/umbrellas m-mi
 # shopping
 ################################################################################
 
+pesa : money : n
+soko/masoko : market/markets : ji-ma
 duka/maduka : shop/shops : ji-ma
 mgahawa/migahawa : restaurant/restaurants : m-mi
+bei : price/prices : n
+fungu/mafungu : bunch/bunches : ji-ma
+jumla  : total/totals : n
+shilingi : Tanzanian shilling/Tanzanian shillings : n
 
 ################################################################################
 # day-to-day
 ################################################################################
 
+
+mazungumzo : conversation/converstations : ji-ma # plural only
+
+benki/mabenki : bank/banks : ji-ma
+
 kitu/vitu : thing/things : ki-vi
+
+wimbo/nyimbo : song/songs : u
 
 shida : problem/problems : n
 tatizo/matatizo : problem/problem : ma-ja
@@ -512,9 +558,12 @@ chuma/vyuma : metal/metals : n
 # Celebration
 ################################################################################
 
+zawadi : gift/gifts : n
+
 harausi - wedding
 hongera : congrats
 likizo : vacation
+
 
 ################################################################################
 # Other
