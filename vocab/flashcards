@@ -2,6 +2,8 @@
 # Connecting words
 ################################################################################
 
+nafasi : space, chance
+
 kuliko : than
 sehemu : part
 
@@ -22,6 +24,8 @@ lakini : but
 kasoro : except
 mpaka : until
 hadi : until
+
+hata  : even # Even I know
 
 sahihi : correct
 muhimu : important
@@ -216,6 +220,10 @@ daktari/madaktari : doctor : m-wa
 rais/marais : president/presidents : m-wa
 seremala/maseremala : carpenter/carpenters : m-wa
 fundi/mafundi : artisen/artisens : m-wa
+jeshi/majeshi : solider/soliders : m-wa
+
+# Other
+kiongozi/viongozi : leader/leaders
 
 ################################################################################
 # body
@@ -315,7 +323,7 @@ maendeleo : progress : ji-ma # plural only
 ukarimu : generosity : u # no plural
 
 ################################################################################
-# Human geography
+# politics
 ################################################################################
 
 serekali : government/governments : n
@@ -336,6 +344,7 @@ ajira : employment/employment : n
 nguvu/nguvu : power/powers, authority/authorities : n
 kita/vita : war/wars : ki-vi
 amani : peace  : n
+mpango/mipango : plan/plans : m-mi
 
 tukio/matukio : event/events : ji-ma
 umeme : electricity
@@ -444,7 +453,6 @@ mafuta : oil/oils : ji-ma # plural only
 upishi : recipe/recipes : u
 
 
-
 ################################################################################
 # nature
 ################################################################################
@@ -454,7 +462,7 @@ mti/miti : tree/trees : m-mi
 jani/majani : leaf/leaves : ji-ma
 mmea/mimea : plant/plants : m-mi
 mche/miche : seedling/seedlings : m-mi
-mzizi/miziz : root/roots : m-mi
+mzizi/mizizi : root/roots : m-mi
 mazingira : environment : ma # plural only
 mto/mito : river/rivers : m-mi
 kilele/vilele : peak/peaks : ki-vi
@@ -466,6 +474,8 @@ ardhi : land/lands : n
 ziwa/maziwa : lake/lakes : ji-ma
 ua/maua : flower/flowers
 tope/matope : mud/muds : ji-ma
+
+tawi/matawi : branch/branches : ji-ma 
 
 ################################################################################
 # weather
@@ -480,6 +490,8 @@ giza : darkness : ma # no plural
 ngurumo : thunder, rumble, roar : n
 radi : thunder, lightining : n
 
+
+
 ################################################################################
 # travel
 ################################################################################
@@ -488,7 +500,6 @@ kaskazini : north : n
 mashariki : east : n
 kusini : south : n 
 magharibi : west : n
-
 
 gari/magari : car/cars : ji-ma
 boti : boat/boats : n
@@ -521,7 +532,6 @@ shilingi : Tanzanian shilling/Tanzanian shillings : n
 # day-to-day
 ################################################################################
 
-
 mazungumzo : conversation/converstations : ji-ma # plural only
 
 benki/mabenki : bank/banks : ji-ma
@@ -531,7 +541,9 @@ kitu/vitu : thing/things : ki-vi
 wimbo/nyimbo : song/songs : u
 
 shida : problem/problems : n
+
 tatizo/matatizo : problem/problem : ma-ja
+mashaka : worries
 changamoto : challenges/challenges : n
 tumaini/matumaini : hope/hopes : ji-ma
 
@@ -550,11 +562,11 @@ kodi : rent
 
 jengo/majengo : building/buildings : ji-ma
 
-mapokezi : reception
-
-baraka : blessing
-
 wivu : jealousy
+
+################################################################################
+# Materials
+################################################################################
 
 ubao/mbao : wood/woods : u
 chuma/vyuma : metal/metals : n
@@ -565,9 +577,16 @@ chuma/vyuma : metal/metals : n
 
 zawadi : gift/gifts : n
 
+likizo : vacation/vacations : n
+
+hongera : congratulation/congratulations : n
+
+
 harausi - wedding
-hongera : congrats
-likizo : vacation
+
+mapokezi : reception
+
+baraka : blessing
 
 
 ################################################################################
@@ -576,11 +595,13 @@ likizo : vacation
 
 mchango/michango : contribution/contributions : m-mi
 
+motisha : motivation
+
+nidhamu : discipline
+
 shauku : passion 
 
 kadi : card
-
-mashaka : worries
 
 ruhusa : permission
 
@@ -600,11 +621,10 @@ hadithi : story
 
 ovyo : useless
 
-ovyo ovyo : randomly
+ovyo ovyo : haphazardly, randomly
 
 -tupu : empty
 
-tawi : branch
 
 ujasiri : confidence
 
@@ -643,3 +663,10 @@ hatari : dangerous
 
 
 asma : saidy's wife
+
+maalum : special, distinguished, famous
+spesheli : special
+
+
+ajabu/maajabu : wonder/wonders : ji-ma
+
