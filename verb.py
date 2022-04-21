@@ -1,5 +1,5 @@
 from random import choice
-from googletrans import Translator
+from google_trans_new import google_translator as Translator
 
 class VerbComponents(object):
 
@@ -142,5 +142,5 @@ class EngVerb(object):
         return "{0} {1} {2}".format(subject, aux, self.gerund())
 
     def _conjugate_google(self, phrase):
-        return self._translator.translate(phrase, src="sw", dest="en").text
+        return self._translator.translate(phrase, lang_src="sw", lang_tgt="en")
 
