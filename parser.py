@@ -1,7 +1,6 @@
 from verb import VerbComponents, KisVerb
 from noun import KisNoun
 
-
 class Parser(object):
 
     def __init__(self, paths):
@@ -83,22 +82,41 @@ class KisVerbParser(Parser):
 class KisNounParser(Parser):
 
     def __init__(self, paths):
-        self.nouns = []
+        self._nouns = []
         super().__init__(paths)
+
+    def num_nouns(self):
+        return len(self._nouns)
 
     def parse(self):
 
         for path in self.paths:
             self._parse_file(path)
-        return self.nouns
+        return self._nouns
+
+    def _parse_sing_plur(self, string):
+        if "/" in string:
+            sing, plur = [x.strip() for x in string.split("/")]
+        else:
+            sing, plur = [string.strip()]*2
+
+        return sing, plur
 
     def _parse_noun_line(self, line):
         line = self._remove_comment(line)
         kis, eng, noun_class = (l.strip() for l in line.split(":"))
 
-        eng = [l.strip() for l in eng.split(",")]
+        kis_sing, kis_plur = self._parse_sing_plur(kis)
 
-        return root.strip("-"), eng
+        eng_sing = []
+        eng_plur = []
+        for x in eng.split(','):
+            sing, plur = self._parse_sing_plur(x)
+            eng_sing.append(sing)
+            eng_plur.append(plur)
+            
+
+        return KisNoun(kis_sing, kis_plur, eng_sing, eng_plur, noun_class)
 
     def _parse_file(self, path):
         with open(path, 'r') as f:
@@ -107,9 +125,13 @@ class KisNounParser(Parser):
         i = 0
         while i < len(lines):
             if self._valid_line(lines[i]):
-                root, eng = self._parse_noun_line(lines[i])
-                noun = KisNoun(kis, eng)
-                self.verbs.append(verb)
+
+                # line needed only to ignore scratch space
+                if len(lines[i].split(":")) != 3:
+                    i += 1
+                    continue
+
+                self._nouns.append(self._parse_noun_line(lines[i]))
                 i += 1
             else:
                 i += 1

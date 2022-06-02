@@ -183,13 +183,21 @@ exception neg 3 plur present si
 
 -pendelea : prefer
 
--ongea : speak
-
 -sema : say
 
 -ambia : tell
 
 -zungumza : converse
+
+-ongea : speak
+
+-ongeza : add
+
+-ongezeka : increase
+
+-boresha : improve
+
+-punguza : reduce
 
 -paswa : should
 
@@ -257,14 +265,6 @@ exception neg 3 plur present si
 
 -tayarisha : prepare
 
--ongeza : add
-
--ongezeka : increase
-
--boresha : improve
-
--punguza : reduce
-
 -nuka : stink
 
 -nukia : smell
@@ -331,7 +331,7 @@ exception neg 3 plur present si
 
 -hema : breathe
 
--amini : believe # ninakuamini - I believe you
+-amini : believe, trust # ninakuamini - I believe you
 
 -sikitika : be dissapointed
 
@@ -365,6 +365,17 @@ exception neg 3 plur present si
 
 -haribu : destroy
 
+-ficha : conceal
+
+-kumbuka : remember
+
+-sahua : forget
+
+-dumu : last
+
+-fanana : look like
+
+-koroga : stir, mix
 
 
 # -kusanyika? : gather

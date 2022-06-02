@@ -1,5 +1,5 @@
 from random import choice
-from google_trans_new import google_translator as Translator
+from googletrans import Translator
 
 class VerbComponents(object):
 

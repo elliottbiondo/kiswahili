@@ -67,8 +67,6 @@ kisha : then # same as halafu
 licha ya : despite
 
 
-
-
 ################################################################################
 # Phrases
 ################################################################################
@@ -130,7 +128,7 @@ bafu : bathroom/bathrooms : n
 choo/vyoo : toilet/toilets : ki-vi 
 ufagio : broom/brooms : u                                                         
 nguo : clothes : n                                                               
-jiko/majiko : kitchen/kitches, stove/stoves : ji-ma                              
+jiko/majiko : kitchen/kitchens, stove/stoves : ji-ma                              
 chumba/vyumba : room/rooms  : ki-vi                                              
 sabuni  : soap/soaps : n                                                         
 sufuria : pot/pots : n                                                           
@@ -138,7 +136,7 @@ ndoo : bucket/buckets : n
 moto : fire/fires : n                                                            
 dirisha/madirisha : window/windows : ji-ma                                       
 sahani : plate/plates : n                                                        
-meza/meza : table/tables : b                                                     
+meza/meza : table/tables : n
 kikombe/vikombe : cup/cups : ki-vi                                               
 chupa : bottle/bottles : n                                                       
 pazia/mapazia : curtain/curtains : ji-ma                                         
@@ -210,6 +208,7 @@ mteja/wateja : customer/customers : m-wa
 mnunuzi/wanunuzi : buyer/buyers : m-wa
 muuzaji/wauzaji : seller/sellers : m-wa
 myahudi/wayahudi : Jew/Jews : m-wa
+mzungumzaji/wazungumzaji : speaker/speakers : m-wa
                                                                                  
 # Pluralize in n-class fashion, but have m-wa concords, except possesives:
 rafiki : friend/friends : m-wa-n**
@@ -237,7 +236,7 @@ kidole/vidole : finger/fingers : ki-vi
 mkono/mikono : arm/arms, hand/hands : m-mi
 bega/mabega : shoulder/shoulder : ji-ma
 nywele : hair/hair : n
-kichwa/vichwa : head/heads : vi-ki
+kichwa/vichwa : head/heads : ki-vi
 tako/matako : butt cheek/buttocks : ji-ma
 kichwa/vichwa : head/heads : ki-vi
 bega/mabega : shoulder/sholders : ji-ma
@@ -485,12 +484,10 @@ hewa : air
 hali ya hewa : weather
 madadiliko ya hali ya hewa : climate change
 dhoruba : storm/storms : n
-barafu : ice/ice : n
+barafu : ice/ices : n
 giza : darkness : ma # no plural
 ngurumo : thunder, rumble, roar : n
 radi : thunder, lightining : n
-
-
 
 ################################################################################
 # travel
@@ -542,7 +539,7 @@ wimbo/nyimbo : song/songs : u
 
 shida : problem/problems : n
 
-tatizo/matatizo : problem/problem : ma-ja
+tatizo/matatizo : problem/problem : ma
 mashaka : worries
 changamoto : challenges/challenges : n
 tumaini/matumaini : hope/hopes : ji-ma
@@ -576,11 +573,8 @@ chuma/vyuma : metal/metals : n
 ################################################################################
 
 zawadi : gift/gifts : n
-
 likizo : vacation/vacations : n
-
 hongera : congratulation/congratulations : n
-
 
 harausi - wedding
 
@@ -625,18 +619,14 @@ ovyo ovyo : haphazardly, randomly
 
 -tupu : empty
 
-
 ujasiri : confidence
 
 kimya :
 
-
 -bichi : ripe
-
 
 naam : yes? for a man
 beeh : yes? for a woman
-
 
 kupiga mbizi : diving!
 
@@ -646,27 +636,29 @@ tabia : habit/behavior
 
 udongo : soil
 
-kipande : slice/piece (kipande cha mkati
-
-
+kipande/vipande : slice/slices, piece/pieces # (kipande cha mkati)
 
 mkimbizi : refugee
 silaha : weapon
 usawa : equality
 
-
-Maarufu
+maarufu : famous/popular
 
 kisogo : back of head?
 
 hatari : dangerous
 
-
-asma : saidy's wife
+Asma : Saidy's wife
 
 maalum : special, distinguished, famous
 spesheli : special
 
-
 ajabu/maajabu : wonder/wonders : ji-ma
+
+tangazo : announcement
+mbuga : park (like national park)
+
+kuotisha (sp?) to grow a plant
+
+kipaji/vipaji : talent/talents, gift/gifts, donation/donations : ki-vi
 
