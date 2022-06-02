@@ -321,7 +321,9 @@ exception neg 3 plur present si
 
 -umiza : harm
 
--uma : be in pain
+-uma : hurt
+
+-umwa : be sick, be in pain
 
 -linganisha : compare
 
@@ -336,8 +338,6 @@ exception neg 3 plur present si
 -sikitika : be dissapointed
 
 -sikitisha : dissapoint
-
--umwa : be sick
 
 -onya : warn
 
@@ -359,8 +359,6 @@ exception neg 3 plur present si
 
 -tatua : solve
 
--jiamini : trust oneself
-
 -pangisha : rent
 
 -haribu : destroy
@@ -377,13 +375,15 @@ exception neg 3 plur present si
 
 -koroga : stir, mix
 
+-kutana : meet # to meet one another
+
+-hisi : feel # emotionally
 
 # -kusanyika? : gather
 
 # -kusanya? : collect
 
 #kuiva- v. to ripen
-#kuja- v. to come
 #kujaa- v. to be full
 #kulea- v. to care for, raise (children)
 #kumeza- v. to swallow up, to engulf

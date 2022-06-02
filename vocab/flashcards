@@ -2,8 +2,6 @@
 # Connecting words
 ################################################################################
 
-nafasi : space, chance
-
 kuliko : than
 sehemu : part
 
@@ -178,7 +176,7 @@ kitenge/vitenge : sarong/sarongs : ki-vi
 ################################################################################
 
 mwanaume/wanaume : man/men : m-wa                                                
-mwanamke/wanawake : woman/woman : m-wa                                           
+mwanamke/wanawake : woman/women : m-wa                                           
 msichana/wasichana : girl/girls : m-wa                                           
 mvulana/wavulana : boy/boys : m-wa                                               
 mume/waume : husband/husbands : m-wa
@@ -209,20 +207,21 @@ mnunuzi/wanunuzi : buyer/buyers : m-wa
 muuzaji/wauzaji : seller/sellers : m-wa
 myahudi/wayahudi : Jew/Jews : m-wa
 mzungumzaji/wazungumzaji : speaker/speakers : m-wa
-                                                                                 
-# Pluralize in n-class fashion, but have m-wa concords, except possesives:
-rafiki : friend/friends : m-wa-n**
-raia : citizen/citizens : m-wa-n**                                               
-                                                                                 
-# Nouns that pluralize in the ji-ma fashion, have ALL m-wa concords, even possesive:
+mkimbizi/wakimbizi : refugee/refugees : m-wa
+
+# Nouns that pluralize in the ji-ma or ki-vi fashion, have ALL m-wa concords, even possesive:
 daktari/madaktari : doctor : m-wa                                                
 rais/marais : president/presidents : m-wa
 seremala/maseremala : carpenter/carpenters : m-wa
 fundi/mafundi : artisen/artisens : m-wa
-jeshi/majeshi : solider/soliders : m-wa
+jeshi/majeshi : soldier/soldiers : m-wa
+kiongozi/viongozi : leader/leaders : m-wa
+                                                                                 
+# Pluralize in n-class fashion, but have m-wa concords, except possesives:
+rafiki : friend/friends : m-wa-n**
+raia : citizen/citizens : m-wa-n**                                               
+ndugu : relative/relatives : m-wa-n** # not sure on this one, I have seen both wangu and yangu/zangu
 
-# Other
-kiongozi/viongozi : leader/leaders
 
 ################################################################################
 # body
@@ -434,8 +433,8 @@ kahawa : coffee : n
 bia : beer/beers : n                                                             
 juisi : juice/juices : n                                                         
 maharage : beans : ji-ma                                                         
-maziwa : milk : ji-ma # plural only                                              
-maji : water : ji-ma # plural only                                               
+maziwa : milk : ma # plural only                                              
+maji : water : ma # plural only                                               
 kinywaji/vinywaji : drink/drinks : ki-vi                                         
 fenesi/mafenesi : jackfruit/jackfruits : ji-ma                                   
 tikiti/matikiti : watermelon/watermelons : ji-ma                                 
@@ -443,11 +442,11 @@ keki : cake/cakes : n
 kiungo/viungo : spice/spices : ki-vi
 mchuzi/michuzi : sauce/sauces : m-mi
 chumvi : salt : n
-pombe : alcohal/alcohals : n
+pombe : alcohol/alcohols : n
 nanasi/mananasi : pineapple/pineapples : ji-ma
-mahindi : corn/corns : ji-ma # plural-only
+mahindi : corn : ma # plural-only
 papai/mapapai : papaya/papayas : ji-ma
-mafuta : oil/oils : ji-ma # plural only
+mafuta : oil/oils : ma # plural only
 
 upishi : recipe/recipes : u
 
@@ -473,14 +472,17 @@ ardhi : land/lands : n
 ziwa/maziwa : lake/lakes : ji-ma
 ua/maua : flower/flowers
 tope/matope : mud/muds : ji-ma
-
 tawi/matawi : branch/branches : ji-ma 
+udongo : soil/soils : u
+anga : sky/skies : ma # ma class with no plural
+mbuga : park/parks, grassland/grasslands : n # e.g., a national park
+ajabu/maajabu : wonder/wonders : ji-ma
 
 ################################################################################
 # weather
 ################################################################################
-hali : condition
-hewa : air
+hali : condition/conditions, mood/moods, situation/situations : n
+hewa : air : n
 hali ya hewa : weather
 madadiliko ya hali ya hewa : climate change
 dhoruba : storm/storms : n
@@ -513,7 +515,7 @@ mzigo/mizigo : luggage/luggages : m-mi
 mwavuli/miavuli : umbrella/umbrellas m-mi
 
 ################################################################################
-# shopping
+# shopping and money
 ################################################################################
 
 pesa : money : n
@@ -525,41 +527,64 @@ fungu/mafungu : bunch/bunches : ji-ma
 jumla  : total/totals : n
 shilingi : Tanzanian shilling/Tanzanian shillings : n
 
+pato/mapato : income/incomes, achievement/achievements : ji-ma
+kodi : rent/rents, fee/fees, tax/taxes : n
+benki/mabenki : bank/banks : ji-ma
+
 ################################################################################
 # day-to-day
 ################################################################################
 
 mazungumzo : conversation/converstations : ji-ma # plural only
+swali/maswali : question/questions : ji-ma
+jibu/majibu : response/responses : ji-ma
+tangazo/matangazo : announcement/announcements : ji-ma
 
-benki/mabenki : bank/banks : ji-ma
-
+shughuli : activty/activities : n
 kitu/vitu : thing/things : ki-vi
 
 wimbo/nyimbo : song/songs : u
 
-shida : problem/problems : n
-
-tatizo/matatizo : problem/problem : ma
-mashaka : worries
-changamoto : challenges/challenges : n
-tumaini/matumaini : hope/hopes : ji-ma
-
-nishati : inspiration/inspiration : n # also energy
-
 tahadhari : precaution/precautions : n
 
-swali/maswali : question/questions : ji-ma
-jibu/majibu : response/responses : ji-ma
-
-shughuli : activty/activities : n
-
-mapato : income
-
-kodi : rent
+nafasi : space/spaces, chance/chances, opportunity/opportunities : n
 
 jengo/majengo : building/buildings : ji-ma
 
-wivu : jealousy
+kimya : silence : ki-vi
+kelele/makelele : noise/noises : ji-ma
+
+kipande/vipande : slice/slices, piece/pieces : ki-vi # (kipande cha mkati)
+upande/pande : side/sides : u
+
+################################################################################
+# Psychological concepts
+################################################################################
+
+hisia : emotion/emotions : n
+
+shida : problem/problems : n
+tatizo/matatizo : problem/problem : ma
+shaka/mashaka : worry/worries, doubt/doubts : ji-ma
+changamoto : challenges/challenges : n
+wivu : jealousy/jealousies : u
+
+tumaini/matumaini : hope/hopes : ji-ma
+nishati : inspiration/inspiration : n # also energy
+
+mchango/michango : contribution/contributions : m-mi
+motisha : motivation/motivations, incentive/incentives : n
+nidhamu : discipline : n
+ruhusa : permission/permissions : n
+heri : happiness, luck : n
+ujasiri : confidence, courage, bravery : u
+uwezekano : possiblity/possibilities : u
+shauku/mashauku : passion : ji-ma
+
+kipaji/vipaji : talent/talents, gift/gifts, donation/donations : ki-vi
+aibu : shame/disgrace : n
+tabia : habit/habits, behavior/behaviors : n
+
 
 ################################################################################
 # Materials
@@ -567,6 +592,7 @@ wivu : jealousy
 
 ubao/mbao : wood/woods : u
 chuma/vyuma : metal/metals : n
+pamba : cotton : n
 
 ################################################################################
 # Celebration
@@ -575,53 +601,50 @@ chuma/vyuma : metal/metals : n
 zawadi : gift/gifts : n
 likizo : vacation/vacations : n
 hongera : congratulation/congratulations : n
-
-harausi - wedding
-
-mapokezi : reception
-
-baraka : blessing
-
+harausi :  wedding/weddings : n
+mapokezi : reception/receptions : ma # weddding reception, reception desk, a fancy meeting of people
+baraka : blessing/blessings : n
 
 ################################################################################
-# Other
-#mp###############################################################################
+# Tools
+################################################################################
 
-mchango/michango : contribution/contributions : m-mi
+kifaa/vifaa : tool/tools : ki-vi
+nyundo : hammer/hammers : n
+msumeno/misumeno : saw/saws : m-mi
+msasa/misasa : sandpaper/sandpapers : m-mi
 
-motisha : motivation
+################################################################################
+# Science
+################################################################################
 
-nidhamu : discipline
+sayansi : science : n
+oksijeni : oxygen : n
+molekuli : molekuli	: n
+atomu : atom/atoms : n
+nyutroni : neutron/neutrons : n
+protoni : proton/protons : n
+elektroni : electron/electrons : n
+kiini cha atomu/viini vya atomu : nucleus/nuclei : ki-vi
 
-shauku : passion 
+################################################################################
+# Other/unprocessed
+################################################################################
 
 kadi : card
-
-ruhusa : permission
-
-ndugu : relatives
 
 mahali : place
 
 utani : jokes
-
-uwezekano : possiblity
-
-heri : luck
 
 kupa : to give?
 
 hadithi : story
 
 ovyo : useless
-
 ovyo ovyo : haphazardly, randomly
 
 -tupu : empty
-
-ujasiri : confidence
-
-kimya :
 
 -bichi : ripe
 
@@ -630,15 +653,6 @@ beeh : yes? for a woman
 
 kupiga mbizi : diving!
 
-maalum : special
-
-tabia : habit/behavior
-
-udongo : soil
-
-kipande/vipande : slice/slices, piece/pieces # (kipande cha mkati)
-
-mkimbizi : refugee
 silaha : weapon
 usawa : equality
 
@@ -653,12 +667,27 @@ Asma : Saidy's wife
 maalum : special, distinguished, famous
 spesheli : special
 
-ajabu/maajabu : wonder/wonders : ji-ma
-
-tangazo : announcement
-mbuga : park (like national park)
-
 kuotisha (sp?) to grow a plant
 
-kipaji/vipaji : talent/talents, gift/gifts, donation/donations : ki-vi
+kimataifa : internationally
 
+kulipiza kisasi
+
+itakuwa bora kuonana badaya :
+
+kuhisi : to feel
+
+vyema : well, as in, "well, we will see eachother later"
+
+ujuzi : skill
+
+siku hizi - now days
+
+muda
+
+mwigizaji : actor
+-ugiza : acting
+
+filamu : movie
+
+gongo : kipande cha mbao # is this firewood or a club/cudgel
