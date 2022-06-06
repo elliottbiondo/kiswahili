@@ -1,5 +1,13 @@
 from random import choice
-from googletrans import Translator
+
+try:
+    import mlconjug3
+except ImportError:
+    error = ("Missing dependency: mlconjug3\n"
+             "\tThis is needed for conjugating English verbs. Install via:\n"
+             "\tpip3 install mlconjug3\n")
+    raise ImportError(error)
+    
 
 class VerbComponents(object):
 
@@ -24,27 +32,35 @@ class VerbComponents(object):
         tense = choice(cls._tense)
         return cls(polarity, person, plurality, tense)
 
+    @property
     def polarity(self):
         return self._polarity[self._polarity_idx]
 
+    @property
     def person(self):
         return self._person[self._person_idx]
 
+    @property
     def plurality(self):
         return self._plurality[self._plurality_idx]
 
+    @property
     def tense(self):
         return self._tense[self._tense_idx]
 
+    @property
     def polarity_idx(self):
         return self._polarity_idx
 
+    @property
     def person_idx(self):
         return self._person_idx
 
+    @property
     def plurality_idx(self):
         return self._plurality_idx
 
+    @property
     def tense_idx(self):
         return self._tense_idx
 
@@ -88,11 +104,11 @@ class KisVerb(object):
         if vc in self.exceptions.keys():
             return self.exceptions[vc]
 
-        subject_pre = self._subjects[vc.polarity_idx()][vc.plurality_idx()][vc.person_idx()]
-        tense_pre = self._tenses[vc.polarity_idx()][vc.tense_idx()]
+        subject_pre = self._subjects[vc.polarity_idx][vc.plurality_idx][vc.person_idx]
+        tense_pre = self._tenses[vc.polarity_idx][vc.tense_idx]
         conj = subject_pre + tense_pre + self.root
 
-        if (vc.tense() == "present" and vc.polarity() == "negative" and self.is_bantu()):
+        if (vc.tense == "present" and vc.polarity == "negative" and self.is_bantu()):
             return conj[:-1] + "i"
         else:
             return conj
@@ -103,44 +119,56 @@ class KisVerb(object):
 
 class EngVerb(object):
 
-    _translator = Translator()
+    _conj = mlconjug3.Conjugator(language='en')
     _subjects = [["I", "You", "S/he"], ["We", "You all", "They"]]
-    _copula = [["am", "are", "is"], ["are", "are", "are"]]
+    _copula_present = [["am", "are", "is"], ["are", "are", "are"]]
+    _copula_past_perfect = [["have", "have", "has"], ["have", "have", "have"]]
 
     def __init__(self, inf):
         self.inf = inf
 
-    def gerund(self):
-        if self.inf[-1] == "e":
-            root = self.inf[:-1]
-        else:
-            root = self.inf
-        return root + "ing"
+    def conjugate(self, vc):
 
-    def conjugate(self, vc, swa):
+        subject = self._subjects[vc.plurality_idx][vc.person_idx]
 
-        if vc.tense() == "future":
-            return self._conjugate_future(vc)
+        if vc.tense == "future":
+            conj_verb = self._conjugate_future(vc)
         else:
-            return self._conjugate_google(swa)
+            conj_verb = self._conjugate_mlconj3(vc)
+
+        return "{0} {1}".format(subject, conj_verb)
 
     def _conjugate_future(self, vc):
+        # Future tense not avail
         # All English verbs are regular in the future test
-        subject = self._subjects[vc.plurality_idx()][vc.person_idx()]
-        aux = "will" if vc.polarity() == "affirmative" else "will not"
-        return "{0} {1} {2}".format(subject, aux, self.inf)
+        aux = "will" if vc.polarity == "affirmative" else "will not"
+        return "{0} {1}".format(aux, self.inf)
 
+    def _conjugate_mlconj3(self, vc):
 
-    def _conjugate_present(self, vc):
-        # this doesn't work yet, and might not be something worth pursuing
-        subject = self._subjects[vc.plurality_idx()][vc.person_idx()]
-        aux = self._copula[vc.plurality_idx()][vc.person_idx()]
+        per_plur = "{0}{1}".format(vc.person_idx + 1, "s" if vc.plurality == "singular" else "p")
 
-        if vc.polarity() == "negative":
-            aux += " not"
+        if vc.tense == "past":
+            if vc.polarity == "affirmative":
+                aux = ""
+                conj_root = self._conj.conjugate(self.inf).conjug_info['indicative']['indicative past tense'][per_plur]
+            else:
+                aux = "did not"
+                conj_root = self.inf
+                
+        elif vc.tense == "past-perfect":
+            cop = self._copula_past_perfect[vc.plurality_idx][vc.person_idx]
+            aux = cop if vc.polarity == "affirmative" else "{0} not".format(cop)
+            conj_root = self._conj.conjugate(self.inf).conjug_info['indicative']['indicative present perfect'][per_plur]
 
-        return "{0} {1} {2}".format(subject, aux, self.gerund())
+        elif vc.tense == "present":
+            cop = self._copula_present[vc.plurality_idx][vc.person_idx]
+            aux = cop if vc.polarity == "affirmative" else "{0} not".format(cop)
+            conj_root = self._conj.conjugate(self.inf).conjug_info['indicative']['indicative present continuous'][per_plur]
 
-    def _conjugate_google(self, phrase):
-        return self._translator.translate(phrase, lang_src="sw", lang_tgt="en")
+        else:
+            raise ValueError("Unrecognized tense: {}".format(vc.tense))
+
+        return "{0}{1}{2}".format(aux, " " if aux else "", conj_root)
+
 

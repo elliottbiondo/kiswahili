@@ -1,6 +1,6 @@
 from nose.tools import assert_equal, with_setup, assert_raises
 
-from parser import KisVerb, VerbComponents
+from kiswahili.parser import KisVerb, VerbComponents
 
 
 def test_verb_components():

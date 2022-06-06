@@ -1,8 +1,8 @@
 from random import choice, uniform
 from copy import copy
 
-from parser import KisVerbParser, KisNounParser
-from verb import VerbComponents, EngVerb
+from kiswahili.parser import KisVerbParser, KisNounParser
+from kiswahili.verb import VerbComponents, EngVerb
 
 class Challenge(object):
 
@@ -23,7 +23,7 @@ def check_result(expected, actual, message):
 def kis_to_eng(kis_verb, eng_verb, vc):
 
     kis = kis_verb.conjugate(vc)
-    eng = eng_verb.conjugate(vc, kis)
+    eng = eng_verb.conjugate(vc)
 
     # Check if Google failed to translate
     if eng == kis:
@@ -37,7 +37,7 @@ def kis_to_eng(kis_verb, eng_verb, vc):
 def eng_to_kis(kis_verb, eng_verb, vc):
 
     kis = kis_verb.conjugate(vc)
-    eng = eng_verb.conjugate(vc, kis)
+    eng = eng_verb.conjugate(vc)
 
     # Check if Google failed to translate
     if eng == kis:
@@ -45,7 +45,7 @@ def eng_to_kis(kis_verb, eng_verb, vc):
 
     # Differiate between you (singular) and you (plural) in English
     plural = ''
-    if vc.person() == "second" and vc.plurality() == "plural":
+    if vc.person == "second" and vc.plurality == "plural":
         plural = '(plural)'
 
     inp = input("Translate to Kiswahili: {0} {1}\n>> ".format(eng, plural))
@@ -98,8 +98,8 @@ def noun_game():
             check_result(eng, inp, eng)
 
 def main():
-    #verb_game()
-    noun_game()
+    verb_game()
+    #noun_game()
 
 
 if __name__ == "__main__":

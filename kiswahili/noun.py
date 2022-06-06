@@ -1,7 +1,7 @@
 
 class KisNoun(object):
 
-    _noun_classes = ["m-wa", "m-mi", "ji-ma", "ma", "ki-vi", "n", "u", "m-wa-n*", "m-wa-n**"]
+    _noun_classes = ["m-wa", "m-mi", "ji-ma", "ma", "ki-vi", "n", "u", "m-wa*", "m-wa-n*", "m-wa-n**"]
 
     _subject_prefixs = [[ "a", "wa"], # m-wa
                         [ "u",  "i"], # m-mi

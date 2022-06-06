@@ -1,6 +1,6 @@
 from nose.tools import assert_equal, with_setup, assert_raises
 
-from parser import KisVerbParser
+from kiswahili.parser import KisVerbParser
 
 def test_simple():
     parser = KisVerbParser(["input/verbs"])
