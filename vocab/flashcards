@@ -557,6 +557,8 @@ kelele/makelele : noise/noises : ji-ma
 kipande/vipande : slice/slices, piece/pieces : ki-vi # (kipande cha mkati)
 upande/pande : side/sides : u
 
+msema/misema : saying/sayings : m-mi
+
 ################################################################################
 # Psychological concepts
 ################################################################################
@@ -691,3 +693,5 @@ mwigizaji : actor
 filamu : movie
 
 gongo : kipande cha mbao # is this firewood or a club/cudgel
+
+takriban : approximately
