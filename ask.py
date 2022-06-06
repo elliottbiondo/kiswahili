@@ -9,26 +9,23 @@ class Challenge(object):
     def __init__():
         pass
 
-def check_result(expected, actual):
-    return expected.lower() == actual.lower()
+    def _check(self, expected, actual, message):
+        if expected.lower().split() == actual.lower().split():
+            print("CORRECT\n")
+        else:
+            print("INCORRECT! answer: {}\n".format(message))
 
+class Verb_Challenge(Challenge):
 
-def check_result(expected, actual, message):
-    if expected.lower().split() == actual.lower().split():
-        print("CORRECT\n")
-    else:
-        print("INCORRECT! answer: {}\n".format(message))
+    def __init__(self):
+        vp = KisVerbParser(["vocab/verbs"])
+        self._verbs = vp.parse()
+        print("Read {} verbs".format(vp.num_verbs()))
 
-
-def verb_game():
-    vp = KisVerbParser(["vocab/verbs"])
-    verbs = vp.parse()
-
-    print("Read {} verbs".format(vp.num_verbs()))
-    while (True):
+    def play(self):
 
         # select a random kiswahili verb
-        kis_verb = choice(verbs)
+        kis_verb = choice(self._verbs)
 
         # Since the verb may have multiple English translates, randomly select
         # an English infinative and convert to EngVerb
@@ -40,7 +37,7 @@ def verb_game():
 
         if uniform(0, 1) < 0.5:
             inp = input("Translate to English: {}\n>> ".format(kis))
-            check_result(eng, inp, eng)
+            self._check(eng, inp, eng)
 
         else:
             # Differiate between you (singular) and you (plural) in English
@@ -49,19 +46,20 @@ def verb_game():
                 plural = '(plural)'
 
             inp = input("Translate to Kiswahili: {0} {1}\n>> ".format(eng, plural))
-            check_result(kis, inp, kis)
+            self._check(kis, inp, kis)
 
 
+class Noun_Challenge(Challenge):
 
-def noun_game():
-    np = KisNounParser(["vocab/flashcards"])
-    nouns = np.parse()
+    def __init__(self):
+        np = KisNounParser(["vocab/flashcards"])
+        self._nouns = np.parse()
+        print("Read {} nouns".format(np.num_nouns()))
 
-    print("Read {} nouns".format(np.num_nouns()))
-    while (True):
+    def play(self):
 
         # select a random kiswahili verb
-        noun = choice(nouns)
+        noun = choice(self._nouns)
 
         plural = ""
         if uniform(0, 1) < 0.5:
@@ -75,15 +73,18 @@ def noun_game():
 
         if uniform(0, 1) < 0.5:
             inp = input("Translate to Kiswahili: {0} {1}\n>> ".format(eng, plural))
-            check_result(kis, inp, kis)
+            self._check(kis, inp, kis)
         else:
             inp = input("Translate to English: {0} {1}\n>> ".format(kis, plural))
-            check_result(eng, inp, eng)
+            self._check(eng, inp, eng)
 
 def main():
-    verb_game()
-    #noun_game()
+    nc = Noun_Challenge()
+    vc = Verb_Challenge()
 
+    while True:
+        play = choice([nc.play, vc.play])
+        play()
 
 if __name__ == "__main__":
     main()
