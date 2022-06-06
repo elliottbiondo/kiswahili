@@ -9,8 +9,8 @@ class Challenge(object):
     def __init__():
         pass
 
-    def check_result(expected, actual):
-        return expected.lower() == actual.lower()
+def check_result(expected, actual):
+    return expected.lower() == actual.lower()
 
 
 def check_result(expected, actual, message):
@@ -19,38 +19,6 @@ def check_result(expected, actual, message):
     else:
         print("INCORRECT! answer: {}\n".format(message))
 
-
-def kis_to_eng(kis_verb, eng_verb, vc):
-
-    kis = kis_verb.conjugate(vc)
-    eng = eng_verb.conjugate(vc)
-
-    # Check if Google failed to translate
-    if eng == kis:
-        eng = "{0} form of 'to {1}'".format(str(vc), eng_verb.inf)
-
-    inp = input("Translate to English: {}\n>> ".format(kis))
-
-    check_result(eng, inp, eng)
-
-
-def eng_to_kis(kis_verb, eng_verb, vc):
-
-    kis = kis_verb.conjugate(vc)
-    eng = eng_verb.conjugate(vc)
-
-    # Check if Google failed to translate
-    if eng == kis:
-       eng = "{0} form of {1}".format(str(vc), eng_verb.inf)
-
-    # Differiate between you (singular) and you (plural) in English
-    plural = ''
-    if vc.person == "second" and vc.plurality == "plural":
-        plural = '(plural)'
-
-    inp = input("Translate to Kiswahili: {0} {1}\n>> ".format(eng, plural))
-
-    check_result(kis, inp, kis)
 
 def verb_game():
     vp = KisVerbParser(["vocab/verbs"])
@@ -67,8 +35,23 @@ def verb_game():
         eng_verb = EngVerb(choice(kis_verb.eng))
 
         vc = VerbComponents.from_random_sample()
-        a = choice([eng_to_kis, kis_to_eng])
-        a(kis_verb, eng_verb, vc)
+        kis = kis_verb.conjugate(vc)
+        eng = eng_verb.conjugate(vc)
+
+        if uniform(0, 1) < 0.5:
+            inp = input("Translate to English: {}\n>> ".format(kis))
+            check_result(eng, inp, eng)
+
+        else:
+            # Differiate between you (singular) and you (plural) in English
+            plural = ''
+            if vc.person == "second" and vc.plurality == "plural":
+                plural = '(plural)'
+
+            inp = input("Translate to Kiswahili: {0} {1}\n>> ".format(eng, plural))
+            check_result(kis, inp, kis)
+
+
 
 def noun_game():
     np = KisNounParser(["vocab/flashcards"])
