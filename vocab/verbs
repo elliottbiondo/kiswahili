@@ -101,9 +101,9 @@ exception neg 3 plur present si
 
 -acha : stop, quit, leave
 
--zima : turn off
+-zima : # turn off
 
--washa : turn on
+-washa : ignite # turn on
 
 -rudi : return
 
@@ -317,7 +317,7 @@ exception neg 3 plur present si
 
 -epuka : avoid
 
--chafuka : make dirty
+-chafuka : dirty
 
 -kasirika : get angry
 
