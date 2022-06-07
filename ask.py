@@ -11,9 +11,11 @@ class Challenge(object):
 
     def _check(self, expected, actual, message):
         if expected.lower().split() == actual.lower().split():
-            print("CORRECT\n")
+            # unicode checkmark
+            print("{}\n".format(u'\u2713'))
         else:
-            print("INCORRECT! answer: {}\n".format(message))
+            # unicode x
+            print("{0} {1}\n".format(u'\u2717', message))
 
 class Verb_Challenge(Challenge):
 
@@ -36,23 +38,16 @@ class Verb_Challenge(Challenge):
         eng = eng_verb.conjugate(vc)
 
         if uniform(0, 1) < 0.5:
-            inp = input("Translate to English: {}\n>> ".format(kis))
+            inp = input("Translate to English: {}\n> ".format(kis))
             self._check(eng, inp, eng)
-
         else:
-            # Differiate between you (singular) and you (plural) in English
-            plural = ''
-            if vc.person == "second" and vc.plurality == "plural":
-                plural = '(plural)'
-
-            inp = input("Translate to Kiswahili: {0} {1}\n>> ".format(eng, plural))
+            inp = input("Translate to Kiswahili: {0}\n> ".format(eng))
             self._check(kis, inp, kis)
-
 
 class Noun_Challenge(Challenge):
 
     def __init__(self):
-        np = KisNounParser(["vocab/flashcards"])
+        np = KisNounParser(["vocab/nouns"])
         self._nouns = np.parse()
         print("Read {} nouns".format(np.num_nouns()))
 
@@ -72,10 +67,10 @@ class Noun_Challenge(Challenge):
                 plural = "(plural)"
 
         if uniform(0, 1) < 0.5:
-            inp = input("Translate to Kiswahili: {0} {1}\n>> ".format(eng, plural))
+            inp = input("Translate to Kiswahili: {0} {1}\n> ".format(eng, plural))
             self._check(kis, inp, kis)
         else:
-            inp = input("Translate to English: {0} {1}\n>> ".format(kis, plural))
+            inp = input("Translate to English: {0} {1}\n> ".format(kis, plural))
             self._check(eng, inp, eng)
 
 def main():

@@ -1,176 +1,3 @@
-#################################################################################
-# Connecting words
-################################################################################
-
-kuliko : than
-sehemu : part
-
-mojawapo : one of the # tembo ni mnyama mojawapo ambayo ninawapenda
-kwa kawaida : usually
-baadhi ya : some
-kabisa : absolutely
-kwa hivyo : thus
-halafu : then
-mno : very (too much)
-baadhi ya watu : some people
-
-tangu : since
-pia : also
-tu : only
-bila : without
-lakini : but
-kasoro : except
-mpaka : until
-hadi : until
-
-hata  : even # Even I know
-
-sahihi : correct
-muhimu : important
-uhakika : certainty
-tofauti : different
-
-labda : maybe
-mbalimbali : varieties
-mara tatu : three times
-mara nyingi : many times
-
-zaidi ya : more than
-bora : better
-
-baadaye : later
-
-pekee : unique
-
-ngumu : difficult
-mfupi : short
-
-halisi : real
-bandia : fake
-
-jinsi ya : method of
-
-Kumechelewa kukucha
-Kumekucha salama
-
-wastani : average
-
-zima : entire, whole
-
-ingawa : although
-hata : until, even
-basi : well, so # "Generally placed after a verb to support an order or express resignation." Imbe basi! -> Well, sing!
-kwa ajili ya : because of
-kisha : then # same as halafu
-licha ya : despite
-
-
-################################################################################
-# Phrases
-################################################################################
-
-Nilipo kuwa mdogo : when I was younger
-Bado ni mapema : it is still early
-Nipo hai : I am alive 
-Kinga ni bora kuliko tiba : Prevention is better than cure
-
-################################################################################
-# prepositions
-################################################################################
-katika : in
-ndani ya : inside of
-nje ya: outside of
-juu ya : on top of
-chini ya : under
-kati ya : between
-katikati ya : in the middle of
-
-kabla ya : before
-baada ya : after
-
--a kulia : right
--a kushoto : left
-
-################################################################################
-# time
-################################################################################
-dakika : minute/minutes : n
-sekunde : second/seconds : n
-wiki : week/weeks : n
-mwezi/miezi : month/monthes : m-mi
-mwaka/miaka : year : m-mi
-
-siku : day/days : n
-usiku : night/nights : u # no plural
-asubuhi : morning/mornings : n
-mchana : afternoon/afternoons : m-mi # no plural
-jioni : evening/evenings : n
-
-juzi : day before yesterday
-jana : yesterday
-leo : today
-kesho : tomorrow
-kesho kutwa : day after tomorrow
-
-nusu : half
-robo : quarter
-
-mapema : soon, early 
-wakati : when # (when I go the store I buy things), also means 'tense' in the grammatical sense
-
-################################################################################
-# household
-################################################################################
-
-bafu : bathroom/bathrooms : n                                                    
-choo/vyoo : toilet/toilets : ki-vi 
-ufagio : broom/brooms : u                                                         
-nguo : clothes : n                                                               
-jiko/majiko : kitchen/kitchens, stove/stoves : ji-ma                              
-chumba/vyumba : room/rooms  : ki-vi                                              
-sabuni  : soap/soaps : n                                                         
-sufuria : pot/pots : n                                                           
-ndoo : bucket/buckets : n                                                        
-moto : fire/fires : n                                                            
-dirisha/madirisha : window/windows : ji-ma                                       
-sahani : plate/plates : n                                                        
-meza/meza : table/tables : n
-kikombe/vikombe : cup/cups : ki-vi                                               
-chupa : bottle/bottles : n                                                       
-pazia/mapazia : curtain/curtains : ji-ma                                         
-takataka : trash : n
-mlango/milango : door/doors : n
-kiti/viti : chair/chairs : ki-vi
-kisu/visu : knife/knives : ki-vi
-chandarua/vyandarua : insect net/insect nets : ki-vi
-kitanda/vitanda : bed/beds : ki-vi
-godoro/magodoro : mattress/mattresses : ji-ma
-kisima/visiwa : well/wells : ki-vi
-ukuta/kuta : wall/walls : u
-blanketi : blanket/blankets : n
-taa : light/lights : n
-kijiko/vijiko : spoon/spoons : ki-vi
-
-
-################################################################################
-# clothing
-################################################################################
-nguo : clothes : n
-shati : shirt/shirts : n
-suruali : pants : n
-bangili : bracelet/bracelets : n
-gauni/magauni : gown/gowns : ji-ma
-kofia : cap/caps : n
-koti/makoti : coat/coats : ji-ma
-kiatu/viatu : shoe/shoes : ki-vi
-uzi/nyuzi : thread/threads : u
-fulana : undershirt/undershirt : n
-hereni/hereni : earing/earings : n
-soksi/soksi : sock/socks : n
-pete : ring/rings : n
-kitenge/vitenge : sarong/sarongs : ki-vi
-
-
 ################################################################################
 # people
 ################################################################################
@@ -222,6 +49,157 @@ rafiki : friend/friends : m-wa-n**
 raia : citizen/citizens : m-wa-n**                                               
 ndugu : relative/relatives : m-wa-n** # not sure on this one, I have seen both wangu and yangu/zangu
 
+################################################################################
+# food
+################################################################################
+chakula/vyakula : food/foods : ki-vi                                             
+kiazi/viazi : potato/potatoes : ki-vi                                            
+kitunguu/vitunguu : onion/onions : ki-vi                                         
+kitunguu saumu/vitunguu saumu : garlic/garlics : ki-vi                           
+nyama ya mbuzi : goat meat : n                                                   
+nyama ya ng'ombe : beef : n                                                      
+nyama ya nguruwe : pork : n                                                      
+samaki : fish : n                                                                
+nyanya : tomato/tomatoes : n                                                     
+pilipli hoho : green pepper/green peppers : n                                    
+ndizi : banana/bananas : n                                                       
+chai : tea : n                                                                   
+mkate/mikate : bread/breads : m-mi                                               
+wali : rice : n                                                                  
+chipsi : fries : n                                                               
+ugali : ugali : u                                                                
+karoti : carrot/carrots : n                                                      
+chungwa/machungwa : orange/oranges : ji-ma                                       
+parachihi/maparachichi : avocado/avocados : ji-ma                                
+embe/maembe : mango/mangoes : ji-ma                                              
+tunda/matunda : fruit/fruits : ji-ma                                             
+mboga : vegetable/vegetables : n                                                 
+kahawa : coffee : n                                                              
+bia : beer/beers : n                                                             
+juisi : juice/juices : n                                                         
+maharage : beans : ji-ma                                                         
+maziwa : milk : ma # plural only                                              
+maji : water : ma # plural only                                               
+kinywaji/vinywaji : drink/drinks : ki-vi                                         
+fenesi/mafenesi : jackfruit/jackfruits : ji-ma                                   
+tikiti/matikiti : watermelon/watermelons : ji-ma                                 
+keki : cake/cakes : n                                                            
+kiungo/viungo : spice/spices : ki-vi
+mchuzi/michuzi : sauce/sauces : m-mi
+chumvi : salt : n
+pombe : alcohol/alcohols : n
+nanasi/mananasi : pineapple/pineapples : ji-ma
+mahindi : corn : ma # plural-only
+papai/mapapai : papaya/papayas : ji-ma
+mafuta : oil/oils : ma # plural only
+
+upishi : recipe/recipes : u
+
+################################################################################
+# nature
+################################################################################
+
+msitu/misitu : forrest/forrests : m-mi
+mti/miti : tree/trees : m-mi
+jani/majani : leaf/leaves : ji-ma
+mmea/mimea : plant/plants : m-mi
+mche/miche : seedling/seedlings : m-mi
+mzizi/mizizi : root/roots : m-mi
+mazingira : environment : ma # plural only
+mto/mito : river/rivers : m-mi
+kilele/vilele : peak/peaks : ki-vi
+jiwe/mawe : stone/stones : ji-ma
+kisiwa/visiwa : island/islands : ki-vi
+bahari : ocean/oceans : n
+dunia : world/worlds : n
+ardhi : land/lands : n
+ziwa/maziwa : lake/lakes : ji-ma
+ua/maua : flower/flowers
+tope/matope : mud/muds : ji-ma
+tawi/matawi : branch/branches : ji-ma 
+udongo : soil/soils : u
+anga : sky/skies : ma # ma class with no plural
+mbuga : park/parks, grassland/grasslands : n # e.g., a national park
+ajabu/maajabu : wonder/wonders : ji-ma
+
+################################################################################
+# household
+################################################################################
+
+bafu : bathroom/bathrooms : n                                                    
+choo/vyoo : toilet/toilets : ki-vi 
+ufagio : broom/brooms : u                                                         
+nguo : clothes : n                                                               
+jiko/majiko : kitchen/kitchens, stove/stoves : ji-ma                              
+chumba/vyumba : room/rooms  : ki-vi                                              
+sabuni  : soap/soaps : n                                                         
+sufuria : pot/pots : n                                                           
+ndoo : bucket/buckets : n                                                        
+moto : fire/fires : n                                                            
+dirisha/madirisha : window/windows : ji-ma                                       
+sahani : plate/plates : n                                                        
+meza/meza : table/tables : n
+kikombe/vikombe : cup/cups : ki-vi                                               
+chupa : bottle/bottles : n                                                       
+pazia/mapazia : curtain/curtains : ji-ma                                         
+takataka : trash : n
+mlango/milango : door/doors : n
+kiti/viti : chair/chairs : ki-vi
+kisu/visu : knife/knives : ki-vi
+chandarua/vyandarua : insect net/insect nets : ki-vi
+kitanda/vitanda : bed/beds : ki-vi
+godoro/magodoro : mattress/mattresses : ji-ma
+kisima/visiwa : well/wells : ki-vi
+ukuta/kuta : wall/walls : u
+blanketi : blanket/blankets : n
+taa : light/lights : n
+kijiko/vijiko : spoon/spoons : ki-vi
+
+################################################################################
+# clothing
+################################################################################
+nguo : clothes : n
+shati : shirt/shirts : n
+suruali : pants : n
+bangili : bracelet/bracelets : n
+gauni/magauni : gown/gowns : ji-ma
+kofia : cap/caps : n
+koti/makoti : coat/coats : ji-ma
+kiatu/viatu : shoe/shoes : ki-vi
+uzi/nyuzi : thread/threads : u
+fulana : undershirt/undershirt : n
+hereni/hereni : earing/earings : n
+soksi/soksi : sock/socks : n
+pete : ring/rings : n
+kitenge/vitenge : sarong/sarongs : ki-vi
+
+################################################################################
+# time
+################################################################################
+dakika : minute/minutes : n
+sekunde : second/seconds : n
+wiki : week/weeks : n
+mwezi/miezi : month/monthes : m-mi
+mwaka/miaka : year : m-mi
+
+siku : day/days : n
+usiku : night/nights : u # no plural
+asubuhi : morning/mornings : n
+mchana : afternoon/afternoons : m-mi # no plural
+jioni : evening/evenings : n
+
+juzi : day before yesterday
+jana : yesterday
+leo : today
+kesho : tomorrow
+kesho kutwa : day after tomorrow
+
+nusu : half
+robo : quarter
+
+mapema : soon, early 
+wakati : when # (when I go the store I buy things), also means 'tense' in the grammatical sense
+
 
 ################################################################################
 # body
@@ -259,6 +237,7 @@ dalili : symptom/symptoms : n
 homa : fever : n
 damu : blood/bloods : n
 chembechembe : cell/cells : n
+dawa : drug/drugs, medicine/medicines : n
 
 ################################################################################
 # school
@@ -293,32 +272,27 @@ mkutano/mikutano : meeting/meetings : m-mi
 mradi/miradi : project/projects : m-mi
 biashara : business/businesses : n 
 barua pepe : email/emails : n
+barua : mail : n
 
 ################################################################################
 # philosophy
 ################################################################################
 
 akili : intelligence : n 
-
 maarifa : knowledge : ji-ma # plural only
-
 maana : meaning/meanings : n
-
 kweli : truth/truths : n
-
 uvumilivu : patience : u 
 subira : patience : n
-
 namba : number/numbers : n
 nambari : number/numbers : n
 asilimia : percent/percents : n
 jamii : society/society : n
-
 badiliko/mabadiliko : change/changes : ji-ma
-
 maendeleo : progress : ji-ma # plural only
-
 ukarimu : generosity : u # no plural
+asili : origin/origin, culture/cultures : n # wikitionary says "origin", native speakers translate it as "culture"
+utamaduni : culture/cultures : u # no plural
 
 ################################################################################
 # politics
@@ -405,80 +379,6 @@ mkunga/mikunga : eel/eels : m-wa*
 jongoo/majongoo : millipede/millipede : m-wa*
 
 ################################################################################
-# food
-################################################################################
-chakula/vyakula : food/foods : ki-vi                                             
-kiazi/viazi : potato/potatoes : ki-vi                                            
-kitunguu/vitunguu : onion/onions : ki-vi                                         
-kitunguu saumu/vitunguu saumu : garlic/garlics : ki-vi                           
-nyama ya mbuzi : goat meat : n                                                   
-nyama ya ng'ombe : beef : n                                                      
-nyama ya nguruwe : pork : n                                                      
-samaki : fish : n                                                                
-nyanya : tomato/tomatoes : n                                                     
-pilipli hoho : green pepper/green peppers : n                                    
-ndizi : banana/bananas : n                                                       
-chai : tea : n                                                                   
-mkate/mikate : bread/breads : m-mi                                               
-wali : rice : n                                                                  
-chipsi : fries : n                                                               
-ugali : ugali : u                                                                
-karoti : carrot/carrots : n                                                      
-chungwa/machungwa : orange/oranges : ji-ma                                       
-parachihi/maparachichi : avocado/avocados : ji-ma                                
-embe/maembe : mango/mangoes : ji-ma                                              
-tunda/matunda : fruit/fruits : ji-ma                                             
-mboga : vegetable/vegetables : n                                                 
-kahawa : coffee : n                                                              
-bia : beer/beers : n                                                             
-juisi : juice/juices : n                                                         
-maharage : beans : ji-ma                                                         
-maziwa : milk : ma # plural only                                              
-maji : water : ma # plural only                                               
-kinywaji/vinywaji : drink/drinks : ki-vi                                         
-fenesi/mafenesi : jackfruit/jackfruits : ji-ma                                   
-tikiti/matikiti : watermelon/watermelons : ji-ma                                 
-keki : cake/cakes : n                                                            
-kiungo/viungo : spice/spices : ki-vi
-mchuzi/michuzi : sauce/sauces : m-mi
-chumvi : salt : n
-pombe : alcohol/alcohols : n
-nanasi/mananasi : pineapple/pineapples : ji-ma
-mahindi : corn : ma # plural-only
-papai/mapapai : papaya/papayas : ji-ma
-mafuta : oil/oils : ma # plural only
-
-upishi : recipe/recipes : u
-
-
-################################################################################
-# nature
-################################################################################
-
-msitu/misitu : forrest/forrests : m-mi
-mti/miti : tree/trees : m-mi
-jani/majani : leaf/leaves : ji-ma
-mmea/mimea : plant/plants : m-mi
-mche/miche : seedling/seedlings : m-mi
-mzizi/mizizi : root/roots : m-mi
-mazingira : environment : ma # plural only
-mto/mito : river/rivers : m-mi
-kilele/vilele : peak/peaks : ki-vi
-jiwe/mawe : stone/stones : ji-ma
-kisiwa/visiwa : island/islands : ki-vi
-bahari : ocean/oceans : n
-dunia : world/worlds : n
-ardhi : land/lands : n
-ziwa/maziwa : lake/lakes : ji-ma
-ua/maua : flower/flowers
-tope/matope : mud/muds : ji-ma
-tawi/matawi : branch/branches : ji-ma 
-udongo : soil/soils : u
-anga : sky/skies : ma # ma class with no plural
-mbuga : park/parks, grassland/grasslands : n # e.g., a national park
-ajabu/maajabu : wonder/wonders : ji-ma
-
-################################################################################
 # weather
 ################################################################################
 hali : condition/conditions, mood/moods, situation/situations : n
@@ -486,6 +386,7 @@ hewa : air : n
 hali ya hewa : weather
 madadiliko ya hali ya hewa : climate change
 dhoruba : storm/storms : n
+baridi : cold : n # As in "the cold"
 barafu : ice/ices : n
 giza : darkness : ma # no plural
 ngurumo : thunder, rumble, roar : n
@@ -557,7 +458,8 @@ kelele/makelele : noise/noises : ji-ma
 kipande/vipande : slice/slices, piece/pieces : ki-vi # (kipande cha mkati)
 upande/pande : side/sides : u
 
-msema/misema : saying/sayings : m-mi
+msemo/misemo : adage/adages : m-mi
+filamu : movie/movies : n
 
 ################################################################################
 # Psychological concepts
@@ -587,7 +489,6 @@ kipaji/vipaji : talent/talents, gift/gifts, donation/donations : ki-vi
 aibu : shame/disgrace : n
 tabia : habit/habits, behavior/behaviors : n
 
-
 ################################################################################
 # Materials
 ################################################################################
@@ -615,6 +516,8 @@ kifaa/vifaa : tool/tools : ki-vi
 nyundo : hammer/hammers : n
 msumeno/misumeno : saw/saws : m-mi
 msasa/misasa : sandpaper/sandpapers : m-mi
+jembe/majembe : hoe/hoes : ji-ma
+wembe/nyembe : razor/razors : u
 
 ################################################################################
 # Science
@@ -627,71 +530,19 @@ atomu : atom/atoms : n
 nyutroni : neutron/neutrons : n
 protoni : proton/protons : n
 elektroni : electron/electrons : n
-kiini cha atomu/viini vya atomu : nucleus/nuclei : ki-vi
 
 ################################################################################
-# Other/unprocessed
+# Colors
 ################################################################################
 
-kadi : card
-
-mahali : place
-
-utani : jokes
-
-kupa : to give?
-
-hadithi : story
-
-ovyo : useless
-ovyo ovyo : haphazardly, randomly
-
--tupu : empty
-
--bichi : ripe
-
-naam : yes? for a man
-beeh : yes? for a woman
-
-kupiga mbizi : diving!
-
-silaha : weapon
-usawa : equality
-
-maarufu : famous/popular
-
-kisogo : back of head?
-
-hatari : dangerous
-
-Asma : Saidy's wife
-
-maalum : special, distinguished, famous
-spesheli : special
-
-kuotisha (sp?) to grow a plant
-
-kimataifa : internationally
-
-kulipiza kisasi
-
-itakuwa bora kuonana badaya :
-
-kuhisi : to feel
-
-vyema : well, as in, "well, we will see eachother later"
-
-ujuzi : skill
-
-siku hizi - now days
-
-muda
-
-mwigizaji : actor
--ugiza : acting
-
-filamu : movie
-
-gongo : kipande cha mbao # is this firewood or a club/cudgel
-
-takriban : approximately
+rangi : color/colors : n
+nyeusi : black : n 
+nyeupe : white : n
+nyekundu : red : n 
+rangi ya bluu : blue : n
+rangi ya machungwa : orange : n
+rangi ya manjano : yellow : n
+rangi ya kijani : green : n
+rangi ya zambarau : purple : n 
+rangi ya kahawia : brown : n
+rangi ya kijivu : grey : n
