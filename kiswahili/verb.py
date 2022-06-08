@@ -15,7 +15,7 @@ class VerbComponents(object):
     _polarity = ["affirmative", "negative"]
     _person = ["first", "second", "third"]
     _plurality = ["singular", "plural"]
-    _tense = ["past", "past-perfect", "present", "future"]
+    _tense = ["past", "present-perfect", "present", "future"]
 
     def __init__(self, polarity_idx, person_idx, plurality_idx, tense):
 
@@ -122,7 +122,7 @@ class EngVerb(object):
     _conj = mlconjug3.Conjugator(language='en')
     _subjects = [["I", "You", "S/he"], ["We", "You all", "They"]]
     _copula_present = [["am", "are", "is"], ["are", "are", "are"]]
-    _copula_past_perfect = [["have", "have", "has"], ["have", "have", "have"]]
+    _copula_present_perfect = [["have", "have", "has"], ["have", "have", "have"]]
 
     def __init__(self, inf):
         self.inf = inf
@@ -156,8 +156,8 @@ class EngVerb(object):
                 aux = "did not"
                 conj_root = self.inf
                 
-        elif vc.tense == "past-perfect":
-            cop = self._copula_past_perfect[vc.plurality_idx][vc.person_idx]
+        elif vc.tense == "present-perfect":
+            cop = self._copula_present_perfect[vc.plurality_idx][vc.person_idx]
             aux = cop if vc.polarity == "affirmative" else "{0} not".format(cop)
             conj_root = self._conj.conjugate(self.inf).conjug_info['indicative']['indicative present perfect'][per_plur]
 
