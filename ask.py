@@ -6,16 +6,26 @@ from kiswahili.verb import VerbComponents, EngVerb
 
 class Challenge(object):
 
+    _checkmark = u'\u2713'
+    _xmark = u'\u2717'
+
     def __init__():
         pass
 
     def _check(self, expected, actual, message):
-        if expected.lower().split() == actual.lower().split():
+    
+        actual = actual.lower().split()
+
+        # Convert 3rd person pronouns
+        if len(actual) > 0 and actual[0] in ["he", "she"]:
+            actual[0] = "s/he"
+
+        if expected.lower().split() == actual:
             # unicode checkmark
-            print("{}\n".format(u'\u2713'))
+            print("{}\n".format(self._checkmark))
         else:
             # unicode x
-            print("{0} {1}\n".format(u'\u2717', message))
+            print("{0} {1}\n".format(self._xmark, message))
 
 class Verb_Challenge(Challenge):
 

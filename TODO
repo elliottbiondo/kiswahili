@@ -1,0 +1,5 @@
+
+1) Check user responses against all possible English translations
+2) Tag multi-word English verbs (i.e., wash hands) such that only the actual verb (i.e., wash) is conjugated
+3) Expand testing
+4) Generate sentences from noun + conjugated verb from a `vocab` list mapping nouns to valid verbs

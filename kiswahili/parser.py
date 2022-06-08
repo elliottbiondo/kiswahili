@@ -135,5 +135,3 @@ class KisNounParser(Parser):
                 i += 1
             else:
                 i += 1
-
-

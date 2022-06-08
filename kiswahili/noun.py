@@ -36,7 +36,6 @@ class KisNoun(object):
             raise ValueError(
                 "Invalid noun class '{0}' for noun {1}".format(noun_class,
                                                                sing))
-
     @property
     def sing(self):
         return self._sing
