@@ -8,7 +8,6 @@ except ImportError:
              "\tpip3 install mlconjug3\n")
     raise ImportError(error)
     
-
 class VerbComponents(object):
 
     # class variable defining cannonical sorting of verb components

@@ -2,7 +2,6 @@ from nose.tools import assert_equal, with_setup, assert_raises
 
 from kiswahili.verb import VerbComponents, KisVerb, EngVerb
 
-
 def test_verb_components():
 
     vc = VerbComponents(0, 1, 0, "present")
@@ -20,7 +19,7 @@ def test_verb_components():
     assert_equal("affirmative, second person, singular, present tense", str(vc))
 
 
-def test_regular():
+def test_kis_regular():
 
     verb = KisVerb("ruka", "jump")
 
@@ -37,7 +36,7 @@ def test_regular():
     assert_equal("wameruka", verb.conjugate(vc))
 
 
-def test_regular_negation():
+def test_kis_regular_negation():
 
     verb = KisVerb("ruka", "jump")
 
@@ -53,14 +52,14 @@ def test_regular_negation():
     vc = VerbComponents(1, 2, 1, "present-perfect")
     assert_equal("hawajaruka", verb.conjugate(vc))
 
-def test_regular_negation_arabic():
+def test_kis_regular_negation_arabic():
 
     verb = KisVerb("fikiri", "think")
 
     vc = VerbComponents(1, 0, 0, "present")
     assert_equal("sifikiri", verb.conjugate(vc))
 
-def test_english():
+def test_eng():
 
     n = EngVerb("break")
 
