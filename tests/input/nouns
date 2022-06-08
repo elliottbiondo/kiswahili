@@ -1,0 +1,19 @@
+# Non-pluralizable to pluralizable
+ndizi : banana/bananas : n
+
+# Pluralizable to pluralizable
+muuguzi/wauguzi : nurse/nurses : m-wa
+
+# Stray blank lines
+
+
+# Non-pluralizable to multiple non-pluralizable
+ujasiri : confidence, courage, bravery : u # another comment
+
+# Non-pluralizable to multiple pluralizable
+motisha : motivation/motivations, incentive/incentives : n
+#
+# Comment lines
+#
+# Pluralizable to multiple pluralizable
+kipaji/vipaji : talent/talents, gift/gifts, donation/donations : ki-vi # more comment lines

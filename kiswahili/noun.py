@@ -1,7 +1,7 @@
 
 class KisNoun(object):
 
-    _noun_classes = ["m-wa", "m-mi", "ji-ma", "ma", "ki-vi", "n", "u", "m-wa*", "m-wa-n*", "m-wa-n**"]
+    _noun_classes = ["m-wa", "m-mi", "ji-ma", "ki-vi", "n", "u", "m-wa*", "m-wa-n*", "m-wa-n**", "ma"]
 
     _subject_prefixs = [[ "a", "wa"], # m-wa
                         [ "u",  "i"], # m-mi
@@ -36,6 +36,11 @@ class KisNoun(object):
             raise ValueError(
                 "Invalid noun class '{0}' for noun {1}".format(noun_class,
                                                                sing))
+
+    def _check_noun_class_supported(self):
+        if self._noun_class_index >= 7:
+            raise NotImplementedError("Noun class {} does not yet support prefixes".format(self.noun_class))
+
     @property
     def sing(self):
         return self._sing
@@ -56,3 +61,18 @@ class KisNoun(object):
     def noun_class(self):
         return self._noun_classes[self._noun_class_index]
         
+    @property
+    def subject_prefixes(self):
+        self._check_noun_class_supported()
+        return self._subject_prefixs[self._noun_class_index]
+
+    @property
+    def possessive_prefixes(self):
+        self._check_noun_class_supported()
+        return self._possessive_prefixs[self._noun_class_index]
+
+    @property
+    def adjective_prefixes(self):
+        self._check_noun_class_supported()
+        return self._adjective_prefixs[self._noun_class_index]
+

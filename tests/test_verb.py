@@ -7,15 +7,15 @@ def test_verb_components():
 
     vc = VerbComponents(0, 1, 0, "present")
 
-    assert_equal("affirmative", vc.polarity())
-    assert_equal("second", vc.person())
-    assert_equal("singular", vc.plurality())
-    assert_equal("present", vc.tense())
+    assert_equal("affirmative", vc.polarity)
+    assert_equal("second", vc.person)
+    assert_equal("singular", vc.plurality)
+    assert_equal("present", vc.tense)
 
-    assert_equal(0, vc.polarity_idx())
-    assert_equal(1, vc.person_idx())
-    assert_equal(0, vc.plurality_idx())
-    assert_equal(2, vc.tense_idx())
+    assert_equal(0, vc.polarity_idx)
+    assert_equal(1, vc.person_idx)
+    assert_equal(0, vc.plurality_idx)
+    assert_equal(2, vc.tense_idx)
 
     assert_equal("affirmative, second person, singular, present tense", str(vc))
 
