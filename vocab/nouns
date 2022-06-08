@@ -441,7 +441,7 @@ swali/maswali : question/questions : ji-ma
 jibu/majibu : response/responses : ji-ma
 tangazo/matangazo : announcement/announcements : ji-ma
 
-shughuli : activty/activities : n
+shughuli : activity/activities : n
 kitu/vitu : thing/things : ki-vi
 
 wimbo/nyimbo : song/songs : u
