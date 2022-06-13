@@ -93,12 +93,34 @@ class KisVerb(object):
                  [["si", "hu", "ha"], ["hatu", "ham", "hawa"]]]
 
     def __init__(self, root, eng):
+        """
+        Instantiate KisVerb object.
+
+        Parameters
+        ----------
+        root : str
+            The root of the Kiswahili verb
+        eng : list of EngVerb
+            The EngVerb objects representing all availible English translations
+        """
         self.root = root
         self.eng = eng
         self.exceptions = {}
 
-
     def conjugate(self, vc):
+        """
+        Conjugate the verb for the supplied parameters
+
+        Parameters
+        ----------
+        vc : verb_components
+            The parameters necessary to cojugate the verb
+
+        Returns
+        -------
+        str
+            The conjugated verb
+        """
 
         if vc in self.exceptions.keys():
             return self.exceptions[vc]
@@ -107,12 +129,21 @@ class KisVerb(object):
         tense_pre = self._tenses[vc.polarity_idx][vc.tense_idx]
         conj = subject_pre + tense_pre + self.root
 
-        if (vc.tense == "present" and vc.polarity == "negative" and self.is_bantu()):
+        if (vc.tense == "present" and vc.polarity == "negative" and self._is_bantu):
             return conj[:-1] + "i"
         else:
             return conj
 
-    def is_bantu(self):
+    @property
+    def _is_bantu(self):
+        """
+        Determine if this verb is of Bantu origin, i.e., not Arabic
+
+        Returns
+        -------
+        bool
+            True if the verb of Bantu origin
+        """
         return self.root[-1] == "a"
 
 
@@ -126,6 +157,16 @@ class EngVerb(object):
     def __init__(self, inf):
         self.inf = inf
 
+    def __str__(self):
+        return self.inf
+
+    def __eq__(self, other):
+        if not isinstance(other, EngVerb):
+            print(self, other)
+            return False
+        else:
+            return self.inf == str(other)
+
     def conjugate(self, vc):
 
         subject = self._subjects[vc.plurality_idx][vc.person_idx]
@@ -138,7 +179,6 @@ class EngVerb(object):
         return "{0} {1}".format(subject, conj_verb)
 
     def _conjugate_future(self, vc):
-        # Future tense not avail
         # All English verbs are regular in the future test
         aux = "will" if vc.polarity == "affirmative" else "will not"
         return "{0} {1}".format(aux, self.inf)
