@@ -12,6 +12,9 @@ class Challenge(object):
     def __init__():
         pass
 
+    def _coin_flip(self):
+        return uniform(0, 1) < 0.5
+
     def _check(self, expected, actual, message):
     
         actual = actual.lower().split()
@@ -47,7 +50,7 @@ class Verb_Challenge(Challenge):
         kis = kis_verb.conjugate(vc)
         eng = eng_verb.conjugate(vc)
 
-        if uniform(0, 1) < 0.5:
+        if self._coin_flip():
             inp = input("Translate to English: {}\n> ".format(kis))
             self._check(eng, inp, eng)
         else:
@@ -67,7 +70,7 @@ class Noun_Challenge(Challenge):
         noun = choice(self._nouns)
 
         plural = ""
-        if uniform(0, 1) < 0.5:
+        if self._coin_flip():
             kis = noun.sing
             eng = choice(noun.eng_sing)
         else:
@@ -76,7 +79,7 @@ class Noun_Challenge(Challenge):
             if noun.noun_class in ("n", "u"):
                 plural = "(plural)"
 
-        if uniform(0, 1) < 0.5:
+        if self._coin_flip():
             inp = input("Translate to Kiswahili: {0} {1}\n> ".format(eng, plural))
             self._check(kis, inp, kis)
         else:

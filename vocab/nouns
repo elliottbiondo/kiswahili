@@ -35,6 +35,7 @@ muuzaji/wauzaji : seller/sellers : m-wa
 myahudi/wayahudi : Jew/Jews : m-wa
 mzungumzaji/wazungumzaji : speaker/speakers : m-wa
 mkimbizi/wakimbizi : refugee/refugees : m-wa
+mfalme/waflame : king/kings : m-wa
 
 # Nouns that pluralize in the ji-ma or ki-vi fashion, have ALL m-wa concords, even possesive:
 daktari/madaktari : doctor : m-wa                                                
@@ -48,6 +49,7 @@ kiongozi/viongozi : leader/leaders : m-wa
 rafiki : friend/friends : m-wa-n**
 raia : citizen/citizens : m-wa-n**                                               
 ndugu : relative/relatives : m-wa-n** # not sure on this one, I have seen both wangu and yangu/zangu
+malkia : queen/queens : m-wa-n**
 
 ################################################################################
 # food
@@ -115,6 +117,7 @@ dunia : world/worlds : n
 ardhi : land/lands : n
 ziwa/maziwa : lake/lakes : ji-ma
 ua/maua : flower/flowers
+waridi/mawaridi : rose/roses : ji-ma
 tope/matope : mud/muds : ji-ma
 tawi/matawi : branch/branches : ji-ma 
 udongo : soil/soils : u
@@ -303,7 +306,6 @@ kijiji/vijiji : village/villages : ki-vi
 mji/miji : town/towns : m-mi
 mfereji/mifereji : canal/canals : m-mi
 daraja/madaraja : bridge/bridges : ji-ma
-
 sheria : law/laws : n
 uchumi : economy/economy : u
 umoja : unity :  u
@@ -312,14 +314,16 @@ nchi : country/contries : n
 jimbo/majimbo : state/states : ji-ma
 taifa/mataifa : nation/nations : ji-ma
 kabila/makabila : tribe/tribes : ji-ma
+bendera : flag/flags : n
+bunduki : gun/guns, rifle/rifles : n
+silaha : weapon/weapons : n
 ajira : employment/employment : n
 nguvu/nguvu : power/powers, authority/authorities : n
 kita/vita : war/wars : ki-vi
 amani : peace  : n
 mpango/mipango : plan/plans : m-mi
-
 tukio/matukio : event/events : ji-ma
-umeme : electricity
+umeme : electricity : u
 
 ################################################################################
 # religion
@@ -461,6 +465,8 @@ upande/pande : side/sides : u
 msemo/misemo : adage/adages : m-mi
 filamu : movie/movies : n
 
+usumbufu : nuisance/nuisances, disturbance/disturbances : u
+
 ################################################################################
 # Psychological concepts
 ################################################################################
@@ -488,6 +494,8 @@ shauku/mashauku : passion : ji-ma
 kipaji/vipaji : talent/talents, gift/gifts, donation/donations : ki-vi
 aibu : shame/disgrace : n
 tabia : habit/habits, behavior/behaviors : n
+
+raha : bliss, comfort : n
 
 ################################################################################
 # Materials
@@ -523,9 +531,9 @@ wembe/nyembe : razor/razors : u
 # Science
 ################################################################################
 
-sayansi : science : n
+sayansi : science/sciences : n
 oksijeni : oxygen : n
-molekuli : molekuli	: n
+molekuli : molecule/molecules : n
 atomu : atom/atoms : n
 nyutroni : neutron/neutrons : n
 protoni : proton/protons : n
