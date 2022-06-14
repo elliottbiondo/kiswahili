@@ -1,6 +1,7 @@
 from nose.tools import assert_equal, with_setup, assert_raises
 
-from kiswahili.parser import KisVerbParser, KisNounParser
+from parser import KisVerbParser, KisNounParser
+from verb import EngVerb
 
 def test_verbs():
     parser = KisVerbParser(["input/verbs"])
@@ -9,13 +10,13 @@ def test_verbs():
     assert_equal(3, len(verbs))
 
     assert_equal("kubali", verbs[0].root)
-    assert_equal(["agree", "accept"],  verbs[0].eng)
+    assert_equal([EngVerb("agree"), EngVerb("accept")],  verbs[0].eng)
 
     assert_equal("kimbia", verbs[1].root)
-    assert_equal(["run", "flee"],  verbs[1].eng)
+    assert_equal([EngVerb("run"), EngVerb("flee")],  verbs[1].eng)
 
     assert_equal("fikiri", verbs[2].root)
-    assert_equal(["think"],  verbs[2].eng)
+    assert_equal([EngVerb("think")],  verbs[2].eng)
 
 def test_nouns():
     parser = KisNounParser(["input/nouns"])

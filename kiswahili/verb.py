@@ -104,6 +104,10 @@ class KisVerb(object):
             The EngVerb objects representing all availible English translations
         """
         self.root = root
+
+        for e in eng:
+            if not isinstance(e, EngVerb):
+                raise ValueError("Argument <eng> must be a list of EngVerb objects")
         self.eng = eng
         self.exceptions = {}
 
@@ -161,8 +165,7 @@ class EngVerb(object):
         return self.inf
 
     def __eq__(self, other):
-        if not isinstance(other, EngVerb):
-            print(self, other)
+        if not isinstance(other, type(self)):
             return False
         else:
             return self.inf == str(other)

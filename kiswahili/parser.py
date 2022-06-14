@@ -1,4 +1,4 @@
-from verb import VerbComponents, KisVerb
+from verb import VerbComponents, KisVerb, EngVerb
 from noun import KisNoun
 
 class Parser(object):
@@ -42,6 +42,7 @@ class KisVerbParser(Parser):
         line = self._remove_comment(line)
         root, eng = (l.strip() for l in line.split(":"))
         eng = [l.strip() for l in eng.split(",")]
+        eng = [EngVerb(x) for x in eng]
         return root.strip("-"), eng
 
     def _process_exceptions(self, verb, exception_lines):

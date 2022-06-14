@@ -1,6 +1,6 @@
 from nose.tools import assert_equal, with_setup, assert_raises
 
-from kiswahili.verb import VerbComponents, KisVerb, EngVerb
+from verb import VerbComponents, KisVerb, EngVerb
 
 def test_verb_components():
 
@@ -21,7 +21,7 @@ def test_verb_components():
 
 def test_kis_regular():
 
-    verb = KisVerb("ruka", "jump")
+    verb = KisVerb("ruka", [EngVerb("jump")])
 
     vc = VerbComponents(0, 0, 0, "present")
     assert_equal("ninaruka", verb.conjugate(vc))
@@ -38,7 +38,7 @@ def test_kis_regular():
 
 def test_kis_regular_negation():
 
-    verb = KisVerb("ruka", "jump")
+    verb = KisVerb("ruka", [EngVerb("jump")])
 
     vc = VerbComponents(1, 0, 0, "present")
     assert_equal("siruki", verb.conjugate(vc))
@@ -54,7 +54,7 @@ def test_kis_regular_negation():
 
 def test_kis_regular_negation_arabic():
 
-    verb = KisVerb("fikiri", "think")
+    verb = KisVerb("fikiri", [EngVerb("think")])
 
     vc = VerbComponents(1, 0, 0, "present")
     assert_equal("sifikiri", verb.conjugate(vc))
