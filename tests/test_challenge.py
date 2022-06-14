@@ -20,3 +20,11 @@ def test_check():
     assert_true(c._check(["They thought", "They pondered"], "they pondered"))
     assert_true(c._check(["They thought", "They pondered"], "they thought"))
     assert_false(c._check(["They thought", "They pondered"], "they walked"))
+
+def test_gen_correct_response_string():
+
+    c = ChallengeMock()
+
+    assert_equal('You will run *or* You will flee',
+                 c._gen_correct_response_string(["You will run", "You will flee"]))
+

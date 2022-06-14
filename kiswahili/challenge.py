@@ -10,14 +10,31 @@ class Challenge(ABC):
     def __init__():
         pass
 
-    def _print_result(self, is_correct, message):
+    def _print_result(self, is_correct, correct_response):
+
+        if not isinstance(is_correct, bool):
+            raise ValueError("Argument <is_correct> must be a bool")
+        if not isinstance(correct_response, str):
+            raise ValueError("Argument <correct_response> must be a str")
+
         if is_correct:
             print("{}\n".format(self._checkmark))
         else:
-            print("{} {}\n".format(self._xmark, message))
+            print("{} {}\n".format(self._xmark, correct_response))
+
+    def _gen_correct_response_string(self, correct_responses):
+        if not self._is_list_of_strings(correct_responses):
+            raise ValueError("Argument <expected> must be a list of strings")
+        return " *or* ".join(correct_responses)
 
     def _coin_flip(self):
         return uniform(0, 1) < 0.5
+
+    def _is_list_of_strings(self, inp):
+        if inp and isinstance(inp, list): 
+            return all(isinstance(x, str) for x in inp)
+        else:
+            return False
 
     def _standardize_pronouns(self, string):
         words = string.lower().split()
@@ -30,6 +47,10 @@ class Challenge(ABC):
         return " ".join(words)
 
     def _check(self, expected, actual):
+
+        if not self._is_list_of_strings(expected):
+            raise ValueError("Argument <expected> must be a list of strings")
+
         actual = actual.lower().split()
         for x in expected:
             if x.lower().split() == actual:

@@ -22,7 +22,8 @@ class Verb_Challenge(Challenge):
             inp = input("Translate to English: {}\n> ".format(kis))
             inp = self._standardize_pronouns(inp)
             result = self._check(eng, inp)
-            self._print_result(result, eng)
+            message = self._gen_correct_response_string(eng)
+            self._print_result(result, message)
         else:
             # Must choose a single English translation
             eng = choice(eng)
@@ -61,7 +62,8 @@ class Noun_Challenge(Challenge):
         else:
             inp = input("Translate to English: {0} {1}\n> ".format(kis, plurality_message))
             result = self._check(eng, inp)
-            self._print_result(result, eng)
+            message = self._gen_correct_response_string(eng)
+            self._print_result(result, message)
 
 def main():
     nc = Noun_Challenge(["vocab/nouns"])
