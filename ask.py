@@ -3,41 +3,7 @@ from copy import copy
 
 from kiswahili.parser import KisVerbParser, KisNounParser
 from kiswahili.verb import VerbComponents, EngVerb
-
-class Challenge(object):
-
-    _checkmark = u'\u2713'
-    _xmark = u'\u2717'
-
-    def __init__():
-        pass
-
-    def _print_result(self, is_correct, message):
-        if is_correct:
-            print("{}\n".format(self._checkmark))
-        else:
-            print("{} {}\n".format(self._xmark, message))
-
-    def _coin_flip(self):
-        return uniform(0, 1) < 0.5
-
-    def _standardize_pronouns(self, string):
-        pieces = string.lower().split()
-        for p in pieces:
-            if p in ("he", "she"):
-                p = "s/he"
-            elif p == "y'all":
-                p = "you all"
-
-        return " ".join(pieces)
-
-    def _check(self, expected, actual):
-        actual = actual.lower().split()
-        for x in expected:
-            if x.lower().split() == actual:
-                return True
-        
-        return False
+from kiswahili.challenge import Challenge
 
 class Verb_Challenge(Challenge):
 
