@@ -12,32 +12,32 @@ class Challenge(object):
     def __init__():
         pass
 
-    def _random_verb(self, verbs):
-        kis_verb = choice(verbs)
-        vc = VerbComponents.from_random_sample()
-        kis = kis_verb.conjugate(vc)
-        eng = [x.conjugate(vc) for x in kis_verb.eng]
-        return kis, eng
+    def _print_result(self, is_correct, message):
+        if is_correct:
+            print("{}\n".format(self._checkmark))
+        else:
+            print("{} {}\n".format(self._xmark, message))
 
     def _coin_flip(self):
         return uniform(0, 1) < 0.5
 
-    def _check(self, expected, actual, message):
-    
+    def _standardize_pronouns(self, string):
+        pieces = string.lower().split()
+        for p in pieces:
+            if p in ("he", "she"):
+                p = "s/he"
+            elif p == "y'all":
+                p = "you all"
+
+        return " ".join(pieces)
+
+    def _check(self, expected, actual):
         actual = actual.lower().split()
-
-        # Convert 3rd person pronouns
-        if len(actual) > 0 and actual[0] in ["he", "she"]:
-            actual[0] = "s/he"
-
         for x in expected:
             if x.lower().split() == actual:
-                # unicode checkmark
-                print("{}\n".format(self._checkmark))
-                return
+                return True
         
-        # unicode x
-        print("{0} {1}\n".format(self._xmark, message))
+        return False
 
 class Verb_Challenge(Challenge):
 
@@ -47,17 +47,22 @@ class Verb_Challenge(Challenge):
         print("Read {} verbs".format(vp.num_verbs()))
 
     def play(self):
-
-        kis, eng = self._random_verb(self._verbs)
+        kis_verb = choice(self._verbs)
+        vc = VerbComponents.from_random_sample()
+        kis = kis_verb.conjugate(vc)
+        eng = [x.conjugate(vc) for x in kis_verb.eng]
 
         if self._coin_flip():
             inp = input("Translate to English: {}\n> ".format(kis))
-            self._check(eng, inp, eng)
+            inp = self._standardize_pronouns(inp)
+            result = self._check(eng, inp)
+            self._print_result(result, eng)
         else:
             # Must choose a single English translation
             eng = choice(eng)
             inp = input("Translate to Kiswahili: {0}\n> ".format(eng))
-            self._check([kis], inp, kis)
+            result = self._check([kis], inp)
+            self._print_result(result, kis)
 
 class Noun_Challenge(Challenge):
 
@@ -85,10 +90,12 @@ class Noun_Challenge(Challenge):
 
         if self._coin_flip():
             inp = input("Translate to Kiswahili: {0} {1}\n> ".format(choice(eng), plurality_message))
-            self._check([kis], inp, kis)
+            result = self._check([kis], inp)
+            self._print_result(result, kis)
         else:
             inp = input("Translate to English: {0} {1}\n> ".format(kis, plurality_message))
-            self._check(eng, inp, eng)
+            result = self._check(eng, inp)
+            self._print_result(result, eng)
 
 def main():
     nc = Noun_Challenge(["vocab/nouns"])
