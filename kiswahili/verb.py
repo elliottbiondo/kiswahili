@@ -158,17 +158,21 @@ class EngVerb(object):
     _copula_present = [["am", "are", "is"], ["are", "are", "are"]]
     _copula_present_perfect = [["have", "have", "has"], ["have", "have", "have"]]
 
-    def __init__(self, inf):
-        self.inf = inf
+    def __init__(self, inf, compound_component=""):
+        self._inf = inf
+        self._compound_component = compound_component
 
     def __str__(self):
-        return self.inf
+        if self._compound_component:
+            return "{0} {1}".format(self._inf, self._compound_component)
+        else:
+            return self._inf
 
     def __eq__(self, other):
         if not isinstance(other, type(self)):
             return False
         else:
-            return self.inf == str(other)
+            return str(self) == str(other)
 
     def conjugate(self, vc):
 
@@ -179,12 +183,15 @@ class EngVerb(object):
         else:
             conj_verb = self._conjugate_mlconj3(vc)
 
-        return "{0} {1}".format(subject, conj_verb)
+        out =  "{0} {1}".format(subject, conj_verb)
+        if self._compound_component:
+            out += " {0}".format(self._compound_component)
+        return out
 
     def _conjugate_future(self, vc):
         # All English verbs are regular in the future test
         aux = "will" if vc.polarity == "affirmative" else "will not"
-        return "{0} {1}".format(aux, self.inf)
+        return "{0} {1}".format(aux, self._inf)
 
     def _conjugate_mlconj3(self, vc):
 
@@ -193,20 +200,20 @@ class EngVerb(object):
         if vc.tense == "past":
             if vc.polarity == "affirmative":
                 aux = ""
-                conj_root = self._conj.conjugate(self.inf).conjug_info['indicative']['indicative past tense'][per_plur]
+                conj_root = self._conj.conjugate(self._inf).conjug_info['indicative']['indicative past tense'][per_plur]
             else:
                 aux = "did not"
-                conj_root = self.inf
+                conj_root = self._inf
                 
         elif vc.tense == "present-perfect":
             cop = self._copula_present_perfect[vc.plurality_idx][vc.person_idx]
             aux = cop if vc.polarity == "affirmative" else "{0} not".format(cop)
-            conj_root = self._conj.conjugate(self.inf).conjug_info['indicative']['indicative present perfect'][per_plur]
+            conj_root = self._conj.conjugate(self._inf).conjug_info['indicative']['indicative present perfect'][per_plur]
 
         elif vc.tense == "present":
             cop = self._copula_present[vc.plurality_idx][vc.person_idx]
             aux = cop if vc.polarity == "affirmative" else "{0} not".format(cop)
-            conj_root = self._conj.conjugate(self.inf).conjug_info['indicative']['indicative present continuous'][per_plur]
+            conj_root = self._conj.conjugate(self._inf).conjug_info['indicative']['indicative present continuous'][per_plur]
 
         else:
             raise ValueError("Unrecognized tense: {}".format(vc.tense))
