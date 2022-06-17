@@ -36,6 +36,7 @@ myahudi/wayahudi : Jew/Jews : m-wa
 mzungumzaji/wazungumzaji : speaker/speakers : m-wa
 mkimbizi/wakimbizi : refugee/refugees : m-wa
 mfalme/waflame : king/kings : m-wa
+mwigizaji/waigizaji : actor/actors : m-wa
 
 # Nouns that pluralize in the ji-ma or ki-vi fashion, have ALL m-wa concords, even possesive:
 daktari/madaktari : doctor : m-wa                                                
@@ -124,6 +125,7 @@ udongo : soil/soils : u
 anga : sky/skies : ma # ma class with no plural
 mbuga : park/parks, grassland/grasslands : n # e.g., a national park
 ajabu/maajabu : wonder/wonders : ji-ma
+pwa/mapwa : coast/coasts : ji-ma
 
 ################################################################################
 # household
@@ -224,6 +226,12 @@ tumbo/matumbo : stomach/stomachs : ji-ma
 uso/nyuso : face/faces : u
 shingo : neck/necks : n
 pua/mapua : nose/noses : ji-ma
+paja/mapaja : thigh/thighs : ji-ma
+pafu/mapafu : lung/lungs : ji-ma
+mdomo/midomo : lip/lips : m-mi
+jino/meno : tooth/teeth : ji-ma
+ini/maini : liver/livers : ji-ma
+msuli/misuli : muscle/muscles : m-mi
     
 ################################################################################
 # health
@@ -310,6 +318,8 @@ sheria : law/laws : n
 uchumi : economy/economy : u
 umoja : unity :  u
 uhuru : freedom : u
+usawa : equality : u
+usawa : equality : u
 nchi : country/contries : n
 jimbo/majimbo : state/states : ji-ma
 taifa/mataifa : nation/nations : ji-ma
@@ -362,19 +372,21 @@ popo : bat : m-wa-n*
 panya : rat : m-wa-n*                                                            
 uduvi : shrimp : m-wa-n*                                                         
 nyangumi : whale : m-wa-n*                                                       
-tempo : elephant : m-wa-n*                                                       
+tembo : elephant : m-wa-n*                                                       
 simba : lion : m-wa-n*                                                           
 chui : leopard : m-wa-n*                                                         
+duma : cheetah : m-wa-n*                                                         
 fisi : hyina : m-wa-n*                                                           
 mbu : mosquito : m-wa-n*
 ng'e : scorpion : m-wa-n*
 nyoka : snake/snakes : m-wa-n*
 nyangumi : whale/whales : m-wa-n*
 pomboo : dolphin/dolpins : m-wa-n*
-nzi : fly/flies : n # both nzi and inzi are correct, nzi may be newer
-inzi : fly/flies : n
-nyuki : bee/bees : n
-panya : rat/rats, mouse/mice : n
+nzi : fly/flies : m-wa-n* # both nzi and inzi are correct, nzi may be newer
+inzi : fly/flies : m-wa-n*
+nyuki : bee/bees : m-wa-n*
+panya : rat/rats, mouse/mice : m-wa-n*
+pweza : octopus/octopi : m-wa-n*
 
 # Pluralize in another fashion, but have all m-wa concords:
 kifaru/vifaru : rhino/rhinos : m-wa*
@@ -389,12 +401,22 @@ hali : condition/conditions, mood/moods, situation/situations : n
 hewa : air : n
 hali ya hewa : weather
 madadiliko ya hali ya hewa : climate change
+mvua : rain/rains : n
+joto : heat, warmth : ji-ma # ma class no plural
 dhoruba : storm/storms : n
 baridi : cold : n # As in "the cold"
 barafu : ice/ices : n
 giza : darkness : ma # no plural
 ngurumo : thunder, rumble, roar : n
 radi : thunder, lightining : n
+theluji : snow : n
+wingu/mawingu : cloud/clouds : ji-ma
+msimu/misimu : season/seasons : m-mi
+kipupwe : winter/winters : ki-vi # no plural
+kiangazi : summer/summers, drought/droughts : ki-vi # no plural
+masika : spring, season of heavy rain : ji-ma # no plural
+vuli : autume, season of light rain : ji-ma # ma class, no plural
+
 
 ################################################################################
 # travel
@@ -443,12 +465,10 @@ benki/mabenki : bank/banks : ji-ma
 mazungumzo : conversation/converstations : ji-ma # plural only
 swali/maswali : question/questions : ji-ma
 jibu/majibu : response/responses : ji-ma
-tangazo/matangazo : announcement/announcements : ji-ma
+tangazo/matangazo : announcement/announcements, advertisement/advertisements : ji-ma
 
 shughuli : activity/activities : n
 kitu/vitu : thing/things : ki-vi
-
-wimbo/nyimbo : song/songs : u
 
 tahadhari : precaution/precautions : n
 
@@ -462,10 +482,15 @@ kelele/makelele : noise/noises : ji-ma
 kipande/vipande : slice/slices, piece/pieces : ki-vi # (kipande cha mkati)
 upande/pande : side/sides : u
 
-msemo/misemo : adage/adages : m-mi
-filamu : movie/movies : n
 
 usumbufu : nuisance/nuisances, disturbance/disturbances : u
+
+gazeti/magazeti : newspaper/newspapers : ji-ma
+hadithi : story/stories : n
+filamu : movie/movies : n
+wimbo/nyimbo : song/songs : u
+msemo/misemo : adage/adages : m-mi
+utani : joke/jokes, friendly teasing : u
 
 ################################################################################
 # Psychological concepts
@@ -526,6 +551,8 @@ msumeno/misumeno : saw/saws : m-mi
 msasa/misasa : sandpaper/sandpapers : m-mi
 jembe/majembe : hoe/hoes : ji-ma
 wembe/nyembe : razor/razors : u
+msumari/misumari : nail/nails : m-mi
+mnyoyoro/minyororo : chain/chains : m-mi
 
 ################################################################################
 # Science
@@ -538,6 +565,7 @@ atomu : atom/atoms : n
 nyutroni : neutron/neutrons : n
 protoni : proton/protons : n
 elektroni : electron/electrons : n
+nyota : star/stars : n
 
 ################################################################################
 # Colors
