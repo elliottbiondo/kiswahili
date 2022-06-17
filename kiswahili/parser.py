@@ -38,11 +38,24 @@ class KisVerbParser(Parser):
     def num_verbs(self):
         return len(self.verbs)
 
+    def _parse_eng_verb(self, eng):
+
+        if "*" not in eng:
+            ev = EngVerb(eng)
+        else:
+            if eng.count("*") != 2:
+                raise ValueError("More than two asterisk found in English verb {0}".format(eng))
+            else:
+                _, inf, cc = [x.strip() for x in eng.split("*")]
+                ev = EngVerb(inf, compound_component=cc)
+                
+        return ev
+
     def _parse_verb_line(self, line):
         line = self._remove_comment(line)
         root, eng = (l.strip() for l in line.split(":"))
         eng = [l.strip() for l in eng.split(",")]
-        eng = [EngVerb(x) for x in eng]
+        eng = [self._parse_eng_verb(x) for x in eng]
         return root.strip("-"), eng
 
     def _process_exceptions(self, verb, exception_lines):

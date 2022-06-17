@@ -7,7 +7,7 @@ def test_verbs():
     parser = KisVerbParser(["input/verbs"])
     verbs = parser.parse()
 
-    assert_equal(3, len(verbs))
+    assert_equal(5, len(verbs))
 
     assert_equal("kubali", verbs[0].root)
     assert_equal([EngVerb("agree"), EngVerb("accept")],  verbs[0].eng)
@@ -17,6 +17,12 @@ def test_verbs():
 
     assert_equal("fikiri", verbs[2].root)
     assert_equal([EngVerb("think")],  verbs[2].eng)
+
+    assert_equal("nawa", verbs[3].root)
+    assert_equal([EngVerb("wash", compound_component="hands")],  verbs[3].eng)
+
+    assert_equal("tosha", verbs[4].root)
+    assert_equal([EngVerb("be", compound_component="enough"), EngVerb("satisfy")],  verbs[4].eng)
 
 def test_nouns():
     parser = KisNounParser(["input/nouns"])

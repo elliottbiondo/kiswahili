@@ -67,7 +67,7 @@ exception neg 3 plur present si
 
 -kimbia : run, flee
 
--weza : be able
+-weza : *be* able
 
 -tembea : walk
 
@@ -101,9 +101,9 @@ exception neg 3 plur present si
 
 -acha : stop, quit, leave
 
--zima : # turn off
+-zima : *turn* off
 
--washa : ignite # turn on
+-washa : *turm* on, ignite # turn on
 
 -rudi : return
 
@@ -119,7 +119,7 @@ exception neg 3 plur present si
 
 -ogelea : swim
 
--tunza : take care of
+-tunza : *take* care of
 
 -winda : hunt
 
@@ -143,9 +143,9 @@ exception neg 3 plur present si
 
 -panga : plan
 
--zoea : be used to
+-zoea : *be* used to
 
--choka : become tired
+-choka : *be* tired
 
 -cheka : laugh
 
@@ -159,9 +159,9 @@ exception neg 3 plur present si
 
 -fa : die
 
--faa : be suitable
+-faa : *be* suitable
 
--zaa : give birth
+-zaa : *give* birth
 
 -vaa : wear
 
@@ -181,7 +181,7 @@ exception neg 3 plur present si
 
 -elewa : understand
 
--lewa : get drunk
+-lewa : *get* drunk
 
 -pendelea : prefer
 
@@ -239,7 +239,7 @@ exception neg 3 plur present si
 
 -pima : measure
 
--potea : get lost
+-potea : *get* lost
 
 -pa : give
 
@@ -257,13 +257,13 @@ exception neg 3 plur present si
 
 -leta : bring
 
--tosha : satify # to be enough
+-tosha : *be* enough, satify
 
 -lima : farm
 
--pasuka : be torn
+-pasuka : *be* torn
 
--zaliwa : be born
+-zaliwa : *be* born
 
 -tayarisha : prepare
 
@@ -275,23 +275,23 @@ exception neg 3 plur present si
 
 -isha : end # kwisha
 
--fahamisha : inform/explain
+-fahamisha : inform, explain
 
 -hakikisha : confirm
 
--itwa : be called
+-itwa : *be* called
 
 -weka : put
 
 -beba : carry
 
--pita : pass # i.e pass by
+-pita : *pass* by
 
 -tuma : send
 
 -pinda : turn
 
--wezekana : be possible
+-wezekana : *be* possible
 
 -imarika : strengthen
 
@@ -301,11 +301,9 @@ exception neg 3 plur present si
 
 -chemsha : boil
 
--anda : prepare
+-anda : prepare # -jianda is prepare yourself
 
--jianda : prepare yourself
-
--changamka : get exited
+-changamka : *get* exited
 
 -ruhusu : permit, allow
 
@@ -319,13 +317,13 @@ exception neg 3 plur present si
 
 -chafuka : dirty
 
--kasirika : get angry
+-kasirika : *get* angry
 
 -umiza : harm
 
 -uma : hurt
 
--umwa : be sick, be in pain
+-umwa : *be* sick, *be* in pain
 
 -linganisha : compare
 
@@ -337,7 +335,7 @@ exception neg 3 plur present si
 
 -amini : believe, trust # ninakuamini - I believe you
 
--sikitika : be dissapointed
+-sikitika : *be* dissapointed
 
 -sikitisha : dissapoint
 
@@ -373,7 +371,7 @@ exception neg 3 plur present si
 
 -dumu : last
 
--fanana : look like
+-fanana : *look* like
 
 -koroga : stir, mix
 
@@ -389,7 +387,7 @@ exception neg 3 plur present si
 
 -kadiri : assess, estimate, calculate
 
--onekana : be visible, seem
+-onekana : *be* visible, seem
 
 -fuata : follow, imitate, abide
 
