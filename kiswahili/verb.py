@@ -198,12 +198,16 @@ class EngVerb(object):
         per_plur = "{0}{1}".format(vc.person_idx + 1, "s" if vc.plurality == "singular" else "p")
 
         if vc.tense == "past":
+            aux = ""
             if vc.polarity == "affirmative":
-                aux = ""
                 conj_root = self._conj.conjugate(self._inf).conjug_info['indicative']['indicative past tense'][per_plur]
             else:
-                aux = "did not"
-                conj_root = self._inf
+                if self._inf == "be":
+                    conj_root = self._conj.conjugate(self._inf).conjug_info['indicative']['indicative past tense'][per_plur]
+                    conj_root += " not"
+                else:
+                    aux = "did not"
+                    conj_root = self._inf
                 
         elif vc.tense == "present-perfect":
             cop = self._copula_present_perfect[vc.plurality_idx][vc.person_idx]
