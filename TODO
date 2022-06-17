@@ -1,3 +1,2 @@
-1) Tag multi-word English verbs (i.e., wash hands) such that only the actual verb (i.e., wash) is conjugated
-2) Generate sentences from noun + conjugated verb from a `vocab` list mapping nouns to valid verbs
-3) Better UI (Django?)
+1) Generate sentences from noun + conjugated verb from a `vocab` list mapping nouns to valid verbs
+2) Better UI (Django?)
