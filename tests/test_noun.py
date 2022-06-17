@@ -25,7 +25,7 @@ def test_basic():
         KisNoun("jiwe", "mawe", "stone", "stones", "x")
 
     # Throw and error if the prefixes are not yet supported
-    with assert_raises(NotImplementedError):
-       n2 = KisNoun("maji", "maji", "water", "water", "ma")
-       n2.subject_prefixes
+    #with assert_raises(NotImplementedError):
+    #   n2 = KisNoun("maji", "maji", "water", "water", "ma")
+    #   n2.subject_prefixes
 

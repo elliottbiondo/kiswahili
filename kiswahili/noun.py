@@ -1,28 +1,34 @@
 
 class KisNoun(object):
 
-    _noun_classes = ["m-wa", "m-mi", "ji-ma", "ki-vi", "n", "u", "m-wa*", "m-wa-n*", "m-wa-n**", "ma"]
+    _noun_classes = ["m-wa", "m-mi", "ji-ma", "ki-vi", "n", "u", "m-wa-n", "ma"]
 
     _subject_prefixs = [[ "a", "wa"], # m-wa
                         [ "u",  "i"], # m-mi
                         ["li", "ya"], # ji-ma
                         ["ki", "vi"], # ki-vi
                         [ "i", "zi"], # n
-                        [ "u",  "u"]] # u
+                        [ "u",  "u"], # u
+                        [ "a",  "wa"], # m-wa-n
+                        [ "ya", "ya"]] # ma
 
     _possessive_prefixs = [["wa", "wa"], # m-wa
                            ["wa", "ya"], # m-mi
                            ["la", "ya"], # ji-ma
                            ["cha", "vya"], # ki-vi
                            [ "ya",  "za"], # n
-                           ["wa", "wa"]] # u
+                           ["wa", "wa"], # u
+                           ["ya", "za"], # m-wa-n
+                           ["ya", "ya"]] # ma
 
     _adjective_prefixs = [[ "m", "wa"], # m-wa
                           [ "m", "mi"], # m-mi
                           [  "", "ma"], # ji-ma
                           ["ki", "vi"], # ki-vi
                           [ "n",  "n"], # n
-                          [ "m",  "m"]] # u
+                          [ "m",  "m"], # u
+                          [ "m", "wa"], # m-wa-n
+                          [ "ma","ma"]] # ma
 
     def __init__(self, sing, plur, eng_sing, eng_plur, noun_class):
         self._sing = sing
@@ -63,16 +69,16 @@ class KisNoun(object):
         
     @property
     def subject_prefixes(self):
-        self._check_noun_class_supported()
+        #self._check_noun_class_supported()
         return self._subject_prefixs[self._noun_class_index]
 
     @property
     def possessive_prefixes(self):
-        self._check_noun_class_supported()
+        #self._check_noun_class_supported()
         return self._possessive_prefixs[self._noun_class_index]
 
     @property
     def adjective_prefixes(self):
-        self._check_noun_class_supported()
+        #self._check_noun_class_supported()
         return self._adjective_prefixs[self._noun_class_index]
 

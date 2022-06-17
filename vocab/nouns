@@ -47,10 +47,10 @@ jeshi/majeshi : soldier/soldiers : m-wa
 kiongozi/viongozi : leader/leaders : m-wa
                                                                                  
 # Pluralize in n-class fashion, but have m-wa concords, except possesives:
-rafiki : friend/friends : m-wa-n**
-raia : citizen/citizens : m-wa-n**                                               
-ndugu : relative/relatives : m-wa-n** # not sure on this one, I have seen both wangu and yangu/zangu
-malkia : queen/queens : m-wa-n**
+rafiki : friend/friends : m-wa-n
+raia : citizen/citizens : m-wa-n                                               
+ndugu : relative/relatives : m-wa-n # not sure on this one, I have seen both wangu and yangu/zangu
+malkia : queen/queens : m-wa-n
 
 ################################################################################
 # food
@@ -238,7 +238,7 @@ msuli/misuli : muscle/muscles : m-mi
 ################################################################################
 
 afya : health : n
-mafua : sickness : ji-ma # plural only
+mafua : sickness : ma # plural only
 ugonjwa/magonjwa : disease : u # irregular u-class???
 zoezi/mazoezi : exercise/exercises : ji-ma
 chanjo : vaccine/vaccines : n
@@ -290,7 +290,7 @@ barua : mail : n
 ################################################################################
 
 akili : intelligence : n 
-maarifa : knowledge : ji-ma # plural only
+maarifa : knowledge : ma # plural only
 maana : meaning/meanings : n
 kweli : truth/truths : n
 uvumilivu : patience : u 
@@ -300,7 +300,7 @@ nambari : number/numbers : n
 asilimia : percent/percents : n
 jamii : society/society : n
 badiliko/mabadiliko : change/changes : ji-ma
-maendeleo : progress : ji-ma # plural only
+maendeleo : progress : ma # plural only
 ukarimu : generosity : u # no plural
 asili : origin/origin, culture/cultures : n # wikitionary says "origin", native speakers translate it as "culture"
 utamaduni : culture/cultures : u # no plural
@@ -353,46 +353,45 @@ mnyama/wanyama  : animal/animals : m-wa
 mdudu/wadudu : insect/insects : m-wa
 
 # Pluralize in n-class fashion, but have all m-wa concords:
-mbwa : dog : m-wa-n*                                                             
-paka : cat : m-wa-n*                                                             
-kondoo : sheep : m-wa-n*                                                         
-farasi : horse : m-wa-n*                                                         
-mbuzi : goat : m-wa-n*                                                           
-twiga : giraffe : m-wa-n*                                                        
-samaki : fish : m-wa-n*                                                          
-ndege : bird : m-wa-n*                                                           
-buibui : spider : m-wa-n*                                                        
-nyoka : snake : m-wa-n*                                                          
-nyati : buffalo : m-wa-n*                                                        
-mamba : crocodile : m-wa-n*                                                      
-kombakoche : lobster : m-wa-n*                                                   
-konokono : snail : m-wa-n*
-papa : shark : m-wa-n*                                                           
-popo : bat : m-wa-n*                                                             
-panya : rat : m-wa-n*                                                            
-uduvi : shrimp : m-wa-n*                                                         
-nyangumi : whale : m-wa-n*                                                       
-tembo : elephant : m-wa-n*                                                       
-simba : lion : m-wa-n*                                                           
-chui : leopard : m-wa-n*                                                         
-duma : cheetah : m-wa-n*                                                         
-fisi : hyina : m-wa-n*                                                           
-mbu : mosquito : m-wa-n*
-ng'e : scorpion : m-wa-n*
-nyoka : snake/snakes : m-wa-n*
-nyangumi : whale/whales : m-wa-n*
-pomboo : dolphin/dolpins : m-wa-n*
-nzi : fly/flies : m-wa-n* # both nzi and inzi are correct, nzi may be newer
-inzi : fly/flies : m-wa-n*
-nyuki : bee/bees : m-wa-n*
-panya : rat/rats, mouse/mice : m-wa-n*
-pweza : octopus/octopi : m-wa-n*
+mbwa : dog/dogs : m-wa
+paka : cat/cats : m-wa                                                             
+kondoo : sheep : m-wa                                                         
+farasi : horse/horses : m-wa                                                         
+mbuzi : goat/goats : m-wa                                                           
+twiga : giraffe/giraffes : m-wa                                                        
+samaki : fish/fishes : m-wa                                                          
+ndege : bird/birds : m-wa                                                           
+buibui : spider/spiders : m-wa                                                        
+nyoka : snake/snakes : m-wa                                                          
+nyati : buffalo : m-wa                                                        
+mamba : crocodile/crocodiles : m-wa                                                      
+kombakoche : lobster/lobsters : m-wa                                                   
+konokono : snail/snails : m-wa
+papa : shark/sharks : m-wa                                                           
+popo : bat/bats : m-wa                                                             
+panya : rat/rats : m-wa                                                            
+uduvi : shrimp : m-wa                                                         
+nyangumi : whale/whales : m-wa                                                       
+tembo : elephant/elephants : m-wa                                                       
+simba : lion/lions : m-wa                                                           
+chui : leopard/leopard : m-wa                                                         
+duma : cheetah/cheetah : m-wa                                                         
+fisi : hyena/hyenas : m-wa                                                           
+mbu : mosquito/mosquitos : m-wa
+ng'e : scorpion/scorpions : m-wa
+nyoka : snake/snakes : m-wa
+pomboo : dolphin/dolpins : m-wa
+nzi : fly/flies : m-wa # both nzi and inzi are correct, nzi may be newer
+inzi : fly/flies : m-wa
+nyuki : bee/bees : m-wa
+panya : rat/rats, mouse/mice : m-wa
+pweza : octopus/octopi : m-wa
 
 # Pluralize in another fashion, but have all m-wa concords:
-kifaru/vifaru : rhino/rhinos : m-wa*
-kiboko/viboko : hippo/hippos : m-wa*
-mkunga/mikunga : eel/eels : m-wa*
-jongoo/majongoo : millipede/millipede : m-wa*
+kifaru/vifaru : rhino/rhinos : m-wa
+kiboko/viboko : hippo/hippos : m-wa
+mkunga/mikunga : eel/eels : m-wa
+jongoo/majongoo : millipede/millipede : m-wa
 
 ################################################################################
 # weather
@@ -462,7 +461,7 @@ benki/mabenki : bank/banks : ji-ma
 # day-to-day
 ################################################################################
 
-mazungumzo : conversation/converstations : ji-ma # plural only
+mazungumzo : conversation/converstations : ma # plural only
 swali/maswali : question/questions : ji-ma
 jibu/majibu : response/responses : ji-ma
 tangazo/matangazo : announcement/announcements, advertisement/advertisements : ji-ma
