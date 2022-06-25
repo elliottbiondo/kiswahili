@@ -1,9 +1,9 @@
 from random import choice, uniform
 from copy import copy
 
-from kiswahili.parser import KisVerbParser, KisNounParser
-from kiswahili.verb import VerbComponents, EngVerb
-from kiswahili.challenge import Challenge
+from mashariki.parser import KisVerbParser, KisNounParser
+from mashariki.verb import VerbComponents, EngVerb
+from mashariki.challenge import Challenge
 
 class Verb_Challenge(Challenge):
 
@@ -64,6 +64,43 @@ class Noun_Challenge(Challenge):
             result = self._check(eng, inp)
             message = self._gen_correct_response_string(eng)
             self._print_result(result, message)
+
+#class Sentence_Challenge(Challenge):
+#
+#    def __init__(self, noun_paths, verb_paths):
+#        np = KisNounParser(noun_paths)
+#        vp = KisNounParser(verb_paths)
+#        self._nouns = np.parse()
+#        self._verbs = vp.parse()
+#        print("Read {} nouns".format(np.num_nouns()))
+#
+#    def play(self):
+#
+#        # select a random kiswahili noun
+#        noun = choice(self._nouns)
+#
+#        plurality_message = ""
+#        if self._coin_flip():
+#            kis = noun.sing
+#            eng = noun.eng_sing
+#            if noun.noun_class in ("n", "u"):
+#                plurality_message = "(singular)"
+#        else:
+#            kis = noun.plur
+#            eng = noun.eng_plur
+#            if noun.noun_class in ("n", "u"):
+#                plurality_message = "(plural)"
+#
+#        if self._coin_flip():
+#            inp = input("Translate to Kiswahili: {0} {1}\n> ".format(choice(eng), plurality_message))
+#            result = self._check([kis], inp)
+#            self._print_result(result, kis)
+#        else:
+#            inp = input("Translate to English: {0} {1}\n> ".format(kis, plurality_message))
+#            result = self._check(eng, inp)
+#            message = self._gen_correct_response_string(eng)
+#            self._print_result(result, message)
+
 
 def main():
     nc = Noun_Challenge(["vocab/nouns"])
