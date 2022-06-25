@@ -126,6 +126,8 @@ anga : sky/skies : ma # ma class with no plural
 mbuga : park/parks, grassland/grasslands : n # e.g., a national park
 ajabu/maajabu : wonder/wonders : ji-ma
 pwa/mapwa : coast/coasts : ji-ma
+shimo/mashimo : hole/holes, pit/pits : ji-ma
+njia : path/paths : n
 
 ################################################################################
 # household
@@ -520,6 +522,8 @@ aibu : shame/disgrace : n
 tabia : habit/habits, behavior/behaviors : n
 
 raha : bliss, comfort : n
+
+kichaa/vichaa : lunacy, madness : ki-vi
 
 ################################################################################
 # Materials
