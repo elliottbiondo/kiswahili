@@ -1,6 +1,6 @@
 from nose.tools import assert_equal, with_setup, assert_raises
 
-from kiswahili.noun import KisNoun
+from noun import KisNoun
 
 def test_basic():
 

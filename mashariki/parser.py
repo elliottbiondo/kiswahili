@@ -58,18 +58,6 @@ class KisVerbParser(Parser):
         eng = [self._parse_eng_verb(x) for x in eng]
         return root.strip("-"), eng
 
-    def _process_exceptions(self, verb, exception_lines):
-        for line in exception_lines:
-            line = self._remove_comment(line)
-            if line.split()[0] == "exception":
-                polarity, person, plurality, tense, value \
-                    = line.split()[1:]
-
-                polarity = 0 if polarity == "pos" else 1
-                person = int(person) - 1
-                plurality = 0 if plurality == "sing" else 1
-                verb.exceptions[VerbComponents(polarity, person, plurality, tense)] = value
-
     def _parse_file(self, path):
         with open(path, 'r') as f:
             lines = f.readlines()
@@ -80,15 +68,6 @@ class KisVerbParser(Parser):
                 root, eng = self._parse_verb_line(lines[i])
                 verb = KisVerb(root, eng)
                 i += 1
-
-                exception_lines = []
-                while i < len(lines) and not self._blank_line(lines[i]):
-                    exception_lines.append(lines[i])
-                    i += 1
-
-                if len(exception_lines) > 0:
-                    self._process_exceptions(verb, exception_lines)
-
                 self.verbs.append(verb)
             else:
                 i += 1
@@ -129,7 +108,6 @@ class KisNounParser(Parser):
             eng_sing.append(sing)
             eng_plur.append(plur)
             
-
         return KisNoun(kis_sing, kis_plur, eng_sing, eng_plur, noun_class)
 
     def _parse_file(self, path):

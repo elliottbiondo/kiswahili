@@ -17,14 +17,41 @@ class VerbComponents(object):
     _tense = ["past", "present-perfect", "present", "future"]
 
     def __init__(self, polarity_idx, person_idx, plurality_idx, tense):
+        """
+        Initialize VerbComponents object
+
+        Parameters
+        ----------
+        polarity_idx : int 
+            affirmative (0) or negative (1) verb form, e.g. "do" vs. do not
+        person_idx : int 
+            1st (0), 2nd (1), or 3rd (2) person verb form, e.g. I do, you do, he/she/it does
+        plurality_idx : int
+            singular (0) or plural (0) verb form, e.g., I do, we do
+        tense : str
+            any tense in self._tense
+        """
 
         self._polarity_idx = polarity_idx
         self._person_idx = person_idx
         self._plurality_idx = plurality_idx
         self._tense_idx = self._tense.index(tense)
-
+    
     @classmethod
     def from_random_sample(cls, third_person=False):
+        """
+        Create a randomly generated VerbComponent object
+
+        Parameters
+        ----------
+        third_person : bool
+            If True, VerbComponent is guarenteed to be third person
+
+        Returns
+        -------
+        vc : VerbComponents
+            Randomly generated object
+        """
         polarity = choice(range(len(cls._polarity)))
         if third_person:
             person = 2
@@ -112,9 +139,8 @@ class KisVerb(object):
             if not isinstance(e, EngVerb):
                 raise ValueError("Argument <eng> must be a list of EngVerb objects")
         self.eng = eng
-        self.exceptions = {}
 
-    def conjugate(self, vc):
+    def conjugate(self, vc, subject_pre=None):
         """
         Conjugate the verb for the supplied parameters
 
@@ -129,10 +155,8 @@ class KisVerb(object):
             The conjugated verb
         """
 
-        if vc in self.exceptions.keys():
-            return self.exceptions[vc]
-
-        subject_pre = self._subjects[vc.polarity_idx][vc.plurality_idx][vc.person_idx]
+        if subject_pre is None:
+            subject_pre = self._subjects[vc.polarity_idx][vc.plurality_idx][vc.person_idx]
         tense_pre = self._tenses[vc.polarity_idx][vc.tense_idx]
         conj = subject_pre + tense_pre + self.root
 
