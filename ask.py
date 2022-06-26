@@ -85,11 +85,11 @@ class Sentence_Challenge(Challenge):
         kis = kis_verb.conjugate(vc)
 
         if vc.plurality == "singular":
-            kis = "{}  {}".format(noun.sing, kis_verb.conjugate(vc, noun.subject_prefixes[0]))
-            eng = ["{} {}".format(noun.eng_sing, x.conjugate(vc)) for x in kis_verb.eng]
+            kis = "{} {}".format(noun.sing, kis_verb.conjugate(vc, noun.calc_subject_prefix(vc)))
+            eng = ["{} {}".format(noun.eng_sing, x.conjugate(vc, with_subject=False)) for x in kis_verb.eng]
         else:
-            kis = "{}  {}".format(noun.plur, kis_verb.conjugate(vc, noun.subject_prefixes[1]))
-            eng = ["{} {}".format(noun.eng_plur, x.conjugate(vc)) for x in kis_verb.eng]
+            kis = "{} {}".format(noun.plur, kis_verb.conjugate(vc, noun.calc_subject_prefix(vc)))
+            eng = ["{} {}".format(noun.eng_plur, x.conjugate(vc, with_subject=False)) for x in kis_verb.eng]
 
         if self._coin_flip():
             inp = input("Translate to Kiswahili: {0} \n> ".format(choice(eng)))

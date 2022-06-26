@@ -12,6 +12,15 @@ class KisNoun(object):
                         [ "a",  "wa"], # m-wa-n
                         [ "ya", "ya"]] # ma
 
+    _negative_subject_prefixs = [[ "ha", "hawa"], # m-wa
+                                 [ "hu",  "hai"], # m-mi
+                                 ["hali", "haya"], # ji-ma
+                                 ["haki", "havi"], # ki-vi
+                                 [ "hai", "hazi"], # n
+                                 [ "hu",  "hu"], # u
+                                 [ "ha",  "hawa"], # m-wa-n
+                                 [ "haya", "haya"]] # ma
+
     _possessive_prefixs = [["wa", "wa"], # m-wa
                            ["wa", "ya"], # m-mi
                            ["la", "ya"], # ji-ma
@@ -43,9 +52,12 @@ class KisNoun(object):
                 "Invalid noun class '{0}' for noun {1}".format(noun_class,
                                                                sing))
 
-    def _check_noun_class_supported(self):
-        if self._noun_class_index >= 7:
-            raise NotImplementedError("Noun class {} does not yet support prefixes".format(self.noun_class))
+    def calc_subject_prefix(self, vc):
+        plur_idx = vc.plurality_idx
+        if vc.polarity == "affirmative":
+            return self._subject_prefixs[self._noun_class_index][plur_idx]
+        else:
+            return self._negative_subject_prefixs[self._noun_class_index][plur_idx]
 
     @property
     def sing(self):
@@ -69,16 +81,16 @@ class KisNoun(object):
         
     @property
     def subject_prefixes(self):
-        #self._check_noun_class_supported()
         return self._subject_prefixs[self._noun_class_index]
 
     @property
+    def negative_subject_prefixes(self):
+        return self._negative_subject_prefixs[self._noun_class_index]
+
+    @property
     def possessive_prefixes(self):
-        #self._check_noun_class_supported()
         return self._possessive_prefixs[self._noun_class_index]
 
     @property
     def adjective_prefixes(self):
-        #self._check_noun_class_supported()
         return self._adjective_prefixs[self._noun_class_index]
-

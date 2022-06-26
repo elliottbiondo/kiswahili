@@ -201,19 +201,24 @@ class EngVerb(object):
         else:
             return str(self) == str(other)
 
-    def conjugate(self, vc):
+    def conjugate(self, vc, with_subject=True):
 
-        subject = self._subjects[vc.plurality_idx][vc.person_idx]
+        out = []
+        if with_subject:
+            out.append(self._subjects[vc.plurality_idx][vc.person_idx])
+        elif vc.person_idx != 2:
+            raise ValueError("Only third person should ever be requested without a subject")
 
         if vc.tense == "future":
             conj_verb = self._conjugate_future(vc)
         else:
             conj_verb = self._conjugate_mlconj3(vc)
 
-        out =  "{0} {1}".format(subject, conj_verb)
+        out.append(conj_verb)
         if self._compound_component:
-            out += " {0}".format(self._compound_component)
-        return out
+            out.append(self._compound_component)
+
+        return " ".join(out)
 
     def _conjugate_future(self, vc):
         # All English verbs are regular in the future test

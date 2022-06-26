@@ -1,6 +1,7 @@
 from nose.tools import assert_equal, with_setup, assert_raises
 
 from noun import KisNoun
+from verb import VerbComponents
 
 def test_basic():
 
@@ -24,8 +25,19 @@ def test_basic():
     with assert_raises(ValueError):
         KisNoun("jiwe", "mawe", "stone", "stones", "x")
 
-    # Throw and error if the prefixes are not yet supported
-    #with assert_raises(NotImplementedError):
-    #   n2 = KisNoun("maji", "maji", "water", "water", "ma")
-    #   n2.subject_prefixes
 
+def test_subject_prefixs():
+
+    n = KisNoun("kisu", "visu", ["knife"], ["knives"], "ki-vi")
+
+    vc = VerbComponents(0, 2, 0, "present")
+    assert_equal("ki", n.calc_subject_prefix(vc))
+
+    vc = VerbComponents(0, 2, 1, "future")
+    assert_equal("vi", n.calc_subject_prefix(vc))
+
+    vc = VerbComponents(1, 2, 0, "present-perfect")
+    assert_equal("haki", n.calc_subject_prefix(vc))
+
+    vc = VerbComponents(1, 2, 1, "past")
+    assert_equal("havi", n.calc_subject_prefix(vc))

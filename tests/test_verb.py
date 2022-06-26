@@ -127,6 +127,20 @@ def test_eng_simple():
     assert_equal("They have broken", ev.conjugate(VerbComponents(0, 2, 1, "present-perfect")))
     assert_equal("They have not broken", ev.conjugate(VerbComponents(1, 2, 1, "present-perfect")))
 
+def test_eng_simple_no_subject():
+
+    ev = EngVerb("break")
+
+    assert_equal("is breaking", ev.conjugate(VerbComponents(0, 2, 0, "present"), with_subject=False))
+    assert_equal("is not breaking", ev.conjugate(VerbComponents(1, 2, 0, "present"), with_subject=False))
+    assert_equal("are breaking", ev.conjugate(VerbComponents(0, 2, 1, "present"), with_subject=False))
+    assert_equal("are not breaking", ev.conjugate(VerbComponents(1, 2, 1, "present"), with_subject=False))
+
+    # requestiong no subject in a non-third-person case
+    with assert_raises(ValueError):
+        ev.conjugate(VerbComponents(1, 1, 1, "present"), with_subject=False)
+
+
 def test_eng_compound():
 
     # Regular compound verb
