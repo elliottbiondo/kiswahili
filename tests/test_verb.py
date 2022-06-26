@@ -18,6 +18,10 @@ def test_verb_components():
 
     assert_equal("affirmative, second person, singular, present tense", str(vc))
 
+def test_verb_components_third_person():
+    vc = VerbComponents.from_random_sample(third_person=True)
+    assert_equal(2, vc.person_idx)
+
 
 def test_kis_regular():
 
