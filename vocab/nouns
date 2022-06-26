@@ -223,7 +223,7 @@ nywele : hair/hair : n
 kichwa/vichwa : head/heads : ki-vi
 tako/matako : butt cheek/buttocks : ji-ma
 kichwa/vichwa : head/heads : ki-vi
-bega/mabega : shoulder/sholders : ji-ma
+bega/mabega : shoulder/shoulders : ji-ma
 tumbo/matumbo : stomach/stomachs : ji-ma
 uso/nyuso : face/faces : u
 shingo : neck/necks : n
@@ -286,6 +286,8 @@ mradi/miradi : project/projects : m-mi
 biashara : business/businesses : n 
 barua pepe : email/emails : n
 barua : mail : n
+kanuni ya kompyuta/kanuni za kompyuta : computer code/computer codes : n
+programu ya kompyuta/programu za kompyuta : computer program/computer programs : n
 
 ################################################################################
 # philosophy

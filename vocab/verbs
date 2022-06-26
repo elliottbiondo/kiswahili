@@ -47,7 +47,7 @@ exception neg 3 plur present si
 
 -lala : sleep
 
--amka : wake up
+-amka : *wake* up
 
 -cheza : play, dance
 
@@ -311,7 +311,7 @@ exception neg 3 plur present si
 
 -ruhusu : permit, allow
 
--husu : concerning
+-husu : involve, relate # relate one topic to another
 
 -safirisha : transport
 
@@ -371,7 +371,7 @@ exception neg 3 plur present si
 
 -kumbuka : remember
 
--sahua : forget
+-sahau : forget
 
 -dumu : last
 
@@ -395,6 +395,12 @@ exception neg 3 plur present si
 
 -fuata : follow, imitate, abide
 
+-vunja : break, damage
+
+-jaa : *be* full
+
+-paa : *scrap* off, raise
+
 # -kusanyika? : gather
 
 # -kusanya? : collect
@@ -404,12 +410,8 @@ exception neg 3 plur present si
 #kulea- v. to care for, raise (children)
 #kumeza- v. to swallow up, to engulf
 #kumwaga- v. to empty, to spill, to pour out
-#kunusa- v. to smell
 #kunywa- v. to drink
 #kuokoa- v. to save, to rescue
 #kuonja- v. to taste, to savor
-#kupaa- v. 1. to scrape off, 2. to rise, ascend, 3. to transfer embers
 #kupaka- v. to smear, to spread, to apply
-#kuvunja- v. to break
-
 
