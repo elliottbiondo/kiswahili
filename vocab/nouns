@@ -64,7 +64,7 @@ nyama ya ng'ombe : beef : n
 nyama ya nguruwe : pork : n                                                      
 samaki : fish : n                                                                
 nyanya : tomato/tomatoes : n                                                     
-pilipli hoho : green pepper/green peppers : n                                    
+pilipili hoho : green pepper/green peppers : n                                    
 ndizi : banana/bananas : n                                                       
 chai : tea : n                                                                   
 mkate/mikate : bread/breads : m-mi                                               
@@ -355,39 +355,39 @@ mnyama/wanyama  : animal/animals : m-wa
 mdudu/wadudu : insect/insects : m-wa
 
 # Pluralize in n-class fashion, but have all m-wa concords:
-mbwa : dog/dogs : m-wa
-paka : cat/cats : m-wa                                                             
-kondoo : sheep : m-wa                                                         
-farasi : horse/horses : m-wa                                                         
-mbuzi : goat/goats : m-wa                                                           
-twiga : giraffe/giraffes : m-wa                                                        
-samaki : fish/fishes : m-wa                                                          
-ndege : bird/birds : m-wa                                                           
-buibui : spider/spiders : m-wa                                                        
-nyoka : snake/snakes : m-wa                                                          
-nyati : buffalo : m-wa                                                        
-mamba : crocodile/crocodiles : m-wa                                                      
-kombakoche : lobster/lobsters : m-wa                                                   
-konokono : snail/snails : m-wa
-papa : shark/sharks : m-wa                                                           
-popo : bat/bats : m-wa                                                             
-panya : rat/rats : m-wa                                                            
-uduvi : shrimp : m-wa                                                         
-nyangumi : whale/whales : m-wa                                                       
-tembo : elephant/elephants : m-wa                                                       
-simba : lion/lions : m-wa                                                           
-chui : leopard/leopard : m-wa                                                         
-duma : cheetah/cheetah : m-wa                                                         
-fisi : hyena/hyenas : m-wa                                                           
-mbu : mosquito/mosquitos : m-wa
-ng'e : scorpion/scorpions : m-wa
-nyoka : snake/snakes : m-wa
-pomboo : dolphin/dolpins : m-wa
-nzi : fly/flies : m-wa # both nzi and inzi are correct, nzi may be newer
-inzi : fly/flies : m-wa
-nyuki : bee/bees : m-wa
-panya : rat/rats, mouse/mice : m-wa
-pweza : octopus/octopi : m-wa
+mbwa : dog/dogs : m-wa-n
+paka : cat/cats : m-wa-n                                                             
+kondoo : sheep : m-wa-n                                                         
+farasi : horse/horses : m-wa-n                                                         
+mbuzi : goat/goats : m-wa-n                                                           
+twiga : giraffe/giraffes : m-wa-n                                                        
+samaki : fish/fishes : m-wa-n                                                          
+ndege : bird/birds : m-wa-n                                                           
+buibui : spider/spiders : m-wa-n                                                        
+nyoka : snake/snakes : m-wa-n                                                          
+nyati : buffalo : m-wa-n                                                        
+mamba : crocodile/crocodiles : m-wa-n                                                      
+kombakoche : lobster/lobsters : m-wa-n                                                   
+konokono : snail/snails : m-wa-n
+papa : shark/sharks : m-wa-n                                                           
+popo : bat/bats : m-wa-n                                                             
+panya : rat/rats : m-wa-n                                                            
+uduvi : shrimp : m-wa-n                                                         
+nyangumi : whale/whales : m-wa-n                                                       
+tembo : elephant/elephants : m-wa-n                                                       
+simba : lion/lions : m-wa-n                                                           
+chui : leopard/leopard : m-wa-n                                                         
+duma : cheetah/cheetah : m-wa-n                                                         
+fisi : hyena/hyenas : m-wa-n                                                           
+mbu : mosquito/mosquitos : m-wa-n
+ng'e : scorpion/scorpions : m-wa-n
+nyoka : snake/snakes : m-wa-n
+pomboo : dolphin/dolpins : m-wa-n
+nzi : fly/flies : m-wa-n # both nzi and inzi are correct, nzi may be newer
+inzi : fly/flies : m-wa-n
+nyuki : bee/bees : m-wa-n
+panya : rat/rats, mouse/mice : m-wa-n
+pweza : octopus/octopi : m-wa-n
 
 # Pluralize in another fashion, but have all m-wa concords:
 kifaru/vifaru : rhino/rhinos : m-wa

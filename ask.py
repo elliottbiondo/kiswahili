@@ -47,12 +47,12 @@ class Noun_Challenge(Challenge):
         if self._coin_flip():
             kis = noun.sing
             eng = noun.eng_sing
-            if noun.noun_class in ("n", "u"):
+            if noun.noun_class in ("n", "u", "m-w-n"):
                 plurality_message = "(singular)"
         else:
             kis = noun.plur
             eng = noun.eng_plur
-            if noun.noun_class in ("n", "u"):
+            if noun.noun_class in ("n", "u", "m-w-n"):
                 plurality_message = "(plural)"
 
         if self._coin_flip():
@@ -83,12 +83,12 @@ class Noun_Challenge(Challenge):
 #        if self._coin_flip():
 #            kis = noun.sing
 #            eng = noun.eng_sing
-#            if noun.noun_class in ("n", "u"):
+#            if noun.noun_class in ("n", "u", "m-wa-n"):
 #                plurality_message = "(singular)"
 #        else:
 #            kis = noun.plur
 #            eng = noun.eng_plur
-#            if noun.noun_class in ("n", "u"):
+#            if noun.noun_class in ("n", "u", "m-wa-m"):
 #                plurality_message = "(plural)"
 #
 #        if self._coin_flip():

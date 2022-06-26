@@ -24,9 +24,12 @@ class VerbComponents(object):
         self._tense_idx = self._tense.index(tense)
 
     @classmethod
-    def from_random_sample(cls):
+    def from_random_sample(cls, third_person=False):
         polarity = choice(range(len(cls._polarity)))
-        person = choice(range(len(cls._person)))
+        if third_person:
+            person = 2
+        else:
+            person = choice(range(len(cls._person)))
         plurality = choice(range(len(cls._plurality)))
         tense = choice(cls._tense)
         return cls(polarity, person, plurality, tense)
