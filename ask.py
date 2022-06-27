@@ -86,10 +86,18 @@ class Sentence_Challenge(Challenge):
 
         if vc.plurality == "singular":
             kis = "{} {}".format(noun.sing, kis_verb.conjugate(vc, noun.calc_subject_prefix(vc)))
-            eng = ["{} {}".format(noun.eng_sing, x.conjugate(vc, with_subject=False)) for x in kis_verb.eng]
+            eng = []
+            for ev in kis_verb.eng:
+                for ns in noun.eng_sing:
+                    eng.append("{} {}".format(ns, ev.conjugate(vc, with_subject=False)))
         else:
             kis = "{} {}".format(noun.plur, kis_verb.conjugate(vc, noun.calc_subject_prefix(vc)))
-            eng = ["{} {}".format(noun.eng_plur, x.conjugate(vc, with_subject=False)) for x in kis_verb.eng]
+            eng = []
+            for ev in kis_verb.eng:
+                for ns in noun.eng_plur:
+                    eng.append("{} {}".format(ns, ev.conjugate(vc, with_subject=False)))
+
+
 
         if self._coin_flip():
             inp = input("Translate to Kiswahili: {0} \n> ".format(choice(eng)))
@@ -108,9 +116,9 @@ def main():
     sc = Sentence_Challenge(["vocab/nouns"], ["vocab/verbs"])
 
     while True:
-        play = choice([nc.play, vc.play])
-        play()
-        #sc.play()
+        #play = choice([nc.play, vc.play])
+        #play()
+        sc.play()
 
 if __name__ == "__main__":
     main()
