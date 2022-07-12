@@ -1,4 +1,7 @@
-from random import uniform
+from random import choice, uniform
+
+from parser import KisVerbParser, KisNounParser
+from mashariki.verb import VerbComponents, EngVerb
 
 from abc import ABC
 
@@ -57,3 +60,18 @@ class Challenge(ABC):
                 return True
         
         return False
+
+class Verb_Challenge(Challenge):
+
+    def __init__(self, paths):
+        vp = KisVerbParser(paths)
+        self._verbs = vp.parse()
+        print("Read {} verbs".format(vp.num_verbs()))
+
+    def select_kis_eng(self):
+        kis_verb = choice(self._verbs)
+        vc = VerbComponents.from_random_sample()
+        kis = kis_verb.conjugate(vc)
+        eng = [x.conjugate(vc) for x in kis_verb.eng]
+
+        return kis, eng, vc
