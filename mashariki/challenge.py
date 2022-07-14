@@ -66,7 +66,6 @@ class Verb_Challenge(Challenge):
     def __init__(self, paths):
         vp = KisVerbParser(paths)
         self._verbs = vp.parse()
-        print("Read {} verbs".format(vp.num_verbs()))
 
     def select_kis_eng(self):
         kis_verb = choice(self._verbs)
@@ -75,3 +74,39 @@ class Verb_Challenge(Challenge):
         eng = [x.conjugate(vc) for x in kis_verb.eng]
 
         return kis, eng, vc
+
+
+class Sentence_Challenge(Challenge):
+
+
+
+    def play(self):
+
+        # select a random kiswahili verb
+        kis_verb = choice(self._verbs)
+        vc = VerbComponents.from_random_sample(third_person=True)
+
+        # select a random kiswahili noun
+        noun = choice(self._nouns)
+
+        kis = kis_verb.conjugate(vc)
+
+        if vc.plurality == "singular":
+            kis = "{} {}".format(noun.sing, kis_verb.conjugate(vc, noun.calc_subject_prefix(vc)))
+            eng = []
+            for ev in kis_verb.eng:
+                for ns in noun.eng_sing:
+                    eng.append("{} {}".format(ns, ev.conjugate(vc, with_subject=False)))
+        else:
+            kis = "{} {}".format(noun.plur, kis_verb.conjugate(vc, noun.calc_subject_prefix(vc)))
+            eng = []
+            for ev in kis_verb.eng:
+                for ns in noun.eng_plur:
+                    eng.append("{} {}".format(ns, ev.conjugate(vc, with_subject=False)))
+
+
+
+
+
+
+

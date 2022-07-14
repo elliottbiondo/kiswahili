@@ -3,20 +3,16 @@ from copy import copy
 
 from mashariki.parser import KisVerbParser, KisNounParser
 from mashariki.verb import VerbComponents, EngVerb
-from mashariki.challenge import Challenge
+from mashariki.challenge import Verb_Challenge, Challenge
 
-class Verb_Challenge(Challenge):
+class Verb_Challenge_CL(Verb_Challenge):
 
     def __init__(self, paths):
-        vp = KisVerbParser(paths)
-        self._verbs = vp.parse()
-        print("Read {} verbs".format(vp.num_verbs()))
+        super().__init__(paths)
+        print("Read {} verbs".format(len(self._verbs)))
 
     def play(self):
-        kis_verb = choice(self._verbs)
-        vc = VerbComponents.from_random_sample()
-        kis = kis_verb.conjugate(vc)
-        eng = [x.conjugate(vc) for x in kis_verb.eng]
+        kis, eng, vc = self.select_kis_eng()
 
         if self._coin_flip():
             inp = input("Translate to English: {}\n> ".format(kis))
@@ -112,13 +108,13 @@ class Sentence_Challenge(Challenge):
 
 def main():
     nc = Noun_Challenge(["vocab/nouns"])
-    vc = Verb_Challenge(["vocab/verbs"])
+    vc = Verb_Challenge_CL(["vocab/verbs"])
     sc = Sentence_Challenge(["vocab/nouns"], ["vocab/verbs"])
 
     while True:
         #play = choice([nc.play, vc.play])
         #play()
-        sc.play()
+        vc.play()
 
 if __name__ == "__main__":
     main()
