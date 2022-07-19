@@ -78,35 +78,34 @@ class Verb_Challenge(Challenge):
 
 class Sentence_Challenge(Challenge):
 
+     def __init__(self, noun_paths, verb_paths):
+         np = KisNounParser(noun_paths)
+         vp = KisVerbParser(verb_paths)
+         self._nouns = np.parse()
+         self._verbs = vp.parse()
 
+     def select_kis_eng(self):
 
-    def play(self):
+         # select a random kiswahili verb
+         kis_verb = choice(self._verbs)
+         vc = VerbComponents.from_random_sample(third_person=True)
 
-        # select a random kiswahili verb
-        kis_verb = choice(self._verbs)
-        vc = VerbComponents.from_random_sample(third_person=True)
+         # select a random kiswahili noun
+         noun = choice(self._nouns)
 
-        # select a random kiswahili noun
-        noun = choice(self._nouns)
+         kis = kis_verb.conjugate(vc)
 
-        kis = kis_verb.conjugate(vc)
+         if vc.plurality == "singular":
+             kis = "{} {}".format(noun.sing, kis_verb.conjugate(vc, noun.calc_subject_prefix(vc)))
+             eng = []
+             for ev in kis_verb.eng:
+                 for ns in noun.eng_sing:
+                     eng.append("{} {}".format(ns, ev.conjugate(vc, with_subject=False)))
+         else:
+             kis = "{} {}".format(noun.plur, kis_verb.conjugate(vc, noun.calc_subject_prefix(vc)))
+             eng = []
+             for ev in kis_verb.eng:
+                 for ns in noun.eng_plur:
+                     eng.append("{} {}".format(ns, ev.conjugate(vc, with_subject=False)))
 
-        if vc.plurality == "singular":
-            kis = "{} {}".format(noun.sing, kis_verb.conjugate(vc, noun.calc_subject_prefix(vc)))
-            eng = []
-            for ev in kis_verb.eng:
-                for ns in noun.eng_sing:
-                    eng.append("{} {}".format(ns, ev.conjugate(vc, with_subject=False)))
-        else:
-            kis = "{} {}".format(noun.plur, kis_verb.conjugate(vc, noun.calc_subject_prefix(vc)))
-            eng = []
-            for ev in kis_verb.eng:
-                for ns in noun.eng_plur:
-                    eng.append("{} {}".format(ns, ev.conjugate(vc, with_subject=False)))
-
-
-
-
-
-
-
+         return kis, eng, vc
