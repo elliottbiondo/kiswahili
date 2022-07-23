@@ -1,7 +1,7 @@
 from random import choice, uniform
 
 from parser import KisVerbParser, KisNounParser
-from mashariki.verb import VerbComponents, EngVerb
+from verb import VerbComponents, EngVerb
 
 from abc import ABC
 
