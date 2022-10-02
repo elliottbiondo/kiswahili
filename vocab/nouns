@@ -133,6 +133,7 @@ njia : path/paths : n
 # household
 ################################################################################
 
+nyumba : house/houses : n
 bafu : bathroom/bathrooms : n                                                    
 choo/vyoo : toilet/toilets : ki-vi 
 ufagio : broom/brooms : u                                                         
@@ -161,6 +162,7 @@ ukuta/kuta : wall/walls : u
 blanketi : blanket/blankets : n
 taa : light/lights : n
 kijiko/vijiko : spoon/spoons : ki-vi
+sakafu : floor/floors : n
 
 ################################################################################
 # clothing
@@ -271,6 +273,10 @@ chuo/vyuo : college/colleges : ki-vi
 chou kikuu/vyou vikuu : university/universities : ki-vi
 kiingereza : english : ki-vi
 
+nomino : noun/nouns : n
+kitenzi/vitenzi : verb/verbs : ki-vi
+neno/maneno : word/words : ji-ma
+
 ################################################################################
 # work
 ################################################################################
@@ -314,6 +320,7 @@ utamaduni : culture/cultures : u # no plural
 ################################################################################
 
 serekali : government/governments : n
+taasisi : instituation/institutions : n
 kijiji/vijiji : village/villages : ki-vi
 mji/miji : town/towns : m-mi
 mfereji/mifereji : canal/canals : m-mi
@@ -457,6 +464,7 @@ jumla  : total/totals : n
 shilingi : Tanzanian shilling/Tanzanian shillings : n
 
 pato/mapato : income/incomes, achievement/achievements : ji-ma
+mkopo/mikopo : loan/loans : m-mi
 kodi : rent/rents, fee/fees, tax/taxes : n
 benki/mabenki : bank/banks : ji-ma
 
