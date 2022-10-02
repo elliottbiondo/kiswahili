@@ -323,7 +323,6 @@ uchumi : economy/economy : u
 umoja : unity :  u
 uhuru : freedom : u
 usawa : equality : u
-usawa : equality : u
 nchi : country/contries : n
 jimbo/majimbo : state/states : ji-ma
 taifa/mataifa : nation/nations : ji-ma
@@ -378,8 +377,8 @@ uduvi : shrimp : m-wa-n
 nyangumi : whale/whales : m-wa-n                                                       
 tembo : elephant/elephants : m-wa-n                                                       
 simba : lion/lions : m-wa-n                                                           
-chui : leopard/leopard : m-wa-n                                                         
-duma : cheetah/cheetah : m-wa-n                                                         
+chui : leopard/leopards : m-wa-n                                                         
+duma : cheetah/cheetahs : m-wa-n                                                         
 fisi : hyena/hyenas : m-wa-n                                                           
 mbu : mosquito/mosquitos : m-wa-n
 ng'e : scorpion/scorpions : m-wa-n
